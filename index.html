@@ -1,119 +1,1051 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<html>
+<head>
+<title>Statwing</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.no-responsive.no-icons.min.css" rel="stylesheet">
+<link href="icons/ss-pika.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<style>
+body {
+background: #d2dfe0;
+background-color: #d2dfe0;
+font-family: 'Gotham', 'Montserrat', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+color: #4e5f60;
+}
+.btn {
+font-family: 'Gotham', 'Montserrat', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+padding: 8px 12px 5px;
+color: #63797A;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #E5E5E5;
+*background-color: #E5E5E5;
+background-image: -moz-linear-gradient(top, #F3F3F3, #E5E5E5);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F3F3F3), to(#E5E5E5));
+background-image: -webkit-linear-gradient(top, #F3F3F3, #E5E5E5);
+background-image: -o-linear-gradient(top, #F3F3F3, #E5E5E5);
+background-image: linear-gradient(to bottom, #F3F3F3, #E5E5E5);
+background-repeat: repeat-x;
+border-color: #E5E5E5;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3F3F3', endColorstr='#E5E5E5', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+font-weight: bold;
+box-shadow: inset 0px 1px 0px #ffffff;
+border: solid 1px #c5c5c5;
+text-shadow: 0px 1px 0px white;
+}
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+color: #63797a;
+background-color: #E5E5E5;
+*background-color: #003bb3;
+}
+.navbar .btn {
+text-transform: uppercase;
+}
+.ss-icon {
+vertical-align: top;
+line-height: 21px;
+}
+.btn-info {
+color: #E3F2F5;
+background-color: #81B3BC;
+*background-color: #81B3BC;
+background-image: -moz-linear-gradient(top, #8DBBC2, #81B3BC);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8DBBC2), to(#81B3BC));
+background-image: -webkit-linear-gradient(top, #8DBBC2, #81B3BC);
+background-image: -o-linear-gradient(top, #8DBBC2, #81B3BC);
+background-image: linear-gradient(to bottom, #8DBBC2, #81B3BC);
+background-repeat: repeat-x;
+border-color: #81B3BC;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8DBBC2', endColorstr='#81B3BC', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+text-shadow:0px -1px 0px #55a4b0;
+text-transform: uppercase;
+box-shadow: inset 0px 1px 0px #c3dbdf;
+border: solid 1px #729ca2;
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+color: #e3f2f5;
+background-color: #81B3BC;
+*background-color: #003bb3;
+}
+.btn-row {
+margin-bottom: 10px;
+}
+.navbar-fixed-top .navbar-inner {
+border: none;
+box-shadow: none;
+background: #8dbbc2; /* Old browsers */
+background: -moz-linear-gradient(top,  #8dbbc2 0%, #81b3bc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8dbbc2), color-stop(100%,#81b3bc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #8dbbc2 0%,#81b3bc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #8dbbc2 0%,#81b3bc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #8dbbc2 0%,#81b3bc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #8dbbc2 0%,#81b3bc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dbbc2', endColorstr='#81b3bc',GradientType=0 ); /* IE6-9 */
+box-shadow: inset 0px 1px 0px #c3dbdf;
+border-bottom: solid 1px #7ba9b0;
+padding-left: 10px;
+padding-right: 10px;
+}
+.card {
+padding: 20px;
+background-color: white;
+border: 1px solid rgba(0,0,0,0.25);
+box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+border-radius: 3px;
+margin-bottom: 20px;
+}
+.card-top {
+overflow: hidden;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+margin: -21px -21px 20px;
+padding: 8px 0px 5px;
+background: #8dbbc2; /* Old browsers */
+background: -moz-linear-gradient(top,  #8dbbc2 0%, #81b3bc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8dbbc2), color-stop(100%,#81b3bc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #8dbbc2 0%,#81b3bc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #8dbbc2 0%,#81b3bc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #8dbbc2 0%,#81b3bc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #8dbbc2 0%,#81b3bc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dbbc2', endColorstr='#81b3bc',GradientType=0 ); /* IE6-9 */
+box-shadow: inset 0px 1px 0px #c3dbdf;
+border: solid 1px #7ba9b0;
+padding-left: 10px;
+padding-right: 10px;
+}
+.card-top .btn {
+padding: 4px 8px 2px;
+text-transform: none;
+}
+.navbar-fixed-top .navbar-inner {
+padding: 5px 10px 8px;
+}
+.navbar .nav>li>a {
+font-weight: bold;
+text-transform: uppercase;
+}
+.sidebar {
+width: 268px;
+position: fixed;
+padding: 75px 10px 10px;
+left: 0;
+top: 0;
+bottom: 0;
+background-color: white;
+border-right: 1px solid #a8afad;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+.main {
+margin-left: 288px;
+padding: 20px;
+margin-top: 55px;
+}
+.btn-primary {
+color: #E3F2F5;
+background-color: #129EB4;
+*background-color: #129EB4;
+background-image: -moz-linear-gradient(top, #14A6BA, #129EB4);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#14A6BA), to(#129EB4));
+background-image: -webkit-linear-gradient(top, #14A6BA, #129EB4);
+background-image: -o-linear-gradient(top, #14A6BA, #129EB4);
+background-image: linear-gradient(to bottom, #14A6BA, #129EB4);
+background-repeat: repeat-x;
+border-color: #129EB4;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14A6BA', endColorstr='#129EB4', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+text-shadow:0px 1px 0px #1c94a5;
+box-shadow: inset 0px 1px 0px #83d0db;
+border: solid 1px #118a9c;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+color: #E3F2F5;
+background-color: #129EB4;
+*background-color: #003bb3;
+}
+.btn-warning {
+color: #896301;
+background-color: #FFBE00;
+*background-color: #FFBE00;
+background-image: -moz-linear-gradient(top, #FFD800, #FFBE00);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD800), to(#FFBE00));
+background-image: -webkit-linear-gradient(top, #FFD800, #FFBE00);
+background-image: -o-linear-gradient(top, #FFD800, #FFBE00);
+background-image: linear-gradient(to bottom, #FFD800, #FFBE00);
+background-repeat: repeat-x;
+border-color: #FFBE00;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD800', endColorstr='#FFBE00', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+text-shadow:0px 1px 0px #ffeba3;
+box-shadow: inset 0px 1px 0px #ffffff;
+border: solid 1px #b39300;
+}
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+color: #896301;
+background-color: #FFBE00;
+*background-color: #003bb3;
+}
+.closer {
+color: #517277;
+margin-top: 20px;
+}
+.closer .ss-icon {
+line-height: 32px;
+margin-left: 10px;
+margin-right: 5px;
+}
+.closer a{
+color: #517277;
+text-decoration: none;
+}
+.closer a:hover{
+color: #49656a;
+text-decoration: none;
+}
+.chart {
+height: 200px;
+margin-top: 30px;
+}
+.chart .bar-wrap {
+position: relative;
+height: 200px;
+width: 4.3%;
+float: left;
+margin-right: 2%;
+}
+.chart .bar-wrap:last-child {
+margin-right: 0%;
+}
+.chart .bar	{
+position: absolute;
+bottom:0;
+width: 100%;
+height: 200px;
+background-color: #dfecee;
+}
+.counter {
+float: right;
+padding: 2px 5px 0px;
+margin-top: -2px;
+background-color: #63797a;
+color: #eeeeee;
+border-radius: 3px;
+text-shadow: none;
+margin-left: 10px;
+margin-right: -5px;
+}
+.sidebar .variables .btn {
+width: 230px;
+text-align: left;
+margin-bottom: 10px;
+}
+.sidebar .variables .btn .ss-icon {
+float: right;
+}
+.sidebar .variables .btn-radial {
+width: 10px;
+height: 10px;
+padding: 0px 3px 9px 5px;
+margin: -10px 9px 0 4px;
+border-radius: 100px;
+font-size: 11px;
+cursor: pointer;
+}
+.btn-side {
+color: #63797A;
+text-shadow: 0 1px 0 white;
+background-color: #AEC4C4;
+*background-color: #AEC4C4;
+background-image: -moz-linear-gradient(top, #D9E4E4, #AEC4C4);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#D9E4E4), to(#AEC4C4));
+background-image: -webkit-linear-gradient(top, #D9E4E4, #AEC4C4);
+background-image: -o-linear-gradient(top, #D9E4E4, #AEC4C4);
+background-image: linear-gradient(to bottom, #D9E4E4, #AEC4C4);
+background-repeat: repeat-x;
+border-color: #AEC4C4;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9E4E4', endColorstr='#AEC4C4', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-side:hover,
+.btn-side:active,
+.btn-side.active,
+.btn-side.disabled,
+.btn-side[disabled] {
+color: #63797a;
+background-color: #AEC4C4;
+*background-color: #003bb3;
+}
+.sidebar hr {
+margin-left: -10px;
+margin-right: -10px;
+}
+.btn-group>.btn-breadcrumb {
+margin-right: -10px;
+}
+.light-conclusion {
+color: #98afb0;
+}
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-submenu:hover>a,.dropdown-submenu:focus>a{
+background-image: none;
+background-color:#85b8be;	
+}
+@keyframes barchart1 {
+0%   {height:200px;}
+25%  {height:190px;}
+50%  {height:100px;}
+75%  {height:50px;}
+100% {height:200px;}
+}
+@-webkit-keyframes barchart1 {
+0%   {height:200px;}
+25%  {height:190px;}
+50%  {height:100px;}
+75%  {height:50px;}
+100% {height:200px;}
+}
+@keyframes barchart2 {
+0%   {height:180px;}
+25%  {height:130px;}
+50%  {height:90px;}
+75%  {height:40px;}
+100% {height:180px;}
+}
+@-webkit-keyframes barchart2 {
+0%   {height:180px;}
+25%  {height:130px;}
+50%  {height:90px;}
+75%  {height:40px;}
+100% {height:180px;}
+}
+@keyframes barchart3 {
+0%   {height:160px;}
+25%  {height:100px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:160px;}
+}
+@-webkit-keyframes barchart3 {
+0%   {height:160px;}
+25%  {height:100px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:160px;}
+}
+@keyframes barchart4 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart4 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@keyframes barchart5 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:100px;}
+75%  {height:80px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart5 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:100px;}
+75%  {height:80px;}
+100% {height:150px;}
+}
+@keyframes barchart6 {
+0%   {height:40px;}
+25%  {height:150px;}
+50%  {height:120px;}
+75%  {height:80px;}
+100% {height:40px;}
+}
+@-webkit-keyframes barchart6 {
+0%   {height:40px;}
+25%  {height:150px;}
+50%  {height:120px;}
+75%  {height:80px;}
+100% {height:40px;}
+}
+@keyframes barchart7 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart7 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:150px;}
+}
+@keyframes barchart8 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart8 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@keyframes barchart9 {
+0%   {height:150px;}
+25%  {height:200px;}
+50%  {height:100px;}
+75%  {height:200px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart9 {
+0%   {height:150px;}
+25%  {height:200px;}
+50%  {height:100px;}
+75%  {height:200px;}
+100% {height:150px;}
+}
+@keyframes barchart10 {
+0%   {height:40px;}
+25%  {height:150px;}
+50%  {height:120px;}
+75%  {height:80px;}
+100% {height:40px;}
+}
+@-webkit-keyframes barchart10 {
+0%   {height:40px;}
+25%  {height:150px;}
+50%  {height:120px;}
+75%  {height:80px;}
+100% {height:40px;}
+}
+@keyframes barchart11 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart11 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:150px;}
+}
+@keyframes barchart12 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart12 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@keyframes barchart13 {
+0%   {height:150px;}
+25%  {height:200px;}
+50%  {height:100px;}
+75%  {height:200px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart13 {
+0%   {height:150px;}
+25%  {height:200px;}
+50%  {height:100px;}
+75%  {height:200px;}
+100% {height:150px;}
+}
+@keyframes barchart14 {
+0%   {height:40px;}
+25%  {height:150px;}
+50%  {height:120px;}
+75%  {height:80px;}
+100% {height:40px;}
+}
+@-webkit-keyframes barchart14 {
+0%   {height:40px;}
+25%  {height:150px;}
+50%  {height:120px;}
+75%  {height:80px;}
+100% {height:40px;}
+}
+@keyframes barchart15 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart15 {
+0%   {height:150px;}
+25%  {height:50px;}
+50%  {height:70px;}
+75%  {height:130px;}
+100% {height:150px;}
+}
+@keyframes barchart16 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+@-webkit-keyframes barchart16 {
+0%   {height:150px;}
+25%  {height:80px;}
+50%  {height:140px;}
+75%  {height:40px;}
+100% {height:150px;}
+}
+.chart .bar-1 {
+animation:barchart1 5s infinite;
+-webkit-animation:barchart1 5s infinite;
+}
+.chart .bar-2 {
+animation:barchart2 5s infinite;
+-webkit-animation:barchart2 5s infinite;
+}
+.chart .bar-3 {
+animation:barchart3 5s infinite;
+-webkit-animation:barchart3 5s infinite;
+}
+.chart .bar-4 {
+animation:barchart4 5s infinite;
+-webkit-animation:barchart4 5s infinite;
+}
+.chart .bar-5 {
+animation:barchart5 5s infinite;
+-webkit-animation:barchart5 5s infinite;
+}
+.chart .bar-6 {
+animation:barchart6 5s infinite;
+-webkit-animation:barchart6 5s infinite;
+}
+.chart .bar-7 {
+animation:barchart7 5s infinite;
+-webkit-animation:barchart7 5s infinite;
+}
+.chart .bar-8 {
+animation:barchart8 5s infinite;
+-webkit-animation:barchart8 5s infinite;
+}
+.chart .bar-9 {
+animation:barchart9 5s infinite;
+-webkit-animation:barchart9 5s infinite;
+}
+.chart .bar-10 {
+animation:barchart10 5s infinite;
+-webkit-animation:barchart10 5s infinite;
+}
+.chart .bar-11 {
+animation:barchart11 5s infinite;
+-webkit-animation:barchart11 5s infinite;
+}
+.chart .bar-12 {
+animation:barchart12 5s infinite;
+-webkit-animation:barchart12 5s infinite;
+}
+.chart .bar-13 {
+animation:barchart13 5s infinite;
+-webkit-animation:barchart13 5s infinite;
+}
+.chart .bar-14 {
+animation:barchart14 5s infinite;
+-webkit-animation:barchart14 5s infinite;
+}
+.chart .bar-15 {
+animation:barchart15 5s infinite;
+-webkit-animation:barchart15 5s infinite;
+}
+.chart .bar-16 {
+animation:barchart16 5s infinite;
+-webkit-animation:barchart16 5s infinite;
+}
+.btn-group>.btn:hover, .btn-group>.btn:focus, .btn-group>.btn:active, .btn-group>.btn.active {
+	outline: none;
+}
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    } 40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -moz-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -moz-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-o-keyframes flipInX {
+    0% {
+        -o-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -o-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -o-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+.flipInX {
+	-webkit-backface-visibility: visible !important;
+	-webkit-animation-name: flipInX;
+	-moz-backface-visibility: visible !important;
+	-moz-animation-name: flipInX;
+	-o-backface-visibility: visible !important;
+	-o-animation-name: flipInX;
+	backface-visibility: visible !important;
+	animation-name: flipInX;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
 
-        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">Project name</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form pull-right">
-                            <input class="span2" type="text" placeholder="Email">
-                            <input class="span2" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Sign in</button>
-                        </form>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
 
-        <div class="container">
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
-            <!-- Main hero unit for a primary marketing message or call to action -->
-            <div class="hero-unit">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-            </div>
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
 
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-               </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-            </div>
+@-moz-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
 
-            <hr>
+@-o-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
 
-            <footer>
-                <p>&copy; Company 2012</p>
-            </footer>
+@keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 
-        </div> <!-- /container -->
+.fadeInRightBig {
+	-webkit-animation-name: fadeInRightBig;
+	-moz-animation-name: fadeInRightBig;
+	-o-animation-name: fadeInRightBig;
+	animation-name: fadeInRightBig;
+}
+</style>
+</head>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<body>
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="btn-group">
+			<a class="btn btn-primary btn-breadcrumb" href="#" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;-moz-border-top-right-radius: 0px;-moz-border-bottom-right-radius: 0px;-webkit-border-top-right-radius: 0px;-webkit-border-bottom-right-radius: 0px;">
+				<img src="img/statwing_logo_small.png" width="26px" style="margin-top:-6px;" /> Statwing
+			</a>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-info btn-breadcrumb dropdown-toggle" data-toggle="dropdown" href="#" style="border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;">
+				<i class="ss-icon">file</i> Titanic
+				<i class="ss-icon" style="font-size: 10px;margin-left: 7px;">dropdown</i>
+			</a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+				<li><a tabindex="-1" href="#"><i class="ss-icon">file</i> Titanic</a></li>
+				<li><a tabindex="-1" href="#"><i class="ss-icon">file</i> Marketing</a></li>
+				<li><a tabindex="-1" href="#"><i class="ss-icon">file</i> Social Media</a></li>
+				<li><a tabindex="-1" href="#"><i class="ss-icon">file</i> Bob's very long filename</a></li>
+				<li><a tabindex="-1" href="#"><i class="ss-icon">file</i> That thing</a></li>
+				<li><a tabindex="-1" href="#"><i class="ss-icon">file</i> Futurama</a></li>
+			</ul>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-info btn-breadcrumb dropdown-toggle" data-toggle="dropdown" href="#" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;-moz-border-top-left-radius: 0px;-moz-border-bottom-left-radius: 0px;-webkit-border-top-left-radius: 0px;-webkit-border-bottom-left-radius: 0px;">
+				<i class="ss-icon">layout</i> Workspace 1
+				<i class="ss-icon" style="font-size: 10px;margin-left: 7px;">dropdown</i>
+			</a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+				<li><a tabindex="-1" href="#"><i class="ss-icon">layout</i> Workspace 1</a></li>
+				<li><a tabindex="-1" href="#"><i class="ss-icon">layout</i> Workspace 2</a></li>
+			</ul>
+		</div>
+		<div class="pull-right">
+			<a class="btn btn-info" href="#">
+				<i class="ss-icon">help</i><span class="toptextwrap"> HELP</span>
+			</a>
+			<a class="btn btn-info" href="#">
+				<i class="ss-icon">share</i><span class="toptextwrap"> SHARE</span>
+			</a>
+			<a class="btn btn-warning" href="#">
+				<i class="ss-icon">upload</i><span class="toptextwrap">  UPLOAD YOUR OWN</span>
+			</a>
+		</div>
+	</div>
+</div>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+<div class="sidebar">
+	<div class="btn-row">
+		<button class="btn"><i class="ss-icon">playvideo</i> DESCRIBE</button>
+		<div class="btn-group pull-right">
+			<button class="btn">RELATE <i class="ss-icon">record</i></button><button class="btn btn-side"><i class="ss-icon">repeat</i></button>
+		</div>
+	</div>
+	<div class="btn-row">
+		<button class="btn" style="width:100%;text-align:left;"><i class="ss-icon">fork</i> FILTERS <span class="counter">23</span></button>
+	</div>
+	<hr>
+	<div class="btn-row" style="margin-top:-10px;">
+		<input type="text" style="color:#63797a;margin-top:10px;margin-right:5px;font-weight:bold;padding: 8px 10px;width:130px;" value="Find variables..." />
+		<button class="btn" style="margin-right:5px;"><i class="ss-icon">cog</i></button>
+		<button class="btn"><i class="ss-icon">list</i><i class="ss-icon" style="font-size: 10px;margin-left: 7px;">dropdown</i></button>
+	</div>
+	<div class="variables">
+		<div class="btn btn-radial">
+			<i class="ss-icon">record</i>
+		</div>
+		<button class="btn">		
+			Survived?
+			<i class="ss-icon">list</i>
+		</button>
+		<div class="btn btn-radial"></div>
+		<button class="btn">Gender <i class="ss-icon">femaleuser</i></button>
+		<div class="btn btn-radial"></div>
+		<button class="btn">Child? <i class="ss-icon">list</i></button>
+		<div class="btn btn-radial"></div>
+		<button class="btn">Cabin Class <i class="ss-icon">list</i></button>
+		<div class="btn btn-radial"></div>
+		<button class="btn">Age <i class="ss-icon">scatterchart</i></button>
+		<div class="btn btn-radial"></div>
+		<button class="btn">Fare Paid for Ticket <i class="ss-icon">barchart</i></button>
+		<div class="btn btn-radial"></div>
+		<button class="btn">Embarked From <i class="ss-icon">bank</i></button>
+	</div>
+</div>
 
-        <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+<div class="main">
+	<div class="card animated flipInX">
+		<div class="card-top">
+			<div class="titlewrap pull-left">
+				<button class="btn btn-info"><i class="ss-icon">list</i> Survived?</button>
+				<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
+				<button class="btn btn-info"><i class="ss-icon">user</i> Wealth</button>
+			</div>
+			<div class="pull-right">
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">fork</i><span class="textwrap"> CREATE FILTERS</span>
+				</a>
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">save</i><span class="textwrap"> EXPORT</span>
+				</a>
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">edit</i><span class="textwrap"> NOTES</span>
+				</a>
+				<span class="closer">
+					<a href="#">
+						<i class="ss-icon">close</i>
+					</a>
+				</span>
+			</div>
+		</div>
+		<h3>Survived? <span class="light-conclusion">has no correlation with</span> Wealth</h3>
+		<div class="chart">
+			<div class="bar-wrap"><div class="bar bar-1"></div></div>
+			<div class="bar-wrap"><div class="bar bar-2"></div></div>
+			<div class="bar-wrap"><div class="bar bar-3"></div></div>
+			<div class="bar-wrap"><div class="bar bar-4"></div></div>
+			<div class="bar-wrap"><div class="bar bar-5"></div></div>
+			<div class="bar-wrap"><div class="bar bar-6"></div></div>
+			<div class="bar-wrap"><div class="bar bar-7"></div></div>
+			<div class="bar-wrap"><div class="bar bar-8"></div></div>
+			<div class="bar-wrap"><div class="bar bar-9"></div></div>
+			<div class="bar-wrap"><div class="bar bar-10"></div></div>
+			<div class="bar-wrap"><div class="bar bar-11"></div></div>
+			<div class="bar-wrap"><div class="bar bar-12"></div></div>
+			<div class="bar-wrap"><div class="bar bar-13"></div></div>
+			<div class="bar-wrap"><div class="bar bar-14"></div></div>
+			<div class="bar-wrap"><div class="bar bar-15"></div></div>
+			<div class="bar-wrap"><div class="bar bar-16"></div></div>
+		</div>
+	</div>
+	<div class="card animated flipInX">
+		<div class="card-top">
+			<div class="titlewrap pull-left">
+				<button class="btn btn-info"><i class="ss-icon">list</i> Survived?</button>
+				<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
+				<button class="btn btn-info"><i class="ss-icon">user</i> Wealth</button>
+			</div>
+			<div class="pull-right">
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">fork</i><span class="textwrap"> CREATE FILTERS</span>
+				</a>
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">save</i><span class="textwrap"> EXPORT</span>
+				</a>
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">edit</i><span class="textwrap"> NOTES</span>
+				</a>
+				<span class="closer">
+					<a href="#">
+						<i class="ss-icon">close</i>
+					</a>
+				</span>
+			</div>
+		</div>
+		<h3>Survived? <span class="light-conclusion">has no correlation with</span> Wealth</h3>
+		<div class="chart">
+			<div class="bar-wrap"><div class="bar bar-1"></div></div>
+			<div class="bar-wrap"><div class="bar bar-2"></div></div>
+			<div class="bar-wrap"><div class="bar bar-3"></div></div>
+			<div class="bar-wrap"><div class="bar bar-4"></div></div>
+			<div class="bar-wrap"><div class="bar bar-5"></div></div>
+			<div class="bar-wrap"><div class="bar bar-6"></div></div>
+			<div class="bar-wrap"><div class="bar bar-7"></div></div>
+			<div class="bar-wrap"><div class="bar bar-8"></div></div>
+			<div class="bar-wrap"><div class="bar bar-9"></div></div>
+			<div class="bar-wrap"><div class="bar bar-10"></div></div>
+			<div class="bar-wrap"><div class="bar bar-11"></div></div>
+			<div class="bar-wrap"><div class="bar bar-12"></div></div>
+			<div class="bar-wrap"><div class="bar bar-13"></div></div>
+			<div class="bar-wrap"><div class="bar bar-14"></div></div>
+			<div class="bar-wrap"><div class="bar bar-15"></div></div>
+			<div class="bar-wrap"><div class="bar bar-16"></div></div>
+		</div>
+	</div>
+	<div class="card animated flipInX">
+		<div class="card-top">
+			<div class="titlewrap pull-left">
+				<button class="btn btn-info"><i class="ss-icon">list</i> Survived?</button>
+				<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
+				<button class="btn btn-info"><i class="ss-icon">user</i> Wealth</button>
+			</div>
+			<div class="pull-right">
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">fork</i><span class="textwrap"> CREATE FILTERS</span>
+				</a>
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">save</i><span class="textwrap"> EXPORT</span>
+				</a>
+				<a class="btn btn-info" href="#">
+					<i class="ss-icon">edit</i><span class="textwrap"> NOTES</span>
+				</a>
+				<span class="closer">
+					<a href="#">
+						<i class="ss-icon">close</i>
+					</a>
+				</span>
+			</div>
+		</div>
+		<h3>Survived? <span class="light-conclusion">has no correlation with</span> Wealth</h3>
+		<div class="chart">
+			<div class="bar-wrap"><div class="bar bar-1"></div></div>
+			<div class="bar-wrap"><div class="bar bar-2"></div></div>
+			<div class="bar-wrap"><div class="bar bar-3"></div></div>
+			<div class="bar-wrap"><div class="bar bar-4"></div></div>
+			<div class="bar-wrap"><div class="bar bar-5"></div></div>
+			<div class="bar-wrap"><div class="bar bar-6"></div></div>
+			<div class="bar-wrap"><div class="bar bar-7"></div></div>
+			<div class="bar-wrap"><div class="bar bar-8"></div></div>
+			<div class="bar-wrap"><div class="bar bar-9"></div></div>
+			<div class="bar-wrap"><div class="bar bar-10"></div></div>
+			<div class="bar-wrap"><div class="bar bar-11"></div></div>
+			<div class="bar-wrap"><div class="bar bar-12"></div></div>
+			<div class="bar-wrap"><div class="bar bar-13"></div></div>
+			<div class="bar-wrap"><div class="bar bar-14"></div></div>
+			<div class="bar-wrap"><div class="bar bar-15"></div></div>
+			<div class="bar-wrap"><div class="bar bar-16"></div></div>
+		</div>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function () {
+    //on load
+    if ($(".card").width() <= 760) {
+        $(".textwrap").hide();
+    }
+    if ($(window).width() <= 850) {
+        $(".toptextwrap").hide();
+    }
+    //on resize
+    $(window).resize(function(){
+    	if ($(window).width() <= 850) {
+	        $(".toptextwrap").hide();
+	    }else{
+	        $(".toptextwrap").show();
+	    }
+	    
+        if ($(".card").width() <= 760) {
+	            $(".textwrap").hide();
+	    }else{
+	        $(".textwrap").show();
+	    }
+    });
+});
+</script>
+</body>
 </html>
