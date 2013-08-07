@@ -25,6 +25,7 @@
 	body {
 		background: #e7e7e2;
 		padding-top: 60px;
+		color: #888780;
 	}
 	.navbar {
 		border-top:1px solid #2e7cb4;
@@ -33,7 +34,8 @@
 		background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 		background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
-		padding: 9px;
+		padding-top: 9px;
+		padding-bottom: 9px;
 	}
 	.btn {
 		border:1px solid #b7c3c4;
@@ -111,32 +113,77 @@
 	.ss-icon {
 		vertical-align: middle;
 	}
+	.row {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 	</style>
 </head>
 
 <body>
 	<div class="navbar navbar-fixed-top">
 		<div class="container">
-			<button type="button" class="btn btn-default">Statwing</button>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <button type="button" class="btn btn-default pull-left navbar-btn">Statwing</button>
+			<div class="nav-collapse collapse navbar-responsive-collapse pull-left">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+		    </div>
 			<div class="pull-right">
-				<a class="btn btn-primary" href="#"><i class="ss-icon">playvideo</i> see demo</a>
+				<a class="btn btn-primary navbar-btn" href="#"><i class="ss-icon">barchart</i> see demo</a>
 			</div>
 		</div>
 	</div>
 	<div class="wrap">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
-					<h1>Hello, world!</h1>
+				<div class="col-6">
+					<h1>Modern Data Analysis Software</h1>
+					<h3>The power of statistical analysis software, in an intuitive interface.</h3>
 				</div>
-	
-				<div class="col-4">
-					<h1>Hello, world!</h1>
+				<div class="col-6">
 				</div>
-	
-				<div class="col-4">
-					<h1>Hello, world!</h1>
-				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+			</div>
+			<div class="col-6">
+				<h3>Easier than Spreadsheets</h3>
+				<h4>Asking even just one question of your data in a spreadsheet can take minutes of painstaking work shuffling data, creating pivot tables, charts, and writing formulas.</h4>
+				<p>Unlike spreadsheets, Statwing is designed solely for analyzing tables of data, so its users say they work five to ten times faster than they do in spreadsheets.</p>
+				<p>So if you're analyzing a data and you're writing anything more than =AVERAGE(), you'll get your work done much faster in Statwing.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<h3>Statistical Analysis for Humans</h3>
+				<h4>Existing statistical software was built for statisticians, so they require expertise to ask even simple questions.</h4>
+				<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
+				<p>If you're experienced in statistical analysis, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
+				<p>If you're not interested in statistical terminology, though, everything is translated into plain, understandable English, so you can understand your data the same way a statistician or data scientist would.</p>
+			</div>
+			<div class="col-6">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+			</div>
+			<div class="col-6">
+				<h3>Instant Visualization</h3>
+				<h4>Statwing automatically creates beautiful, interactive visualizations along with every analysis.</h4>
+				<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
+				<p>Statwing understands the structure of your data, though, so it instantly creates histograms, scatterplots, heatmaps, bar charts, or whatever else your data calls for.</p>
+				<p>Those visualizations make data cleaning much faster, give a rich feel for the data, and can then be exported for use in presentation software.</p>
 			</div>
 		</div>
 	</div>
