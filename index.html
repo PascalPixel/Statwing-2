@@ -16,128 +16,127 @@
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
 	<style>
-body, h1, h2, h3, h4, h5, h6, h7 {
+	body, h1, h2, h3, h4, h5, h6, h7 {
 		font-family: Gotham;
 	}
 	h1, h2, h3, h4, h5, h6, h7 {
 		font-weight: bold;
 	}
 	body {
-		padding: 0px;
-		margin: 0px;
-		font-size: 14px;
 		background: #e7e7e2;
-	}
-	a {
-		text-decoration: none;
+		padding-top: 60px;
 	}
 	.navbar {
-	  border-top:1px solid #2e7cb4;
-	  border-bottom:1px solid #2e7cb4;
-	  background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	  background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	  background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
-	  padding: 9px;
+		border-top:1px solid #2e7cb4;
+		border-bottom:1px solid #2e7cb4;
+		background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
+		background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
+		background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
+		padding: 9px;
 	}
-	.button {
-	  display: inline-block;
-	  border:1px solid #b7c3c4;
-	  background-image: -moz-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
-	  background-image: -webkit-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
-	  background-image: -ms-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
-	  color: #83837a;
-	  font-weight: bold;
-	  text-transform: uppercase;
-	  text-shadow: 0px 1px 0px white;
-	  border-radius: 4px;
-	  box-shadow: inset 0px 1px 0px white;
-	  padding: 10px 13px 7px;
-	}
-	.button:hover {
-	  color: #575751;
-	}
-	.button:active {
-	  background-image: -moz-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
-	  background-image: -webkit-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
-	  background-image: -ms-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
-	  box-shadow: inset 0px 2px 0px rgba(255,255,255,0.1);
-	  text-shadow: 0px -1px 0px white;
-	}
-	.navbar .button {
-	  display: inline-block;
-	  border: 1px solid #2e7cb4;
-	  background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	  background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	  background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	  color: #c1e2f4;
-	  text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
-	  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
-	}
-	.navbar .button:hover {
-	  color: white;
-	}
-	.navbar .button:active {
-	  background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
-	  background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
-	  background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
-	  border: 1px solid transparent;
-	  border-bottom: 1px solid rgba(255,255,255,0.5);
-	  box-shadow: none;
-	}
-	.navbar .button.action {
-	  display: inline-block;
-	  border:1px solid #b0d6e8;
-	  background-image: -moz-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
-	  background-image: -webkit-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
-	  background-image: -ms-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
-	  color: #409acd;
-	  text-shadow: 0px 1px 0px white;
-	  box-shadow: inset 0px 1px 0px white;
-	}
-	.navbar .button.action:hover {
-	  color: #32759c;
-	}
-	.navbar .button.action:active {
-	  background-image: -moz-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
-	  background-image: -webkit-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
-	  background-image: -ms-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
-	  border: 1px solid transparent;
-	  border-bottom: 1px solid rgba(255,255,255,0.5);
-	  box-shadow: none;
-	}
-	.sidebar {
-		background: #f7fafa;
-		border:1px solid #b5b4ae;
+	.btn {
+		border:1px solid #b7c3c4;
+		background-image: -moz-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
+		background-image: -webkit-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
+		background-image: -ms-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
+		color: #83837a;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-shadow: 0px 1px 0px white;
 		border-radius: 4px;
-		padding: 10px;
-		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-		margin: 50px;
+		box-shadow: inset 0px 1px 0px white;
+		padding: 10px 13px 7px;
+	}
+	.btn:hover {
+		color: #575751;
+	}
+	.btn:active {
+		background-image: -moz-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
+		background-image: -webkit-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
+		background-image: -ms-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
+		box-shadow: inset 0px 2px 0px rgba(255,255,255,0.1);
+		text-shadow: 0px -1px 0px white;
+	}
+	.navbar .btn {
+		display: inline-block;
+		border: 1px solid #2e7cb4;
+		background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
+		background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
+		background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
+		color: #c1e2f4;
+		text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
+	}
+	.navbar .btn:hover {
+		color: white;
+	}
+	.navbar .btn:active {
+		background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
+		background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
+		background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
+		border: 1px solid transparent;
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+		box-shadow: none;
+	}
+	.navbar .btn-primary {
+		display: inline-block;
+		border:1px solid #b0d6e8;
+		background-image: -moz-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
+		background-image: -webkit-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
+		background-image: -ms-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
+		color: #409acd;
+		text-shadow: 0px 1px 0px white;
+		box-shadow: inset 0px 1px 0px white;
+	}
+	.navbar .btn-primary:hover {
+		color: #32759c;
+	}
+	.navbar .btn-primary:active {
+		background-image: -moz-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
+		background-image: -webkit-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
+		background-image: -ms-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
+		border: 1px solid transparent;
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+		box-shadow: none;
+	}
+	.wrap {
+		background: #f7fafa;
+		border-top:1px solid #b5b4ae;
+		border-bottom:1px solid #b5b4ae;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+	}
+	.ss-icon {
+		vertical-align: middle;
 	}
 	</style>
 </head>
 
 <body>
-	<div class="navbar">
-		<a class="button" href="#">Statwing</a> <a class="button action" href="#">Sign up</a>
-	</div>
-
-	<div class="sidebar">
-		<a class="button" href="#">Statwing</a>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-4">
-				<h1>Hello, world!</h1>
+	<div class="navbar navbar-fixed-top">
+		<div class="container">
+			<button type="button" class="btn btn-default">Statwing</button>
+			<div class="pull-right">
+				<a class="btn btn-primary" href="#"><i class="ss-icon">playvideo</i> see demo</a>
 			</div>
-
-			<div class="col-4">
-				<h1>Hello, world!</h1>
-			</div>
-
-			<div class="col-4">
-				<h1>Hello, world!</h1>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h1>Hello, world!</h1>
+				</div>
+	
+				<div class="col-4">
+					<h1>Hello, world!</h1>
+				</div>
+	
+				<div class="col-4">
+					<h1>Hello, world!</h1>
+				</div>
 			</div>
 		</div>
 	</div>
