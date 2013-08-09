@@ -15,6 +15,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Animate -->
+	<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
 	<style>
 	body, h1, h2, h3, h4, h5, h6, h7 {
 		font-family: Gotham, Proxima Nova, Helvetica, sans-serif;
@@ -103,6 +105,30 @@
 		border-bottom: 1px solid rgba(255,255,255,0.5);
 		box-shadow: none;
 	}
+	.browser {
+		border:1px solid #b7c3c4;
+		background: white;
+		border-radius: 4px;
+		padding: 20px;
+	}
+	.browser-top {
+		border:1px solid #b7c3c4;
+		background-image: -moz-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
+		background-image: -webkit-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
+		background-image: -ms-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
+		color: #83837a;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-shadow: 0px 1px 0px white;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		box-shadow: inset 0px 1px 0px white;
+		padding: 10px;
+		margin: -21px -21px 20px;
+	}
+	.browser .btn-group .btn {
+		padding: 7px 10px 2px;
+	}
 	.wrap {
 		background: #f7fafa;
 		border-top:1px solid #b5b4ae;
@@ -118,9 +144,6 @@
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
-	.full-width {
-		width: 100%;
-	}
 	.center {
 		text-align: center;
 	}
@@ -128,7 +151,6 @@
 		font-weight: normal;
 		color: #6b635b;
 		font-size: 24px;
-		line-height: 34px;
 	}
 	.footer ul, .footer li {
 		list-style-type: none;
@@ -144,24 +166,60 @@
 	.footer .oneline {
 		border-top: solid 1px rgba(0,0,0,0.13);
 		padding-top: 50px;
+		margin-top: -40px;
 	}
 	.box {
 		border: 4px solid rgba(0,0,0,0.1);
 		border-radius: 10px;
 		padding: 20px;
 	}
+	.box-header {
+		border-bottom: 3px solid rgba(0,0,0,0.1);
+		padding: 15px 15px 10px;
+		margin: -20px -20px 20px;
+		color: rgba(0,0,0,0.2);
+	}
+	.line-double {
+		background-image: url('img/line-double.png');
+		background-repeat: repeat-x;
+		padding-top: 12px;
+		height: 140px;
+	}
+	.line-double .btn {
+		margin-bottom: 40px;
+	}
+	.line-merge {
+		background-image: url('img/line-merge.png');
+		background-repeat: repeat-x;
+		padding-top: 12px;
+		height: 140px;
+		background-size: 100% 100%;
+	}
+	.line-single {
+		background-image: url('img/line-single.png');
+		background-repeat: repeat-x;
+		padding-top: 25px;
+		height: 140px;
+		background-position: center center;
+	}
+	.line-arrow {
+		background-image: url('img/line-arrow.png');
+		background-repeat: repeat-x;
+		padding-top: 12px;
+		height: 140px;
+	}
 	</style>
 </head>
 
 <body>
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar navbar-fixed-top animated fadeInDown">
 		<div class="container">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
 		    </button>
-		    <button type="button" class="btn btn-default pull-left navbar-btn">Statwing</button>
+		    <button type="button" class="btn btn-default pull-left navbar-btn"><img src="img/statwing_logo_small.png" style="width:20px;margin-right:5px;margin-top:-5px;"/>Statwing</button>
 			<div class="nav-collapse collapse navbar-responsive-collapse pull-left">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Home</a></li>
@@ -174,32 +232,43 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container animated fadeInDownBig">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-8">
 				<h1 style="font-size:30px;">Modern Data Analysis Software</h1>
 				<h3 class="intro">The power of statistical analysis software, in an intuitive interface.</h3>
 			</div>
-			<div class="col-6">
+			<div class="col-4">
 			</div>
 		</div>
 	</div>
-	<div class="wrap">
+	<div class="wrap animated fadeInUp">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<h1 class="center">Easier than Spreadsheets</h1>
 					<h4 class="intro center">Simply ask your data a question, and get a real answer.</h4>
 					<div class="row">
-						<div class="col-4">
-							<button type="button" class="btn full-width" style="margin-bottom:10px;"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
-							<button type="button" class="btn full-width"><span class="pull-left">Age</span> <i class="ss-icon pull-right">barchart</i></button>
+						<div class="col-3 line-double">
+							<button type="button" class="btn btn-block"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
+							<button type="button" class="btn btn-block"><span class="pull-left">Age</span> <i class="ss-icon pull-right">barchart</i></button>
 						</div>
-						<div class="col-4">
-							<button type="button" class="btn btn-primary full-width" style="margin-top:25px;"><span class="pull-left">Relate</span> <i class="ss-icon pull-right">playvideo</i></button>
+						<div class="col-1 line-merge"></div>
+						<div class="col-3 line-single">
+							<button type="button" class="btn btn-primary btn-block" style="margin-top:25px;"><span class="pull-left">Relate</span> <i class="ss-icon pull-right">playvideo</i></button>
 						</div>
+						<div class="col-1 line-arrow"></div>
 						<div class="col-4">
-							<button type="button" class="btn full-width" style="margin-bottom:10px;"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
+							<div class="browser">
+								<div class="browser-top">
+									<div class="btn-group">
+										<button type="button" class="btn"><i class="ss-icon pull-right">back</i></button>
+										<button type="button" class="btn"><i class="ss-icon pull-right">forward</i></button>
+									</div>
+									<input type="text" class="form-control pull-right" id="InputEmail" placeholder="http://statwing.com">
+								</div>
+								<h4>Gender has a clear connection to Age</h4>
+							</div>
 						</div>
 					</div>
 					<p>Asking a simple question of your data in a spreadsheet can be minutes of painstaking work shuffling data, creating pivot tables, charts, and writing formulas.</p>
@@ -234,7 +303,7 @@
 	<div class="footer container">
 		<div class="row">
 			<div class="col-4">
-				<h5>Modern Data Analysis Software</h5>
+				<h5>Our team</h5>
 				<ul>
 					<li>Jobs</li>
 					<li>Blog</li>
@@ -252,11 +321,16 @@
 			</div>
 			<div class="col-4">
 				<div class="box">
-					<h5>Contact</h5>
-					<input type="text" value="Your name"/>
-					<input type="text" value="Your e-mail"/>
-					<input type="text" value="Enter your message here..."/>
-					<button type="button" class="btn btn-primary full-width" style="margin-bottom:10px;"><span class="pull-left">Send</span> <i class="ss-icon pull-right">send</i></button>
+					<h5 class="box-header">Contact</h5>
+					<form>
+					    <div class="form-group">
+					      <input type="text" class="form-control" id="InputEmail" placeholder="Your e-mail">
+					    </div>
+					    <div class="form-group">
+					      <input type="text" class="form-control" id="InputMessage" placeholder="Your message">
+					    </div>
+					    <button type="button" class="btn btn-primary btn-block" style="margin-bottom:10px;"><span class="pull-left">Send</span> <i class="ss-icon pull-right">send</i></button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -270,6 +344,14 @@
 					<li>Contact</li>
 					<li>Pricing</li>
 					<li>Legal</li>
+					<li>
+						<img src="https://d1ycphw12ot9ds.cloudfront.net/assets/comodo_secure_small-44a41ec33cffa26cc203d24a4be12cc0.png"/>
+					</li>
+					<li>
+						<a href="https://mixpanel.com/f/partner">
+							<img alt="Real Time Web Analytics" src="https://mixpanel.com/site_media/images/partner/badge_light.png" style="vertical-align: middle;">
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
