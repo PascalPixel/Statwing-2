@@ -17,7 +17,8 @@
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
 	<style>
 	body, h1, h2, h3, h4, h5, h6, h7 {
-		font-family: Gotham;
+		font-family: Gotham, Proxima Nova, Helvetica, sans-serif;
+		line-height: 150%;
 	}
 	h1, h2, h3, h4, h5, h6, h7 {
 		font-weight: bold;
@@ -25,7 +26,7 @@
 	body {
 		background: #e7e7e2;
 		padding-top: 60px;
-		color: #888780;
+		color: #55544e;
 	}
 	.navbar {
 		border-top:1px solid #2e7cb4;
@@ -60,20 +61,20 @@
 		box-shadow: inset 0px 2px 0px rgba(255,255,255,0.1);
 		text-shadow: 0px -1px 0px white;
 	}
-	.navbar .btn {
+	.btn-primary, .navbar .btn {
 		display: inline-block;
 		border: 1px solid #2e7cb4;
 		background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 		background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 		background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-		color: #c1e2f4;
+		color: #d2ebf8;
 		text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
 		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
 	}
-	.navbar .btn:hover {
+	.btn-primary:hover, .navbar .btn:hover {
 		color: white;
 	}
-	.navbar .btn:active {
+	.btn-primary:active, .navbar .btn:active {
 		background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
@@ -117,6 +118,38 @@
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	.full-width {
+		width: 100%;
+	}
+	.center {
+		text-align: center;
+	}
+	.intro {
+		font-weight: normal;
+		color: #6b635b;
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.footer ul, .footer li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.footer .oneline li {
+		list-style-type: none;
+		margin: 0 40px 0 0;
+		padding: 0;
+		display: inline-block;
+	}
+	.footer .oneline {
+		border-top: solid 1px rgba(0,0,0,0.13);
+		padding-top: 50px;
+	}
+	.box {
+		border: 4px solid rgba(0,0,0,0.1);
+		border-radius: 10px;
+		padding: 20px;
+	}
 	</style>
 </head>
 
@@ -137,56 +170,111 @@
 				</ul>
 		    </div>
 			<div class="pull-right">
-				<a class="btn btn-primary navbar-btn" href="#"><i class="ss-icon">barchart</i> see demo</a>
-			</div>
-		</div>
-	</div>
-	<div class="wrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
-					<h1>Modern Data Analysis Software</h1>
-					<h3>The power of statistical analysis software, in an intuitive interface.</h3>
-				</div>
-				<div class="col-6">
-				</div>
+				<a class="btn btn-primary navbar-btn" href="#"><i class="ss-icon">playvideo</i> try the demo</a>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
+				<h1 style="font-size:30px;">Modern Data Analysis Software</h1>
+				<h3 class="intro">The power of statistical analysis software, in an intuitive interface.</h3>
 			</div>
 			<div class="col-6">
-				<h3>Easier than Spreadsheets</h3>
-				<h4>Asking even just one question of your data in a spreadsheet can take minutes of painstaking work shuffling data, creating pivot tables, charts, and writing formulas.</h4>
-				<p>Unlike spreadsheets, Statwing is designed solely for analyzing tables of data, so its users say they work five to ten times faster than they do in spreadsheets.</p>
-				<p>So if you're analyzing a data and you're writing anything more than =AVERAGE(), you'll get your work done much faster in Statwing.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6">
-				<h3>Statistical Analysis for Humans</h3>
-				<h4>Existing statistical software was built for statisticians, so they require expertise to ask even simple questions.</h4>
-				<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
-				<p>If you're experienced in statistical analysis, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
-				<p>If you're not interested in statistical terminology, though, everything is translated into plain, understandable English, so you can understand your data the same way a statistician or data scientist would.</p>
-			</div>
-			<div class="col-6">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6">
-			</div>
-			<div class="col-6">
-				<h3>Instant Visualization</h3>
-				<h4>Statwing automatically creates beautiful, interactive visualizations along with every analysis.</h4>
-				<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
-				<p>Statwing understands the structure of your data, though, so it instantly creates histograms, scatterplots, heatmaps, bar charts, or whatever else your data calls for.</p>
-				<p>Those visualizations make data cleaning much faster, give a rich feel for the data, and can then be exported for use in presentation software.</p>
 			</div>
 		</div>
 	</div>
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="center">Easier than Spreadsheets</h1>
+					<h4 class="intro center">Simply ask your data a question, and get a real answer.</h4>
+					<div class="row">
+						<div class="col-4">
+							<button type="button" class="btn full-width" style="margin-bottom:10px;"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
+							<button type="button" class="btn full-width"><span class="pull-left">Age</span> <i class="ss-icon pull-right">barchart</i></button>
+						</div>
+						<div class="col-4">
+							<button type="button" class="btn btn-primary full-width" style="margin-top:25px;"><span class="pull-left">Relate</span> <i class="ss-icon pull-right">playvideo</i></button>
+						</div>
+						<div class="col-4">
+							<button type="button" class="btn full-width" style="margin-bottom:10px;"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
+						</div>
+					</div>
+					<p>Asking a simple question of your data in a spreadsheet can be minutes of painstaking work shuffling data, creating pivot tables, charts, and writing formulas.</p>
+					<p>Unlike spreadsheets, Statwing is designed solely for analyzing tables of data, so its users say they work five to ten times faster than they do in spreadsheets.</p>
+					<p>So if you're analyzing a data and you're writing anything more than =AVERAGE(), you'll get your work done much faster in Statwing.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<h3>Statistical Analysis for Humans</h3>
+					<h4>Existing statistical software was built for statisticians, so they require expertise to ask even simple questions.</h4>
+					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
+					<p>For experienced in statistical analysis users, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
+					<p>Statwing also translates everything into plain, understandable English, so you can understand your data the same way a statistician or data scientist would.</p>
+				</div>
+				<div class="col-6">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+				</div>
+				<div class="col-6">
+					<h3>Instant Visualization</h3>
+					<h4>Statwing automatically creates beautiful, interactive visualizations along with every analysis.</h4>
+					<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
+					<p>Statwing understands the structure of your data, though, so it instantly creates histograms, scatterplots, heatmaps, bar charts, anything your data calls for.</p>
+					<p>Those visualizations make data cleaning much faster, give a rich feel for the data, and can then be exported for use in presentation software.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer container">
+		<div class="row">
+			<div class="col-4">
+				<h5>Modern Data Analysis Software</h5>
+				<ul>
+					<li>Jobs</li>
+					<li>Blog</li>
+					<li>Docs</li>
+					<li>Contact</li>
+					<li>Pricing</li>
+					<li>Legal</li>
+				</ul>
+			</div>
+			<div class="col-4">
+				<a href="https://mixpanel.com/f/partner">
+					<img alt="Real Time Web Analytics" src="https://mixpanel.com/site_media/images/partner/badge_light.png" style="vertical-align: middle;">
+				</a>
+				<img src="https://d1ycphw12ot9ds.cloudfront.net/assets/comodo_secure_small-44a41ec33cffa26cc203d24a4be12cc0.png"/>
+			</div>
+			<div class="col-4">
+				<div class="box">
+					<h5>Contact</h5>
+					<input type="text" value="Your name"/>
+					<input type="text" value="Your e-mail"/>
+					<input type="text" value="Enter your message here..."/>
+					<button type="button" class="btn btn-primary full-width" style="margin-bottom:10px;"><span class="pull-left">Send</span> <i class="ss-icon pull-right">send</i></button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<ul class="oneline">
+					<li>© Statwing</li>
+					<li>Jobs</li>
+					<li>Blog</li>
+					<li>Docs</li>
+					<li>Contact</li>
+					<li>Pricing</li>
+					<li>Legal</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
 	<!-- jQuery -->
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap JS -->
