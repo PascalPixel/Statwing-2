@@ -16,7 +16,7 @@
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Animate -->
-	<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
+	<!-- <link href='css/animate-custom.css' rel='stylesheet' type='text/css'> -->
 	<style>
 	body, h1, h2, h3, h4, h5, h6, h7 {
 		font-family: 'Gotham', 'Montserrat', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -176,7 +176,7 @@
 		border-bottom: 3px solid rgba(0,0,0,0.1);
 		padding: 15px 15px 10px;
 		margin: -20px -20px 20px;
-		color: rgba(0,0,0,0.2);
+		color: rgba(0,0,0,0.5);
 	}
 	.line-double {
 		background-image: url('img/line-double.png');
@@ -243,6 +243,16 @@
 	.delay2 {
 		animation-delay:2s;
 		-webkit-animation-delay:2s;
+	}
+	.blue {
+		color: #33a0d3;
+	}
+	.blue-bg {
+		background-color: #33a0d3;
+	}
+	.pricing ul {
+		margin: 0;
+		padding: 0 0 0 10px;
 	}
 	</style>
 	<style>
@@ -586,7 +596,7 @@
 						</div>
 						<div class="col-1 line-merge"></div>
 						<div class="col-2 line-single">
-							<button type="button" class="btn btn-primary btn-block" style="margin-top:25px;"><span class="pull-left">Relate</span> <i class="ss-icon pull-right">playvideo</i></button>
+							<button type="button" class="btn btn-primary btn-block" style="margin-top:25px;"><span class="pull-left">Relate to</span> <i class="ss-icon pull-right">pin</i></button>
 						</div>
 						<div class="col-1 line-arrow"></div>
 						<div class="col-6">
@@ -664,16 +674,41 @@
 				<div class="col-4"></div>
 				<div class="col-4"></div>
 			</div>
-			<div class="row row-padding">
+			<div class="row row-padding pricing">
 				<div class="col-12">
 					<div class="box">
-						<h4 class="box-header">Pricing <i class="ss-icon pull-right">coins</i></h4>
+						<h4 class="box-header blue">Pricing <i class="ss-icon pull-right">cash</i></h4>
 						<div class="row row-padding-small">
-							<div class="col-6">
-								Greg Laughlin
+							<div class="col-4">
+								<div class="box">
+									<h4 class="box-header">Statwing</h4>
+									<ul>
+										<li>Unlimited files</li>
+										<li>No credit card required</li>
+										<li>Uploads in the first month are private forever</li>
+										<li>Datasets can contain up to 3 million cells</li>
+									</ul>
+									<h4 class="box-footer">FREE</h4>
+								</div>
 							</div>
-							<div class="col-6">
-								John Master
+							<div class="col-4">
+								<div class="box">
+									<h4 class="box-header">Statwing <i class="ss-icon">plus</i></h4>
+									<ul>
+										<li>Export your charts to Excel and Powerpoint</li>
+										<li>Uploads can always be private, unless shared</li>
+									</ul>
+									<h4 class="box-footer">$25</h4>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="box">
+									<h4 class="box-header">Statwing <i class="ss-icon">plus</i><i class="ss-icon">plus</i></h4>
+									<ul>
+										<li>Datasets can contain up to 15 million cells</li>
+									</ul>
+									<h4 class="box-footer">$100</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -685,7 +720,7 @@
 		<div class="row row-padding">
 			<div class="col-8 team">
 				<div class="box">
-					<h4 class="box-header">The Team</h4>
+					<h4 class="box-header blue">The Team <i class="ss-icon pull-right">usergroup</i></h4>
 					<div class="row row-padding-small">
 						<div class="col-2">
 							<img class="img-circle" src="img/greg.png"/>
@@ -718,7 +753,7 @@
 			</div>
 			<div class="col-4">
 				<div class="box">
-					<h4 class="box-header">Contact</h4>
+					<h4 class="box-header blue">Contact <i class="ss-icon pull-right">mail</i></h4>
 					<form>
 					    <div class="form-group">
 					      <input type="text" class="form-control" id="InputEmail" placeholder="Your e-mail">
