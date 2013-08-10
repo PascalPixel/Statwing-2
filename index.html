@@ -140,9 +140,13 @@
 	.ss-icon {
 		vertical-align: middle;
 	}
-	.row {
+	.row-padding {
 		padding-top: 40px;
 		padding-bottom: 40px;
+	}
+	.row-padding-small {
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.center {
 		text-align: center;
@@ -181,9 +185,10 @@
 	}
 	.line-double {
 		background-image: url('img/line-double.png');
-		background-repeat: repeat-x;
+		background-repeat: no-repeat;
 		padding-top: 12px;
 		height: 140px;
+		background-size: 100% 100%;
 	}
 	.line-double .btn {
 		margin-bottom: 40px;
@@ -204,8 +209,8 @@
 	}
 	.line-arrow {
 		background-image: url('img/line-arrow.png');
-		background-repeat: repeat-x;
-		padding-top: 12px;
+		background-repeat: no-repeat;
+		background-position-y: 22px;
 		height: 140px;
 	}
 	.intrograph {
@@ -215,6 +220,8 @@
 	}
 	img {
 		max-width: 100%;
+	}
+	.team .img-circle {
 	}
 	</style>
 </head>
@@ -241,7 +248,7 @@
 		</div>
 	</div>
 	<div class="container animated fadeInDownBig">
-		<div class="row">
+		<div class="row row-padding">
 			<div class="col-8">
 				<h1 style="font-size:30px;">Modern Data Analysis Software</h1>
 				<h3 class="intro">The power of statistical analysis software, in an intuitive interface.</h3>
@@ -252,11 +259,11 @@
 	</div>
 	<div class="wrap animated fadeInUp">
 		<div class="container">
-			<div class="row">
+			<div class="row row-padding">
 				<div class="col-12">
 					<h1 class="center">Easier than Spreadsheets</h1>
 					<h4 class="intro center">Simply ask your data a question, and get a real answer.</h4>
-					<div class="row">
+					<div class="row row-padding">
 						<div class="col-3 line-double">
 							<button type="button" class="btn btn-block"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
 							<button type="button" class="btn btn-block"><span class="pull-left">Age</span> <i class="ss-icon pull-right">barchart</i></button>
@@ -279,7 +286,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row row-padding">
 						<div class="col-6">
 							<p class="intrograph">Asking a simple question of your data in a spreadsheet can be minutes of painstaking work shuffling data, creating pivot tables, charts, and writing formulas.</p>
 						</div>
@@ -290,21 +297,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-6">
+			<div class="row row-padding">
+				<div class="col-12">
 					<h3>Statistical Analysis for Humans</h3>
 					<h4>Existing statistical software was built for statisticians, so they require expertise to ask even simple questions.</h4>
 					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
 					<p>For experienced in statistical analysis users, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
 					<p>Statwing also translates everything into plain, understandable English, so you can understand your data the same way a statistician or data scientist would.</p>
 				</div>
-				<div class="col-6">
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-6">
-				</div>
-				<div class="col-6">
+			<div class="row row-padding">
+				<div class="col-12">
 					<h3>Instant Visualization</h3>
 					<h4>Statwing automatically creates beautiful, interactive visualizations along with every analysis.</h4>
 					<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
@@ -313,37 +316,49 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2">
+				<div class="col-4">
 					<img src="http://www.rickwirth.ca/wp-content/uploads/2012/10/FinancialPostBanner_0.jpg"/>
 				</div>
-				<div class="col-2"></div>
-				<div class="col-2"></div>
-				<div class="col-2"></div>
-				<div class="col-2"></div>
-				<div class="col-2"></div>
+				<div class="col-4"></div>
+				<div class="col-4"></div>
+				<div class="col-4"></div>
+				<div class="col-4"></div>
+				<div class="col-4"></div>
 			</div>
 		</div>
 	</div>
 	<div class="footer container">
-		<div class="row">
-			<div class="col-8">
-				<h5>Our team</h5>
-				<div class="row center">
-					<div class="col-3">
-						<img class="img-circle" src="img/greg.png"/><br>
-						Greg Laughlin
+		<div class="row row-padding">
+			<div class="col-8 team">
+				<div class="box">
+					<h5 class="box-header">The Team</h5>
+					<div class="row row-padding-small">
+						<div class="col-2">
+							<img class="img-circle" src="img/greg.png"/>
+						</div>
+						<div class="col-4">
+							Greg Laughlin
+						</div>
+						<div class="col-2">
+							<img class="img-circle" src="img/john.png"/>
+						</div>
+						<div class="col-4">
+							John Master
+						</div>
 					</div>
-					<div class="col-3">
-						<img class="img-circle" src="img/john.png"/><br>
-						John Master
-					</div>
-					<div class="col-3">
-						<img class="img-circle" src="img/guy.png"/><br>
-						That Guy
-					</div>
-					<div class="col-3">
-						<img class="img-circle" src="img/pascal.png"/><br>
-						Pascal Verstegen
+					<div class="row row-padding-small">
+						<div class="col-2">
+							<img class="img-circle" src="img/guy.png"/>
+						</div>
+						<div class="col-4">
+							That Guy
+						</div>
+						<div class="col-2">
+							<img class="img-circle" src="img/pascal.png"/>
+						</div>
+						<div class="col-4">
+							Pascal Verstegen
+						</div>
 					</div>
 				</div>
 			</div>
@@ -362,7 +377,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row row-padding">
 			<div class="col-12">
 				<ul class="oneline">
 					<li>© Statwing</li>
