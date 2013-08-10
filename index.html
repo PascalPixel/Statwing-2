@@ -105,13 +105,13 @@
 		border-bottom: 1px solid rgba(255,255,255,0.5);
 		box-shadow: none;
 	}
-	.browser {
+	.card {
 		border:1px solid #b7c3c4;
 		background: white;
 		border-radius: 4px;
 		padding: 20px;
 	}
-	.browser-top {
+	.card-top {
 		border:1px solid #b7c3c4;
 		background-image: -moz-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
 		background-image: -webkit-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
@@ -126,7 +126,7 @@
 		padding: 10px;
 		margin: -21px -21px 20px;
 	}
-	.browser .btn-group .btn {
+	.card .btn-group .btn {
 		padding: 7px 10px 2px;
 	}
 	.wrap {
@@ -224,6 +224,296 @@
 	.team .img-circle {
 	}
 	</style>
+	<style>
+	@keyframes barchart1 {
+	0%   {height:200px;}
+	25%  {height:190px;}
+	50%  {height:100px;}
+	75%  {height:50px;}
+	100% {height:200px;}
+	}
+	@-webkit-keyframes barchart1 {
+	0%   {height:200px;}
+	25%  {height:190px;}
+	50%  {height:100px;}
+	75%  {height:50px;}
+	100% {height:200px;}
+	}
+	@keyframes barchart2 {
+	0%   {height:180px;}
+	25%  {height:130px;}
+	50%  {height:90px;}
+	75%  {height:40px;}
+	100% {height:180px;}
+	}
+	@-webkit-keyframes barchart2 {
+	0%   {height:180px;}
+	25%  {height:130px;}
+	50%  {height:90px;}
+	75%  {height:40px;}
+	100% {height:180px;}
+	}
+	@keyframes barchart3 {
+	0%   {height:160px;}
+	25%  {height:100px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:160px;}
+	}
+	@-webkit-keyframes barchart3 {
+	0%   {height:160px;}
+	25%  {height:100px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:160px;}
+	}
+	@keyframes barchart4 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart4 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart5 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:100px;}
+	75%  {height:80px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart5 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:100px;}
+	75%  {height:80px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart6 {
+	0%   {height:40px;}
+	25%  {height:150px;}
+	50%  {height:120px;}
+	75%  {height:80px;}
+	100% {height:40px;}
+	}
+	@-webkit-keyframes barchart6 {
+	0%   {height:40px;}
+	25%  {height:150px;}
+	50%  {height:120px;}
+	75%  {height:80px;}
+	100% {height:40px;}
+	}
+	@keyframes barchart7 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart7 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart8 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart8 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart9 {
+	0%   {height:150px;}
+	25%  {height:200px;}
+	50%  {height:100px;}
+	75%  {height:200px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart9 {
+	0%   {height:150px;}
+	25%  {height:200px;}
+	50%  {height:100px;}
+	75%  {height:200px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart10 {
+	0%   {height:40px;}
+	25%  {height:150px;}
+	50%  {height:120px;}
+	75%  {height:80px;}
+	100% {height:40px;}
+	}
+	@-webkit-keyframes barchart10 {
+	0%   {height:40px;}
+	25%  {height:150px;}
+	50%  {height:120px;}
+	75%  {height:80px;}
+	100% {height:40px;}
+	}
+	@keyframes barchart11 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart11 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart12 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart12 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart13 {
+	0%   {height:150px;}
+	25%  {height:200px;}
+	50%  {height:100px;}
+	75%  {height:200px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart13 {
+	0%   {height:150px;}
+	25%  {height:200px;}
+	50%  {height:100px;}
+	75%  {height:200px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart14 {
+	0%   {height:40px;}
+	25%  {height:150px;}
+	50%  {height:120px;}
+	75%  {height:80px;}
+	100% {height:40px;}
+	}
+	@-webkit-keyframes barchart14 {
+	0%   {height:40px;}
+	25%  {height:150px;}
+	50%  {height:120px;}
+	75%  {height:80px;}
+	100% {height:40px;}
+	}
+	@keyframes barchart15 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart15 {
+	0%   {height:150px;}
+	25%  {height:50px;}
+	50%  {height:70px;}
+	75%  {height:130px;}
+	100% {height:150px;}
+	}
+	@keyframes barchart16 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	@-webkit-keyframes barchart16 {
+	0%   {height:150px;}
+	25%  {height:80px;}
+	50%  {height:140px;}
+	75%  {height:40px;}
+	100% {height:150px;}
+	}
+	.chart .bar-1 {
+	animation:barchart1 5s infinite;
+	-webkit-animation:barchart1 5s infinite;
+	}
+	.chart .bar-2 {
+	animation:barchart2 5s infinite;
+	-webkit-animation:barchart2 5s infinite;
+	}
+	.chart .bar-3 {
+	animation:barchart3 5s infinite;
+	-webkit-animation:barchart3 5s infinite;
+	}
+	.chart .bar-4 {
+	animation:barchart4 5s infinite;
+	-webkit-animation:barchart4 5s infinite;
+	}
+	.chart .bar-5 {
+	animation:barchart5 5s infinite;
+	-webkit-animation:barchart5 5s infinite;
+	}
+	.chart .bar-6 {
+	animation:barchart6 5s infinite;
+	-webkit-animation:barchart6 5s infinite;
+	}
+	.chart .bar-7 {
+	animation:barchart7 5s infinite;
+	-webkit-animation:barchart7 5s infinite;
+	}
+	.chart .bar-8 {
+	animation:barchart8 5s infinite;
+	-webkit-animation:barchart8 5s infinite;
+	}
+	.chart .bar-9 {
+	animation:barchart9 5s infinite;
+	-webkit-animation:barchart9 5s infinite;
+	}
+	.chart .bar-10 {
+	animation:barchart10 5s infinite;
+	-webkit-animation:barchart10 5s infinite;
+	}
+	.chart .bar-11 {
+	animation:barchart11 5s infinite;
+	-webkit-animation:barchart11 5s infinite;
+	}
+	.chart .bar-12 {
+	animation:barchart12 5s infinite;
+	-webkit-animation:barchart12 5s infinite;
+	}
+	.chart .bar-13 {
+	animation:barchart13 5s infinite;
+	-webkit-animation:barchart13 5s infinite;
+	}
+	.chart .bar-14 {
+	animation:barchart14 5s infinite;
+	-webkit-animation:barchart14 5s infinite;
+	}
+	.chart .bar-15 {
+	animation:barchart15 5s infinite;
+	-webkit-animation:barchart15 5s infinite;
+	}
+	.chart .bar-16 {
+	animation:barchart16 5s infinite;
+	-webkit-animation:barchart16 5s infinite;
+	}
+	</style>
 </head>
 
 <body>
@@ -249,11 +539,27 @@
 	</div>
 	<div class="container animated fadeInDownBig">
 		<div class="row row-padding">
-			<div class="col-8">
+			<div class="col-12">
 				<h1 style="font-size:30px;">Modern Data Analysis Software</h1>
 				<h3 class="intro">The power of statistical analysis software, in an intuitive interface.</h3>
-			</div>
-			<div class="col-4">
+				<div class="chart">
+					<div class="bar-wrap"><div class="bar bar-1"></div></div>
+					<div class="bar-wrap"><div class="bar bar-2"></div></div>
+					<div class="bar-wrap"><div class="bar bar-3"></div></div>
+					<div class="bar-wrap"><div class="bar bar-4"></div></div>
+					<div class="bar-wrap"><div class="bar bar-5"></div></div>
+					<div class="bar-wrap"><div class="bar bar-6"></div></div>
+					<div class="bar-wrap"><div class="bar bar-7"></div></div>
+					<div class="bar-wrap"><div class="bar bar-8"></div></div>
+					<div class="bar-wrap"><div class="bar bar-9"></div></div>
+					<div class="bar-wrap"><div class="bar bar-10"></div></div>
+					<div class="bar-wrap"><div class="bar bar-11"></div></div>
+					<div class="bar-wrap"><div class="bar bar-12"></div></div>
+					<div class="bar-wrap"><div class="bar bar-13"></div></div>
+					<div class="bar-wrap"><div class="bar bar-14"></div></div>
+					<div class="bar-wrap"><div class="bar bar-15"></div></div>
+					<div class="bar-wrap"><div class="bar bar-16"></div></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -274,15 +580,32 @@
 						</div>
 						<div class="col-1 line-arrow"></div>
 						<div class="col-4">
-							<div class="browser">
-								<div class="browser-top">
-									<div class="btn-group">
-										<button type="button" class="btn"><i class="ss-icon pull-right">back</i></button>
-										<button type="button" class="btn"><i class="ss-icon pull-right">forward</i></button>
+							<div class="card">
+								<div class="card-top">
+									<div class="titlewrap pull-left">
+										<button class="btn btn-info"><i class="ss-icon">list</i> Survived?</button>
+										<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
+										<button class="btn btn-info"><i class="ss-icon">user</i> Wealth</button>
 									</div>
-									<input type="text" class="form-control pull-right" id="InputEmail" placeholder="http://statwing.com">
+									<div class="pull-right">
+										<a class="btn btn-info" href="#">
+											<i class="ss-icon">fork</i><span class="textwrap"> CREATE FILTERS</span>
+										</a>
+										<a class="btn btn-info" href="#">
+											<i class="ss-icon">save</i><span class="textwrap"> EXPORT</span>
+										</a>
+										<a class="btn btn-info" href="#">
+											<i class="ss-icon">edit</i><span class="textwrap"> NOTES</span>
+										</a>
+										<span class="closer">
+											<a href="#">
+												<i class="ss-icon">close</i>
+											</a>
+										</span>
+									</div>
 								</div>
-								<h4>Gender has a clear connection to Age</h4>
+								<h3>Survived? <span class="light-conclusion">has no correlation with</span> Wealth</h3>
+								
 							</div>
 						</div>
 					</div>
