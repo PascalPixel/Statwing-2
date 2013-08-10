@@ -26,7 +26,8 @@
 		font-weight: bold;
 	}
 	body {
-		background: #e7e7e2;
+		/* background: #e7e7e2; */
+		background: #e7f3f6;
 		padding-top: 60px;
 		color: #55544e;
 	}
@@ -37,8 +38,7 @@
 		background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 		background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding: 10px;
 	}
 	.btn {
 		border:1px solid #b7c3c4;
@@ -63,7 +63,7 @@
 		box-shadow: inset 0px 2px 0px rgba(255,255,255,0.1);
 		text-shadow: 0px -1px 0px white;
 	}
-	.btn-primary, .navbar .btn {
+	.btn-primary, .navbar .btn, .card-top, .card-top .btn {
 		display: inline-block;
 		border: 1px solid #2e7cb4;
 		background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
@@ -73,10 +73,10 @@
 		text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
 		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
 	}
-	.btn-primary:hover, .navbar .btn:hover {
+	.btn-primary:hover, .navbar .btn:hover, .card-top .btn:hover {
 		color: white;
 	}
-	.btn-primary:active, .navbar .btn:active {
+	.btn-primary:active, .navbar .btn:active, .card-top .btn:active {
 		background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
@@ -109,24 +109,19 @@
 		border:1px solid #b7c3c4;
 		background: white;
 		border-radius: 4px;
-		padding: 20px;
 	}
 	.card-top {
-		border:1px solid #b7c3c4;
-		background-image: -moz-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
-		background-image: -webkit-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
-		background-image: -ms-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
-		color: #83837a;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-shadow: 0px 1px 0px white;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
-		box-shadow: inset 0px 1px 0px white;
-		padding: 10px;
-		margin: -21px -21px 20px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		padding: 8px 6px;
+		width: 100%;
 	}
-	.card .btn-group .btn {
+	.card h3 {
+		margin: 25px;
+	}
+	.card .btn {
 		padding: 7px 10px 2px;
 	}
 	.wrap {
@@ -223,34 +218,43 @@
 	}
 	.team .img-circle {
 	}
-	.closer {
-	color: #517277;
-	margin-top: 20px;
-	}
 	.closer .ss-icon {
-	line-height: 32px;
 	margin-left: 10px;
-	margin-right: 5px;
+	margin-right: 8px;
 	}
 	.closer a{
-	color: #517277;
+	color: rgba(0,0,0,0.2);
 	text-decoration: none;
 	}
 	.closer a:hover{
-	color: #49656a;
+	color: rgba(0,0,0,0.7);
 	text-decoration: none;
+	}
+	.light-conclusion {
+		color: #a7b3ba;
+	}
+	.navbar-btn {
+		margin-top: 0px;
+	}
+	.delay1 {
+		animation-delay:1s;
+		-webkit-animation-delay:1s;
+	}
+	.delay2 {
+		animation-delay:2s;
+		-webkit-animation-delay:2s;
 	}
 	</style>
 	<style>
 	.chart {
 	height: 200px;
-	margin-top: -150px;
 	margin-bottom: -40px;
+	width: 100%;
 	}
 	.chart .bar-wrap {
 	position: relative;
 	height: 200px;
-	width: 4.3%;
+	width: 4.8%;
 	float: left;
 	margin-right: 2%;
 	}
@@ -262,7 +266,7 @@
 	bottom:0;
 	width: 100%;
 	height: 200px;
-	background-color: #ddddd6;
+	background-color: #d3eaf1;
 	}
 	@keyframes barchart1 {
 	0%   {height:200px;}
@@ -474,20 +478,6 @@
 	75%  {height:130px;}
 	100% {height:150px;}
 	}
-	@keyframes barchart16 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart16 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
-	}
 	.chart .bar-1 {
 	animation:barchart1 5s infinite;
 	-webkit-animation:barchart1 5s infinite;
@@ -548,40 +538,22 @@
 	animation:barchart15 5s infinite;
 	-webkit-animation:barchart15 5s infinite;
 	}
-	.chart .bar-16 {
-	animation:barchart16 5s infinite;
-	-webkit-animation:barchart16 5s infinite;
-	}
 	</style>
 </head>
 
 <body>
-	<div class="navbar navbar-fixed-top animated fadeInDown">
+	<div class="navbar navbar-fixed-top animated delay1 fadeInDown">
 		<div class="container">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		    </button>
 		    <button type="button" class="btn btn-default pull-left navbar-btn"><img src="img/statwing_logo_small.png" style="width:20px;margin-right:5px;margin-top:-5px;"/>Statwing</button>
-			<div class="nav-collapse collapse navbar-responsive-collapse pull-left">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-				</ul>
-		    </div>
-			<div class="pull-right">
-				<a class="btn btn-primary navbar-btn" href="#"><i class="ss-icon">playvideo</i> try the demo</a>
-			</div>
+			<a class="btn btn-primary navbar-btn pull-right" href="#"><i class="ss-icon">playvideo</i> demo</a>
 		</div>
 	</div>
-	<div class="container animated fadeInDownBig">
+	<div class="container animated fadeInUp">
 		<div class="row row-padding">
-			<div class="col-12">
-				<h1 style="font-size:30px;">Modern Data Analysis Software</h1>
+			<div class="col-12 center">
+				<h1>Modern Data Analysis Software</h1>
 				<h3 class="intro">The power of statistical analysis software, in an intuitive interface.</h3>
-				<div class="chart">
+				<div class="chart animated delay2 fadeInUp">
 					<div class="bar-wrap"><div class="bar bar-1"></div></div>
 					<div class="bar-wrap"><div class="bar bar-2"></div></div>
 					<div class="bar-wrap"><div class="bar bar-3"></div></div>
@@ -597,54 +569,29 @@
 					<div class="bar-wrap"><div class="bar bar-13"></div></div>
 					<div class="bar-wrap"><div class="bar bar-14"></div></div>
 					<div class="bar-wrap"><div class="bar bar-15"></div></div>
-					<div class="bar-wrap"><div class="bar bar-16"></div></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="wrap animated fadeInUp">
+	<div class="wrap animated delay2 fadeInUp">
 		<div class="container">
 			<div class="row row-padding">
 				<div class="col-12">
-					<h1 class="center">Easier than Spreadsheets</h1>
+					<h2 class="center">Easier than Spreadsheets</h2>
 					<h4 class="intro center">Simply ask your data a question, and get a real answer.</h4>
 					<div class="row row-padding">
-						<div class="col-3 line-double">
+						<div class="col-2 line-double">
 							<button type="button" class="btn btn-block"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
 							<button type="button" class="btn btn-block"><span class="pull-left">Age</span> <i class="ss-icon pull-right">barchart</i></button>
 						</div>
 						<div class="col-1 line-merge"></div>
-						<div class="col-3 line-single">
+						<div class="col-2 line-single">
 							<button type="button" class="btn btn-primary btn-block" style="margin-top:25px;"><span class="pull-left">Relate</span> <i class="ss-icon pull-right">playvideo</i></button>
 						</div>
 						<div class="col-1 line-arrow"></div>
-						<div class="col-4">
+						<div class="col-6">
 							<div class="card">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
-										<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
-										<button class="btn btn-info"><i class="ss-icon">barchart</i> Age</button>
-									</div>
-									<div class="pull-right">
-										<a class="btn btn-info" href="#">
-											<i class="ss-icon">fork</i><span class="textwrap"> CREATE FILTERS</span>
-										</a>
-										<a class="btn btn-info" href="#">
-											<i class="ss-icon">save</i><span class="textwrap"> EXPORT</span>
-										</a>
-										<a class="btn btn-info" href="#">
-											<i class="ss-icon">edit</i><span class="textwrap"> NOTES</span>
-										</a>
-										<span class="closer">
-											<a href="#">
-												<i class="ss-icon">close</i>
-											</a>
-										</span>
-									</div>
-								</div>
-								<h3>Survived? <span class="light-conclusion">has no correlation with</span> Wealth</h3>
-								
+								<h3><span class="light-conclusion">There is a significant relationship between</span> Gender <span class="light-conclusion">and</span> Age</h3>
 							</div>
 						</div>
 					</div>
@@ -660,18 +607,48 @@
 				</div>
 			</div>
 			<div class="row row-padding">
-				<div class="col-12">
+				<div class="col-6">
 					<h3>Statistical Analysis for Humans</h3>
-					<h4>Existing statistical software was built for statisticians, so they require expertise to ask even simple questions.</h4>
+					<p class="intrograph">Existing statistical software was built for statisticians, so they require expertise to ask even simple questions.</p>
 					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
 					<p>For experienced in statistical analysis users, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
 					<p>Statwing also translates everything into plain, understandable English, so you can understand your data the same way a statistician or data scientist would.</p>
+				</div>
+				<div class="col-6">
+					<div class="card">
+						<div class="card-top clearfix">
+							<div class="titlewrap pull-left">
+								<div class="btn-group">
+									<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
+									<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
+									<button class="btn btn-info"><i class="ss-icon">barchart</i> Age</button>
+								</div>
+							</div>
+							<div class="pull-right">
+								<a class="btn btn-info" href="#">
+									<i class="ss-icon">fork</i>
+								</a>
+								<a class="btn btn-info" href="#">
+									<i class="ss-icon">save</i>
+								</a>
+								<a class="btn btn-info" href="#">
+									<i class="ss-icon">edit</i>
+								</a>
+								<span class="closer">
+									<a href="#">
+										<i class="ss-icon">close</i>
+									</a>
+								</span>
+							</div>
+						</div>
+						<h3><span class="light-conclusion">There is a significant statistical relationship between</span> Gender <span class="light-conclusion">and</span> Age</h3>
+					</div>
 				</div>
 			</div>
 			<div class="row row-padding">
 				<div class="col-12">
 					<h3>Instant Visualization</h3>
-					<h4>Statwing automatically creates beautiful, interactive visualizations along with every analysis.</h4>
+					<p class="intrograph">Statwing automatically creates beautiful, interactive visualizations along with every analysis.</p>
 					<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
 					<p>Statwing understands the structure of your data, though, so it instantly creates histograms, scatterplots, heatmaps, bar charts, anything your data calls for.</p>
 					<p>Those visualizations make data cleaning much faster, give a rich feel for the data, and can then be exported for use in presentation software.</p>
@@ -690,33 +667,13 @@
 			<div class="row row-padding">
 				<div class="col-12">
 					<div class="box">
-						<h5 class="box-header">Pricing <i class="ss-icon pull-right">coins</i></h5>
+						<h4 class="box-header">Pricing <i class="ss-icon pull-right">coins</i></h4>
 						<div class="row row-padding-small">
-							<div class="col-2">
-								<img class="img-circle" src="img/greg.png"/>
-							</div>
-							<div class="col-4">
+							<div class="col-6">
 								Greg Laughlin
 							</div>
-							<div class="col-2">
-								<img class="img-circle" src="img/john.png"/>
-							</div>
-							<div class="col-4">
+							<div class="col-6">
 								John Master
-							</div>
-						</div>
-						<div class="row row-padding-small">
-							<div class="col-2">
-								<img class="img-circle" src="img/guy.png"/>
-							</div>
-							<div class="col-4">
-								That Guy
-							</div>
-							<div class="col-2">
-								<img class="img-circle" src="img/pascal.png"/>
-							</div>
-							<div class="col-4">
-								Pascal Verstegen
 							</div>
 						</div>
 					</div>
@@ -728,7 +685,7 @@
 		<div class="row row-padding">
 			<div class="col-8 team">
 				<div class="box">
-					<h5 class="box-header">The Team</h5>
+					<h4 class="box-header">The Team</h4>
 					<div class="row row-padding-small">
 						<div class="col-2">
 							<img class="img-circle" src="img/greg.png"/>
@@ -761,7 +718,7 @@
 			</div>
 			<div class="col-4">
 				<div class="box">
-					<h5 class="box-header">Contact</h5>
+					<h4 class="box-header">Contact</h4>
 					<form>
 					    <div class="form-group">
 					      <input type="text" class="form-control" id="InputEmail" placeholder="Your e-mail">
