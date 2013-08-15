@@ -290,6 +290,18 @@
 	.navbar .btn-group .btn {
 		margin-right: 0px;
 	}
+	.compare1, .compare2, .compare3, .compare4, .compare5, .compare6 {
+		opacity: 0;
+		position: absolute;
+		top:9px;
+	}
+	.animation .btn {
+		position: relative;
+		height: 38px;
+	}
+	.ss-icon .compare1, .ss-icon .compare2, .ss-icon .compare3 {
+		right: 12px;
+	}
 	</style>
 	<style>
 	.chart {
@@ -613,7 +625,7 @@
 	</nav>
 	<div class="container animated fadeInUp">
 		<div class="row row-padding">
-			<div class="col-xs-12 center">
+			<div class="col-sm-12 center">
 				<h1>Modern Data Analysis Software</h1>
 				<h3 class="intro">The power of statistical analysis software, in an intuitive interface.</h3>
 				<div class="chart animated delay2 fadeInUp">
@@ -639,30 +651,106 @@
 	<div class="wrap animated delay2 fadeInUp">
 		<div class="container">
 			<div class="row row-padding">
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<h2 class="center">Easier than Spreadsheets</h2>
 					<h4 class="intro center">Simply ask your data a question, and get a real answer.</h4>
-					<div class="row row-padding">
-						<div class="col-xs-3 line-double">
-							<button type="button" class="btn btn-block"><span class="pull-left">Gender</span> <i class="ss-icon pull-right">femaleuser</i></button>
-							<button type="button" class="btn btn-block"><span class="pull-left">Satisfaction</span> <i class="ss-icon pull-right">barchart</i></button>
+					<div class="row row-padding animation">
+						<div class="col-sm-3 line-double">
+							<button type="button" class="btn btn-block">
+								<span class="pull-left">
+									<span class="compare1">
+										Gender
+									</span>
+								</span>
+								<i class="ss-icon pull-right">
+									<span class="compare1">
+										femaleuser
+									</span>
+								</i>
+								<br>
+								<span class="pull-left">
+									<span class="compare2">
+										Age
+									</span>
+								</span>
+								<i class="ss-icon pull-right">
+									<span class="compare2">
+										piechart
+									</span>
+								</i>
+								<br>						
+								<span class="pull-left">
+									<span class="compare3">
+										Gender
+									</span>
+								</span>
+								<i class="ss-icon pull-right">
+									<span class="compare3">
+										femaleuser
+									</span>
+								</i>
+							</button>
+							<button type="button" class="btn btn-block">
+								<span class="pull-left">
+									<span class="compare1">
+										Satisfaction
+									</span>
+								</span>
+								<i class="ss-icon pull-right">
+									<span class="compare1">
+										scatterchart
+									</span>
+								</i>
+								<br>
+								<span class="pull-left">
+									<span class="compare2">
+										Satisfaction
+									</span>
+								</span>
+								<i class="ss-icon pull-right">
+									<span class="compare2">
+										scatterchart
+									</span>
+								</i>	
+								<br>							
+								<span class="pull-left">
+									<span class="compare3">
+										Engagement
+									</span>
+								</span>
+								<i class="ss-icon pull-right">
+									<span class="compare3">
+										linecharts
+									</span>
+								</i>
+							</button>
 						</div>
-						<div class="col-xs-1 line-merge"></div>
-						<div class="col-xs-3 line-single">
-							<button type="button" class="btn btn-primary btn-block" style="margin-top:25px;"><span class="pull-left">Relate to</span> <i class="ss-icon pull-right">pin</i></button>
+						<div class="col-sm-1 line-merge"></div>
+						<div class="col-sm-3 line-single">
+							<button type="button" class="btn btn-primary btn-block relate" style="margin-top:25px;">Relate <i class="ss-icon">merge</i></button>
 						</div>
-						<div class="col-xs-1 line-arrow"></div>
-						<div class="col-xs-4">
-							<div class="card">
-								<h4><span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span></h4>
+						<div class="col-sm-1 line-arrow"></div>
+						<div class="col-sm-4">
+							<div class="card" style="min-height:140px;">
+								<h4>
+									<span class="compare4">
+										<span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span>
+									</span>
+									<span class="compare5">
+										<span class="var_name">Age</span> is positively correlated with <span class="var_name">Satisfaction</span>
+									</span>
+									<span class="compare6">
+										There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Engagement</span>
+									</span>
+								</h4>
 							</div>
 						</div>
 					</div>
 					<div class="row row-padding">
-						<div class="col-xs-6">
+						<div class="col-sm-6">
 							<p class="intrograph">Upload your spreadsheet or dataset, select data to explore, and Statwing will give you answers in seconds.</p>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-sm-6">
 							<p>Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
 							<p>Statwing is designed solely for analyzing tables of data, so users work five to ten times faster.</p>
 							<p>If you're analyzing data and writing anything more than =AVERAGE(), you'll work much faster in Statwing.</p>
@@ -672,14 +760,14 @@
 			</div>
 			<hr>
 			<div class="row row-padding">
-				<div class="col-xs-6">
+				<div class="col-sm-6">
 					<h3>Statistical Analysis for Humans</h3>
 					<p class="intrograph">Traditional statistical software was built for statisticians, and requires deep expertise and painstaking coding to ask even simple questions.</p>
 					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
 					<p>For experienced users of statistical analysis, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
 					<p>If you're not interested in statistical terminology, Statwing also translates everything into plain English, so you can understand your data the same way a statistician or data scientist would.</p>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-sm-6">
 					<div class="card">
 						<div class="card-top clearfix">
 							<div class="titlewrap pull-left">
@@ -712,7 +800,7 @@
 			</div>
 			<hr>
 			<div class="row row-padding">
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<h3>Instant Visualization</h3>
 					<p class="intrograph">Statwing automatically creates beautiful, interactive visualizations along with every analysis.</p>
 					<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
@@ -722,26 +810,26 @@
 			</div>
 			<hr>
 			<div class="row center">
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<h3>Statwing in the press</h3>
 				</div>
 			</div>
 			<div class="row row-padding-small">
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/computerworld.png" style="width:100px;"/>
 						<p>“...an appealing resource for professionals who want to try taking their data skills up a notch.”</p>
 						<a class="btn btn-xs" href="http://blogs.computerworld.com/business-intelligenceanalytics/20909/startup-aims-simplify-data-analysis" target="_blank">Read Article</a>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/techcrunch.png" style="width:100px;"/>
 						<p>“Statwing makes it easier to do what used to require someone with deep technical knowledge about statistics.”</p>
 						<a class="btn btn-xs" href="http://techcrunch.com/2012/08/16/how-statwing-makes-it-easier-to-ask-questions-about-data-so-you-dont-have-to-hire-a-statistical-wizard/" target="_blank">Read Article</a>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/financialpost.png" style="width:100px;"/>
 						<p>“Statwing lets you quickly and easily analyze data to explore statistical relationships in seconds.”</p>
@@ -750,21 +838,21 @@
 				</div>
 			</div>
 			<div class="row row-padding-small">
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/tnw.png" style="width:100px;"/>
 						<p>“We’re not all statisticians, but now you can do sound analysis without the complexity of learning SPSS or STATA.”</p>
 						<a class="btn btn-xs" href="http://thenextweb.com/lifehacks/2012/08/26/12-tips-to-improve-your-life-for-free/" target="_blank">Read Article</a>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/oreilly.png" style="width:100px;"/>
 						<p>“I welcome a tool that produces readily interpretable results.”</p>
 						<a class="btn btn-xs" href="http://strata.oreilly.com/2012/10/statwing-simplifies-data-analysis.html" target="_blank">Read Article</a>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/gigaom.png" style="width:100px;"/>
 						<p>Statwing wants to make your data — and armchair quarterback — dreams come true.</p>
@@ -774,13 +862,13 @@
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<h3>Pricing</h3>
 					<p class="intrograph">Statwing is free to use for most casual users, only if you require full privacy, export abilities to other applications or very large professional data sets do we need you to sign on to out + or ++ plans.</p>
 				</div>
 			</div>
 			<div class="row row-padding-small pricing">
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box">
 						<h4 class="box-header">Statwing</h4>
 						<ul>
@@ -792,7 +880,7 @@
 						<h4 class="box-footer">FREE <a class="btn btn-primary"><i class="ss-icon">playvideo</i> get started</a></h4>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box">
 						<h4 class="box-header">Statwing <i class="ss-icon">plus</i></h4>
 						<ul>
@@ -802,7 +890,7 @@
 						<h4 class="box-footer">$25</h4>
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<div class="box">
 						<h4 class="box-header">Statwing <i class="ss-icon">plus</i><i class="ss-icon">plus</i></h4>
 						<ul>
@@ -816,7 +904,7 @@
 	</div>
 	<div class="footer container">
 		<div class="row row-padding">
-			<div class="col-xs-4 team">
+			<div class="col-sm-4 team">
 				<div class="box">
 					<h4 class="box-header blue">The Team <i class="ss-icon pull-right">usergroup</i></h4>
 					<div class="row row-padding-small">
@@ -853,7 +941,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-sm-4">
 				<div class="box">
 					<h4 class="box-header blue">Updates <i class="ss-icon pull-right">news</i></h4>
 					<a class="twitter-timeline" href="https://twitter.com/statwing" data-widget-id="367633455577698305" data-tweet-limit="3" data-chrome="nofooter transparent noheader">News from Statwing</a>
@@ -861,7 +949,7 @@
 					<style>.customisable-border {border-color: rgba(0,0,0,0.1);}</style>
 				</div>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-sm-4">
 				<div class="box">
 					<h4 class="box-header blue">Contact <i class="ss-icon pull-right">mail</i></h4>
 					<form>
@@ -877,7 +965,7 @@
 			</div>
 		</div>
 		<div class="row row-padding">
-			<div class="col-xs-12">
+			<div class="col-sm-12">
 				<ul class="oneline">
 					<li>© Statwing</li>
 					<li>Jobs</li>
@@ -903,6 +991,59 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+	<!-- Demo's animation -->
+	<script type="text/javascript">
+	
+		var loopCompare = function () {
+			$('.compare1').animate({ opacity: 1 }, 'slow');
+			window.setTimeout(function(){
+				$('.relate').addClass('active');
+				window.setTimeout(function(){
+					$('.relate').removeClass('active');
+					$('.compare4').animate({ opacity: 1 }, 'slow');
+					window.setTimeout(function(){
+						$('.compare4').animate({ opacity: 0 }, 'slow');
+						$('.compare1').animate({ opacity: 0 }, 'slow');
+						window.setTimeout(function(){
+							$('.compare2').animate({ opacity: 1 }, 'slow');
+							window.setTimeout(function(){
+								$('.relate').addClass('active');
+								window.setTimeout(function(){
+									$('.relate').removeClass('active');
+									$('.compare5').animate({ opacity: 1 }, 'slow');
+									window.setTimeout(function(){
+										$('.compare5').animate({ opacity: 0 }, 'slow');
+										$('.compare2').animate({ opacity: 0 }, 'slow');
+										window.setTimeout(function(){
+											$('.compare3').animate({ opacity: 1 }, 'slow');
+											window.setTimeout(function(){
+												$('.relate').addClass('active');
+												window.setTimeout(function(){
+													$('.relate').removeClass('active');
+													$('.compare6').animate({ opacity: 1 }, 'slow');
+													window.setTimeout(function(){
+														$('.compare6').animate({ opacity: 0 }, 'slow');
+														$('.compare3').animate({ opacity: 0 }, 'slow');
+														window.setTimeout(function(){
+															loopCompare();
+														},500);
+													},3000);
+												},200);
+											},1000);
+										},500);
+									},3000);
+								},200);
+							},1000);
+						},500);
+					},3000);
+				},200);
+			},1000);
+		};
+		
+		$(document).ready(function() {
+			loopCompare();
+		});
+	</script>
 </body>
 
 </html>
