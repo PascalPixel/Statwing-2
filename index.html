@@ -142,6 +142,17 @@
 	.ss-icon {
 		vertical-align: middle;
 	}
+	.help-popover {
+		cursor: default;
+	}
+	.popover table, th, td {
+		border: 1px solid rgba(0,0,0,0.1);
+		padding: 6px;
+		text-align: right;
+	}
+	.popover {
+		min-width: 200px;
+	} 
 	.row-padding {
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -187,6 +198,14 @@
 		padding: 15px 15px 10px;
 		margin: -20px -20px 20px;
 		color: rgba(0,0,0,0.5);
+	}
+	.box-footnote {
+		font-size: 10px;
+		margin-top: -14px;
+		padding: 0px;
+	}
+	.clearfix {
+		margin-bottom:10px;
 	}
 	.people-header {
 		padding: 15px 15px 0px;
@@ -278,7 +297,7 @@
 		padding: 14px 19px;
 		margin: 20px -24px -24px;
 		color: white;
-		font-size: 24px;
+		font-size: 20px;
 		border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;
 	}
@@ -833,19 +852,17 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-12">
-					<h3>Pricing (Free trial version)</h3>
-					<p class="intrograph">Start with a one-month trial of Statwing Silver; after the trial you'll be downgraded to Statwing Free.<br/>
-					Uploads during the trial will remain private even after the trial completes.</p>
+					<h3>Pricing</h3>
+					<p class="intrograph">Start with a free trial of Statwing Silver (no credit card required).<br/>After one month, choose one our three plans.</p>
 				</div>
 			</div>
 			<div class="row row-padding-small pricing">
 				<div class="col-sm-4">
 					<div class="box">
-						<h4 class="box-header">Statwing Free</h4>
+						<h4 class="box-header">Statwing Public</h4>
 						<ul>
-							<li>All uploads are publicly visible</li>
-							<li>Datasets can contain up to 3 million cells</li>
-							<li>No credit card required</li>
+							<li>New uploads will be <strong>publicly</strong> visible <em data-placement="top" class="ss-icon help-popover" data-content="Data uploaded during the Statwing Silver trial will remain private forever">question</em></li>
+							<li>Datasets up to <strong>1</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>100,000</td><td>10</td></tr><tr><td>25,000</td><td>40</td></tr><tr><td>5,000</td><td>200</td></tr></table>">question</em></li>
 						</ul>
 						<h4 class="box-footer">FREE</h4>
 					</div>
@@ -854,63 +871,28 @@
 					<div class="box">
 						<h4 class="box-header">Statwing Silver</h4>
 						<ul>
-							<li>All uploads are private forever</li>
+							<li>Uploads are <strong>private</strong> forever (even if you downgrade later)
+								<li>Export charts to Excel and Powerpoint</li>
+							<li>Datasets up to <strong>1</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>100,000</td><td>10</td></tr><tr><td>25,000</td><td>40</td></tr><tr><td>5,000</td><td>200</td></tr></table>">question</em></li>
+						</ul>
+						<h4 class="box-footer">$25 / month</h4>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="box">
+						<h4 class="box-header">Statwing Gold</h4>
+						<ul>
+							<li>Uploads are <strong>private</strong> forever (even if you downgrade later)</li>
 							<li>Export charts to Excel and Powerpoint</li>
-							<li>No credit card required for trial</li>
+							<li>Datasets up to <strong>5</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>500,000</td><td>10</td></tr><tr><td>100,000</td><td>50</td></tr><tr><td>25,000</td><td>200</td></tr></table>">question</em></li>
 						</ul>
-						<h4 class="box-footer">$25 <a class="btn btn-primary pull-right"><i class="ss-icon">playvideo</i> start one-month trial</a></h4>
+						<h4 class="box-footer">$100 / month</h4>
 					</div>
+					*Email sales@statwing.com for enterprise pricing
 				</div>
-				<div class="col-sm-4">
-					<div class="box">
-						<h4 class="box-header">Statwing Gold</h4>
-						<ul>
-							<li>Datasets can contain up to 15 million cells</li>
-						</ul>
-						<h4 class="box-footer">$100</h4>
-					</div>
-				</div>
+				<a class="btn btn-primary"><i class="ss-icon">playvideo</i> start one-month free trial of statwing silver</a> (pascal please make this pretty)
 			</div>
-			<hr>
-			<div class="row">
-				<div class="col-sm-12">
-					<h3>Pricing (Free uploads for a month version)</h3>
-					<p class="intrograph">Statwing is free for casual use; all datasets uploaded in your first month of use are private forever.<br/>
-					To continue uploading private datasets after the first month, upgrade to Silver or Gold.</p>
-				</div>
-			</div>
-			<div class="row row-padding-small pricing">
-				<div class="col-sm-4">
-					<div class="box">
-						<h4 class="box-header">Statwing</h4>
-						<ul>
-							<li>Uploads in the first month are private forever</li>
-							<li>No credit card required</li>
-							<li>Datasets can contain up to 3 million cells</li>
-						</ul>
-						<h4 class="box-footer">FREE <a class="btn btn-primary pull-right"><i class="ss-icon">playvideo</i> get started</a></h4>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="box">
-						<h4 class="box-header">Statwing Silver</h4>
-						<ul>
-							<li>All uploads are private forever unless you share them</li>
-							<li>Export your charts to Excel and Powerpoint</li>
-						</ul>
-						<h4 class="box-footer">$25</h4>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="box">
-						<h4 class="box-header">Statwing Gold</h4>
-						<ul>
-							<li>Datasets can contain up to 15 million cells</li>
-						</ul>
-						<h4 class="box-footer">$100</h4>
-					</div>
-				</div>
-			</div>		</div>
+		</div>
 	</div>
 	<div class="footer container">
 		<div class="row row-padding">
@@ -1097,6 +1079,7 @@
 		
 		$(document).ready(function() {
 			loopCompare();
+			$('.help-popover').popover({trigger:"hover"});
 		});
 	</script>
 </body>
