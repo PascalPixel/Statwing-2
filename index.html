@@ -142,6 +142,17 @@
 	.ss-icon {
 		vertical-align: middle;
 	}
+	.help-popover {
+		cursor: default;
+	}
+	.popover table, th, td {
+		border: 1px solid rgba(0,0,0,0.1);
+		padding: 6px;
+		text-align: right;
+	}
+	.popover {
+		min-width: 200px;
+	} 
 	.row-padding {
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -176,7 +187,7 @@
 	}
 	.box {
 		border: 4px solid rgba(0,0,0,0.1);
-		border-radius: 10px;
+		border-radius: 7px;
 		padding: 20px;
 	}
 	.box hr {
@@ -186,6 +197,19 @@
 		border-bottom: 3px solid rgba(0,0,0,0.1);
 		padding: 15px 15px 10px;
 		margin: -20px -20px 20px;
+		color: rgba(0,0,0,0.5);
+	}
+	.box-footnote {
+		font-size: 10px;
+		margin-top: -14px;
+		padding: 0px;
+	}
+	.clearfix {
+		margin-bottom:10px;
+	}
+	.people-header {
+		padding: 15px 15px 0px;
+		margin: -20px -15px 0px;
 		color: rgba(0,0,0,0.5);
 	}
 	.box-footer {
@@ -274,8 +298,8 @@
 		margin: 20px -24px -24px;
 		color: white;
 		font-size: 24px;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
 	}
 	.press_box p {
 		margin-top: 20px;
@@ -652,8 +676,8 @@
 		<div class="container">
 			<div class="row row-padding">
 				<div class="col-sm-12">
-					<h2 class="center">Easier than Spreadsheets</h2>
-					<h4 class="intro center">Simply ask your data a question, and get a real answer.</h4>
+					<h2 class="center">Explore your data in seconds</h2>
+					<h4 class="intro center">Just upload your spreadsheet or dataset, then select the data you want to learn about.</h4>
 					<div class="row row-padding animation">
 						<div class="col-sm-3 line-double">
 							<button type="button" class="btn btn-block">
@@ -748,53 +772,24 @@
 					</div>
 					<div class="row row-padding">
 						<div class="col-sm-6">
-							<p class="intrograph">Upload your spreadsheet or dataset, select data to explore, and Statwing will give you answers in seconds.</p>
+							<p class="intrograph">Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
 						</div>
 						<div class="col-sm-6">
-							<p>Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
 							<p>Statwing is designed solely for analyzing tables of data, so users work five to ten times faster.</p>
-							<p>If you're analyzing data and writing anything more than =AVERAGE(), you'll work much faster in Statwing.</p>
+							<p>If you're analyzing data in a spreadsheet and writing anything more than =AVERAGE(), you'll work much faster in Statwing.</p>
+							<a href="">Learn more...</a>
 						</div>
 					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="row row-padding">
-				<div class="col-sm-6">
-					<h3>Statistical Analysis for Humans</h3>
-					<p class="intrograph">Traditional statistical software was built for statisticians, and requires deep expertise and painstaking coding to ask even simple questions.</p>
-					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other issues in your data.</p>
-					<p>For experienced users of statistical analysis, you can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
-					<p>If you're not interested in statistical terminology, Statwing also translates everything into plain English, so you can understand your data the same way a statistician or data scientist would.</p>
-				</div>
-				<div class="col-sm-6">
-					<div class="card">
-						<div class="card-top clearfix">
-							<div class="titlewrap pull-left">
-								<div class="btn-group">
-									<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
-									<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
-									<button class="btn btn-info"><i class="ss-icon">barchart</i> Age</button>
-								</div>
-							</div>
-							<div class="pull-right">
-								<a class="btn btn-info" href="#">
-									<i class="ss-icon">fork</i>
-								</a>
-								<a class="btn btn-info" href="#">
-									<i class="ss-icon">save</i>
-								</a>
-								<a class="btn btn-info" href="#">
-									<i class="ss-icon">edit</i>
-								</a>
-								<span class="closer">
-									<a href="#">
-										<i class="ss-icon">close</i>
-									</a>
-								</span>
-							</div>
+					<div class="row row-padding">
+						<div class="col-sm-6">
+							<p class="intrograph">Traditional statistical software was built for statisticians, and requires technical expertise and painstaking coding to ask even simple questions.</p>
 						</div>
-						<h3><span class="light-conclusion">There is a significant statistical relationship between</span> Gender <span class="light-conclusion">and</span> Age</h3>
+						<div class="col-sm-6">
+							<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other data issues.</p>
+							<p>Statwing translates results into plain English, so anyone can understand data the way a statistician or data scientist would.</p>
+							<p>The statistically inclined can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
+							<a href="">Learn more...</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -817,46 +812,40 @@
 			<div class="row row-padding-small">
 				<div class="col-sm-4">
 					<div class="box press_box">
-						<img class="press_logo" src="img/computerworld.png" style="width:100px;"/>
-						<p>“...an appealing resource for professionals who want to try taking their data skills up a notch.”</p>
-						<a class="btn btn-xs" href="http://blogs.computerworld.com/business-intelligenceanalytics/20909/startup-aims-simplify-data-analysis" target="_blank">Read Article</a>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="box press_box">
 						<img class="press_logo" src="img/techcrunch.png" style="width:100px;"/>
 						<p>“Statwing makes it easier to do what used to require someone with deep technical knowledge about statistics.”</p>
-						<a class="btn btn-xs" href="http://techcrunch.com/2012/08/16/how-statwing-makes-it-easier-to-ask-questions-about-data-so-you-dont-have-to-hire-a-statistical-wizard/" target="_blank">Read Article</a>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/financialpost.png" style="width:100px;"/>
 						<p>“Statwing lets you quickly and easily analyze data to explore statistical relationships in seconds.”</p>
-						<a class="btn btn-xs" href="http://business.financialpost.com/2012/08/23/battlefy-statwing-wellnessfx-bufferbox/" target="_blank">Read Article</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="box press_box">
+						<img class="press_logo" src="img/tnw.png" style="width:100px;"/>
+						<p>“We’re not all statisticians, but now you can do sound analysis without the complexity of learning SPSS or STATA.”</p>
 					</div>
 				</div>
 			</div>
 			<div class="row row-padding-small">
 				<div class="col-sm-4">
 					<div class="box press_box">
-						<img class="press_logo" src="img/tnw.png" style="width:100px;"/>
-						<p>“We’re not all statisticians, but now you can do sound analysis without the complexity of learning SPSS or STATA.”</p>
-						<a class="btn btn-xs" href="http://thenextweb.com/lifehacks/2012/08/26/12-tips-to-improve-your-life-for-free/" target="_blank">Read Article</a>
+						<img class="press_logo" src="img/greenbook.png" style="width:100px;"/>
+						<p>"Statwing delivers. It’s an incredibly simple user interface that belies the sophistication of the models powering it."</p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="box press_box">
 						<img class="press_logo" src="img/oreilly.png" style="width:100px;"/>
 						<p>“I welcome a tool that produces readily interpretable results.”</p>
-						<a class="btn btn-xs" href="http://strata.oreilly.com/2012/10/statwing-simplifies-data-analysis.html" target="_blank">Read Article</a>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="box press_box">
-						<img class="press_logo" src="img/gigaom.png" style="width:100px;"/>
-						<p>Statwing wants to make your data — and armchair quarterback — dreams come true.</p>
-						<a class="btn btn-xs" href="http://gigaom.com/2013/03/17/statwing-wants-to-make-your-data-and-armchair-quarterback-dreams-come-true/" target="_blank">Read Article</a>
+						<img class="press_logo" src="img/computerworld.png" style="width:100px;"/>
+						<p>“...an appealing resource for professionals who want to try taking their data skills up a notch.”</p>
 					</div>
 				</div>
 			</div>
@@ -864,55 +853,60 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h3>Pricing</h3>
-					<p class="intrograph">Statwing is free to use for most casual users, only if you require full privacy, export abilities to other applications or very large professional data sets do we need you to sign on to out + or ++ plans.</p>
+					<p class="intrograph">Start with a free trial of Statwing Silver (no credit card required).<br/>After one month, choose one our three plans.</p>
 				</div>
 			</div>
 			<div class="row row-padding-small pricing">
 				<div class="col-sm-4">
 					<div class="box">
-						<h4 class="box-header">Statwing</h4>
+						<h4 class="box-header">Statwing Public</h4>
 						<ul>
-							<li>Unlimited files</li>
-							<li>No credit card required</li>
-							<li>Uploads in the first month are private forever</li>
-							<li>Datasets can contain up to 3 million cells</li>
+							<li>New uploads will be <strong>publicly</strong> visible <em data-placement="top" class="ss-icon help-popover" data-content="Data uploaded during the Statwing Silver trial will remain private forever">question</em></li>
+							<li>Datasets up to <strong>1</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>100,000</td><td>10</td></tr><tr><td>25,000</td><td>40</td></tr><tr><td>5,000</td><td>200</td></tr></table>">question</em></li>
 						</ul>
-						<h4 class="box-footer">FREE <a class="btn btn-primary"><i class="ss-icon">playvideo</i> get started</a></h4>
+						<h4 class="box-footer">FREE</h4>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="box">
-						<h4 class="box-header">Statwing <i class="ss-icon">plus</i></h4>
+						<h4 class="box-header">Statwing Silver</h4>
 						<ul>
-							<li>Export your charts to Excel and Powerpoint</li>
-							<li>Uploads can always be private, unless shared</li>
+							<li>Uploads are <strong>private</strong> forever (even if you downgrade later)
+								<li>Export charts to Excel and Powerpoint</li>
+							<li>Datasets up to <strong>1</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>100,000</td><td>10</td></tr><tr><td>25,000</td><td>40</td></tr><tr><td>5,000</td><td>200</td></tr></table>">question</em></li>
 						</ul>
-						<h4 class="box-footer">$25</h4>
+						<h4 class="box-footer">$25 / month</h4>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="box">
-						<h4 class="box-header">Statwing <i class="ss-icon">plus</i><i class="ss-icon">plus</i></h4>
+						<h4 class="box-header">Statwing Gold</h4>
 						<ul>
-							<li>Datasets can contain up to 15 million cells</li>
+							<li>Uploads are <strong>private</strong> forever (even if you downgrade later)</li>
+							<li>Export charts to Excel and Powerpoint</li>
+							<li>Datasets up to <strong>5</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>500,000</td><td>10</td></tr><tr><td>100,000</td><td>50</td></tr><tr><td>25,000</td><td>200</td></tr></table>">question</em></li>
 						</ul>
-						<h4 class="box-footer">$100</h4>
+						<h4 class="box-footer">$100 / month</h4>
 					</div>
+					*Email sales@statwing.com for enterprise pricing
 				</div>
+				<a class="btn btn-primary"><i class="ss-icon">playvideo</i> start one-month free trial of statwing silver</a> (pascal please make this pretty)
 			</div>
 		</div>
 	</div>
 	<div class="footer container">
 		<div class="row row-padding">
-			<div class="col-sm-4 team">
+			<div class="col-sm-4 people">
 				<div class="box">
-					<h4 class="box-header blue">The Team <i class="ss-icon pull-right">usergroup</i></h4>
+					<h4 class="box-header blue">Team <i class="ss-icon pull-right">usergroup</i></h4>
 					<div class="row row-padding-small">
 						<div class="col-xs-4">
 							<img class="img-circle" src="img/greg.png"/>
 						</div>
 						<div class="col-xs-8">
-							Greg Laughlin
+							<h4 class="people-header">Greg Laughlin</h4>
+							Cofounder, CEO<br/>
+							Stanford B.A./M.A. 2006
 						</div>
 					</div>
 					<div class="row row-padding-small">
@@ -920,7 +914,9 @@
 							<img class="img-circle" src="img/john.png"/>
 						</div>
 						<div class="col-xs-8">
-							John Master
+							<h4 class="people-header">John Le</h4>
+							Cofounder, CTO<br/>
+							Stanford B.S/M.S. 2009
 						</div>
 					</div>
 					<div class="row row-padding-small">
@@ -928,7 +924,10 @@
 							<img class="img-circle" src="img/greg.png"/>
 						</div>
 						<div class="col-xs-8">
-							Greg Laughlin
+							<h4 class="people-header">Bob Vallone</h4>
+							User Interface Advisor<br/>
+							Creator of TiVo UI<br/>
+							Taught Stats at Stanford
 						</div>
 					</div>
 					<div class="row row-padding-small">
@@ -936,17 +935,55 @@
 							<img class="img-circle" src="img/john.png"/>
 						</div>
 						<div class="col-xs-8">
-							John Master
+							<h4 class="people-header">Kristian Hartikainen</h4>
+							Software Engineer<br/>
+							Aalto University B.S. 2014
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 people">
 				<div class="box">
-					<h4 class="box-header blue">Updates <i class="ss-icon pull-right">news</i></h4>
-					<a class="twitter-timeline" href="https://twitter.com/statwing" data-widget-id="367633455577698305" data-tweet-limit="3" data-chrome="nofooter transparent noheader">News from Statwing</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<style>.customisable-border {border-color: rgba(0,0,0,0.1);}</style>
+					<h4 class="box-header blue">Selected Investors <i class="ss-icon pull-right">usergroup</i></h4>
+					<div class="row row-padding-small">
+						<div class="col-xs-4">
+							<img class="img-circle" src="img/jeff-headshot.png"/>
+						</div>
+						<div class="col-xs-8">
+							<h4 class="people-header">Jeff Hammerbacher</h4>
+							Cofounder, Cloudera<br/>
+							Built Facebook data team<br/>
+							Coined "data science"
+						</div>
+					</div>
+					<div class="row row-padding-small">
+						<div class="col-xs-4">
+							<img class="img-circle" src="img/jason-headshot.jpg"/>
+						</div>
+						<div class="col-xs-8">
+							<h4 class="people-header">Jason Seats</h4>
+							Cofounder, Slicehost<br/>
+							Director, TechStars Austin<br/>
+						</div>
+					</div>
+					<div class="row row-padding-small">
+						<div class="col-xs-4">
+							<img class="img-circle" src="img/diego-headshot.png"/>
+						</div>
+						<div class="col-xs-8">
+							<h4 class="people-header">Diego Basch</h4>
+							Founder, IndexTank
+						</div>
+					</div>
+					<div class="row row-padding-small">
+						<div class="col-xs-4">
+							<img class="img-circle" src="img/yc-logo.png"/>
+						</div>
+						<div class="col-xs-8">
+							<h4 class="people-header">Y Combinator</h4>
+							Investor in Dropbox, Airbnb, Reddit, Scribd, Optimizely, others
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -1042,6 +1079,7 @@
 		
 		$(document).ready(function() {
 			loopCompare();
+			$('.help-popover').popover({trigger:"hover"});
 		});
 	</script>
 </body>
