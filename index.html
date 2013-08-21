@@ -108,6 +108,28 @@
 		border-bottom: 1px solid rgba(255,255,255,0.5);
 		box-shadow: none;
 	}
+	.btn-success {
+		display: inline-block;
+		border: 1px solid #649321;
+		background-image: -moz-linear-gradient( 90deg, #5fbd31 0%, #8ad34a 100%);
+		background-image: -webkit-linear-gradient( 90deg, #5fbd31 0%, #8ad34a 100%);
+		background-image: -ms-linear-gradient( 90deg, #5fbd31 0%, #8ad34a 100%);
+		color: #edf8d3;
+		text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
+	}
+	.btn-success:hover {
+		color: white;
+	}
+	.btn-success:active {
+		background-image: -moz-linear-gradient( 90deg, #8ad34a 0%, #5fbd31 100%);
+		background-image: -webkit-linear-gradient(90deg, #6aad2f 0%, #4a8f27 100%);
+		background-image: -ms-linear-gradient( 90deg, #8ad34a 0%, #5fbd31 100%);
+		border: 1px solid transparent;
+		border-bottom: 1px solid rgba(255,255,255,0.8);
+		box-shadow: none;
+		text-shadow: none;
+	}
 	.navbar-fixed-top .btn {
 		margin-top: 6px;
 	}
@@ -755,7 +777,7 @@
 						</div>
 						<div class="col-sm-1 line-merge"></div>
 						<div class="col-sm-3 line-single">
-							<button type="button" class="btn btn-primary btn-block relate" style="margin-top:25px;">Relate <i class="ss-icon">merge</i></button>
+							<button type="button" class="btn btn-success btn-block relate" style="margin-top:25px;">Relate <i class="ss-icon">merge</i></button>
 						</div>
 						<div class="col-sm-1 line-arrow"></div>
 						<div class="col-sm-4">
@@ -789,36 +811,38 @@
 						<div class="col-sm-12">
 							<h2 class="center">Statistical Analysis for Humans</h2>
 							<h4 class="intro center">Intuitive to use with plain understandable answers</h4>
-						</div>
-						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
-											<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">barchart</i> Age</button>
-										</div>
-									</div>
-									<div class="pull-right">
-										<a class="btn btn-info" href="#">
-											<i class="ss-icon">fork</i>
-										</a>
-										<a class="btn btn-info" href="#">
-											<i class="ss-icon">save</i>
-										</a>
-										<a class="btn btn-info" href="#">
-											<i class="ss-icon">edit</i>
-										</a>
-										<span class="closer">
-											<a href="#">
-												<i class="ss-icon">close</i>
-											</a>
-										</span>
-									</div>
-		 						</div>
-								<h3><span class="light-conclusion">There is a significant statistical relationship between</span> Gender <span class="light-conclusion">and</span> Age</h3>
-		 					</div>
+							<div class="row row-padding">
+								<div class="col-sm-12">
+									<div class="card">
+										<div class="card-top clearfix">
+											<div class="titlewrap pull-left">
+												<div class="btn-group">
+													<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
+													<button class="btn btn-info"><i class="ss-icon">repeat</i></button>
+													<button class="btn btn-info"><i class="ss-icon">barchart</i> Age</button>
+												</div>
+											</div>
+											<div class="pull-right">
+												<a class="btn btn-info" href="#">
+													<i class="ss-icon">fork</i>
+												</a>
+												<a class="btn btn-info" href="#">
+													<i class="ss-icon">save</i>
+												</a>
+												<a class="btn btn-info" href="#">
+													<i class="ss-icon">edit</i>
+												</a>
+												<span class="closer">
+													<a href="#">
+														<i class="ss-icon">close</i>
+													</a>
+												</span>
+											</div>
+				 						</div>
+										<h3><span class="light-conclusion">There is a significant statistical relationship between</span> Gender <span class="light-conclusion">and</span> Age</h3>
+				 					</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row">
