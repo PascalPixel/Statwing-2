@@ -644,7 +644,7 @@
 	</style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#scrollspy">
 	<nav class="navbar navbar-default navbar-fixed-top animated delay1 fadeInDown">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -654,23 +654,22 @@
 			</button>
 			<a class="btn btn-primary" style="margin-top: 8px;margin-right:10px;"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
 		</div>
-		<div class="navbar-collapse collapse">
+		<div class="navbar-collapse collapse" id="scrollspy">
 			<ul class="nav navbar-nav">
 				<li class="active">
-					<a href="#"><em class="ss-icon">merge</em> How it works</a>
+					<a href="#howitworks"><em class="ss-icon">merge</em> How it works</a>
 				</li>
 				<li>
-					<a href="#"><em class="ss-icon">news</em> Press</a>
+					<a href="#press"><em class="ss-icon">news</em> Press</a>
 				</li>
 				<li>
-					<a href="#"><em class="ss-icon">cash</em> Pricing</a>
+					<a href="#pricing"><em class="ss-icon">cash</em> Pricing</a>
 				</li>
 				<li>
-					<a href="#"><em class="ss-icon">send</em> Contact</a>
+					<a href="#contact"><em class="ss-icon">send</em> Contact</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<a class="btn btn-primary" href="blog.html"><em class="ss-icon">question</em> About</a>
 				<a class="btn btn-primary" href="blog.html"><em class="ss-icon">list</em> Blog</a>
 				<a class="btn btn-primary" href="blog.html"><em class="ss-icon">work</em> Jobs</a>
 				<div class="btn-group">
@@ -707,7 +706,7 @@
 	</div>
 	<div class="wrap animated delay2 fadeInUp">
 		<div class="container">
-			<div class="row row-padding">
+			<div class="row row-padding" id="howitworks">
 				<div class="col-sm-12">
 					<h2 class="center">Explore your data in seconds</h2>
 					<h4 class="intro center">Just upload your spreadsheet or dataset, then select the data you want to learn about.</h4>
@@ -885,7 +884,7 @@
 				</div>
 			</div>
 			<hr>
-			<div class="row center row-padding-small">
+			<div class="row center row-padding-small" id="press">
 				<div class="col-sm-12">
 					<h2>Statwing in the press</h2>
 				</div>
@@ -931,7 +930,7 @@
 				</div>
 			</div>
 			<hr>
-			<div class="row">
+			<div class="row" id="pricing">
 				<div class="col-sm-12">
 					<h2 class="center">Pricing</h2>
 					<h4 class="intro center">Start with a free trial of Statwing Silver (no credit card required).<br> After one month, choose one our three plans.</h4>
@@ -984,7 +983,7 @@
 		</div>
 	</div>
 	<div class="footer container">
-		<div class="row row-padding">
+		<div class="row row-padding" id="contact">
 			<div class="col-sm-4 people">
 				<div class="box">
 					<h4 class="box-header blue">Team <i class="ss-icon pull-right">usergroup</i></h4>
