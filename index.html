@@ -63,7 +63,7 @@
 		box-shadow: inset 0px 2px 0px rgba(255,255,255,0.1);
 		text-shadow: 0px -1px 0px white;
 	}
-	.btn-primary, .navbar .btn, .card-top, .card-top .btn {
+	.btn-primary, .card-top, .card-top .btn {
 		display: inline-block;
 		border: 1px solid #2e7cb4;
 		background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
@@ -73,10 +73,10 @@
 		text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
 		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
 	}
-	.btn-primary:hover, .navbar .btn:hover, .card-top .btn:hover {
+	.btn-primary:hover, .card-top .btn:hover {
 		color: white;
 	}
-	.btn-primary:active, .navbar .btn:active, .card-top .btn:active {
+	.btn-primary:active, .card-top .btn:active {
 		background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
@@ -84,7 +84,7 @@
 		border-bottom: 1px solid rgba(255,255,255,0.5);
 		box-shadow: none;
 	}
-	.navbar .btn-primary {
+	.btn-info {
 		display: inline-block;
 		border:1px solid #b0d6e8;
 		background-image: -moz-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
@@ -94,10 +94,10 @@
 		text-shadow: 0px 1px 0px white;
 		box-shadow: inset 0px 1px 0px white;
 	}
-	.navbar .btn-primary:hover {
+	.btn-info:hover {
 		color: #32759c;
 	}
-	.navbar .btn-primary:active {
+	.btn-info:active {
 		background-image: -moz-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
 		background-image: -webkit-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
 		background-image: -ms-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
@@ -224,9 +224,6 @@
 		margin-top: -14px;
 		padding: 0px;
 	}
-	.clearfix {
-		margin-bottom:10px;
-	}
 	.people-header {
 		padding: 15px 15px 0px;
 		margin: -20px -15px 0px;
@@ -277,16 +274,16 @@
 		max-width: 100%;
 	}
 	.closer .ss-icon {
-	margin-left: 10px;
-	margin-right: 8px;
+		margin-left: 10px;
+		margin-right: 8px;
 	}
 	.closer a{
-	color: rgba(0,0,0,0.2);
-	text-decoration: none;
+		color: rgba(0,0,0,0.2);
+		text-decoration: none;
 	}
 	.closer a:hover{
-	color: rgba(0,0,0,0.7);
-	text-decoration: none;
+		color: rgba(0,0,0,0.7);
+		text-decoration: none;
 	}
 	.delay1 {
 		animation-delay:1s;
@@ -321,13 +318,7 @@
 		margin-bottom: 20px;
 	}
 	.btn-xs {
-	padding: 3px 5px;
-	}
-	.navbar .btn {
-		margin-right: 5px;
-	}
-	.navbar .btn-group .btn {
-		margin-right: 0px;
+		padding: 3px 5px;
 	}
 	.compare1, .compare2, .compare3, .compare4, .compare5, .compare6 {
 		opacity: 0;
@@ -340,6 +331,21 @@
 	}
 	.ss-icon .compare1, .ss-icon .compare2, .ss-icon .compare3 {
 		right: 12px;
+	}
+	.navbar-nav>li>a {
+		padding: 19px 25px 16px;
+	}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+		border-left: 1px solid #2e7cb4;
+		border-right: 1px solid #2e7cb4;
+		background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
+		background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
+		background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
+		color: #d2ebf8;
+		text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+	}
+	.navbar-default .navbar-nav>li>a {
+		color: #d2ebf8;
 	}
 	</style>
 	<style>
@@ -639,35 +645,40 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-fixed-top animated delay1 fadeInDown">
+	<nav class="navbar navbar-default navbar-fixed-top animated delay1 fadeInDown">
 		<div class="navbar-header">
-			<button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-			<a class="btn"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="btn btn-primary" style="margin-top: 8px;margin-right:10px;"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
 		</div>
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="active">
-					<a href="#">How it works <em class="ss-icon">merge</em></a>
+					<a href="#"><em class="ss-icon">merge</em> How it works</a>
 				</li>
 				<li>
-					<a href="#">Press <em class="ss-icon">news</em></a>
+					<a href="#"><em class="ss-icon">news</em> Press</a>
 				</li>
 				<li>
-					<a href="#">Pricing <em class="ss-icon">cash</em></a>
+					<a href="#"><em class="ss-icon">cash</em> Pricing</a>
 				</li>
 				<li>
-					<a href="#">Contact <em class="ss-icon">send</em></a>
+					<a href="#"><em class="ss-icon">send</em> Contact</a>
 				</li>
 			</ul>
-			<div class="nav navbar-nav navbar-right" style="margin-left: 2em">
-				<a class="btn" href="blog.html"><em class="ss-icon">question</em> About</a>
-				<a class="btn" href="blog.html"><em class="ss-icon">list</em> Blog</a>
-				<a class="btn" href="blog.html"><em class="ss-icon">work</em> Jobs</a>
+			<ul class="nav navbar-nav navbar-right">
+				<a class="btn btn-primary" href="blog.html"><em class="ss-icon">question</em> About</a>
+				<a class="btn btn-primary" href="blog.html"><em class="ss-icon">list</em> Blog</a>
+				<a class="btn btn-primary" href="blog.html"><em class="ss-icon">work</em> Jobs</a>
 				<div class="btn-group">
 					<a class="btn navbar-btn btn-primary" href="#"><em class="ss-icon">user</em> Sign In</a> <a class="btn navbar-btn btn-primary" href="#"><em class="ss-icon">form</em> Sign Up</a>
 				</div>
-			</div>
-		</div>
+				<a class="btn btn-success" href="blog.html"><em class="ss-icon">play</em> try demo</a>
+			</ul>
+		</div><!--/.nav-collapse -->
 	</nav>
 	<div class="container animated fadeInUp">
 		<div class="row row-padding">
