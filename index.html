@@ -62,10 +62,11 @@
 	}
 	.btn:active, .btn.active {
 		background-image: -moz-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
-		background-image: -webkit-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
+		background-image: -webkit-linear-gradient(90deg, #d7d7ce 0%, #c8c8bf 100%);
 		background-image: -ms-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
-		box-shadow: inset 0px 2px 0px rgba(255,255,255,0.1);
-		text-shadow: 0px -1px 0px white;
+		box-shadow: inset 0px 2px 1px rgba(0,0,0,0.1);
+		text-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+		color: white;
 	}
 	.btn-primary, .card-top, .card-top .btn {
 		display: inline-block;
@@ -736,7 +737,7 @@
 			<a class="btn btn-primary" style="margin-top: 8px;margin-right:10px;"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
 		</div>
 		<div class="navbar-collapse collapse" id="scrollspy">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav hidden-sm">
 				<li class="active">
 					<a href="#howitworks"><em class="ss-icon">merge</em> How it works</a>
 				</li>
@@ -762,7 +763,7 @@
 	</nav>
 <!-- HERO -->
 	<div class="animated fadeInUp hero">
-		<div class="row row-padding">
+		<div class="row row-padding" style="margin-left:0;margin-right:0;">
 			<div class="col-sm-5 col-sm-offset-1">
 				<div class="bottom">
 					<h1 style="font-size:26px;text-transform:uppercase;color:#33a0d3;">Modern Data Analysis Software</h1>
@@ -779,7 +780,7 @@
 							&#9658;
 						</div>
 						<div class="browser-address">
-							https://www.statwing.com/results
+							https://statwing.com
 						</div>
 					</div>
 					<div class="browser-content">
@@ -888,7 +889,7 @@
 <!-- DESC1 -->
 					<div class="row row-padding">
 						<div class="col-sm-6">
-							<p class="intrograph serif">Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
+							<p class="intrograph">Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
 						</div>
 						<div class="col-sm-6">
 							<p>Statwing is designed solely for analyzing tables of data, so users work five to ten times faster.</p>
@@ -1123,7 +1124,7 @@
 	<div class="footer container">
 		<div class="row row-padding" id="contact">
 <!-- TEAM -->
-			<div class="col-sm-4 people">
+			<div class="col-md-4 people">
 				<div class="box">
 					<h4 class="box-header blue">Team <i class="ss-icon pull-right">usergroup</i></h4>
 					<div class="row row-padding-small">
@@ -1170,7 +1171,7 @@
 				</div>
 			</div>
 <!-- INVESTORS -->
-			<div class="col-sm-4 people">
+			<div class="col-md-4 people">
 				<div class="box">
 					<h4 class="box-header blue">Selected Investors <i class="ss-icon pull-right">usergroup</i></h4>
 					<div class="row row-padding-small">
@@ -1215,7 +1216,7 @@
 				</div>
 			</div>
 <!-- CONTACT -->
-			<div class="col-sm-4">
+			<div class="col-md-4">
 				<div class="box">
 					<h4 class="box-header blue">Contact <i class="ss-icon pull-right">mail</i></h4>
 					<form>
