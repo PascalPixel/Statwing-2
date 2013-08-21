@@ -161,6 +161,8 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 		box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+		z-index: 0;
+		position: relative;
 	}
 	.ss-icon {
 		vertical-align: middle;
@@ -353,7 +355,7 @@
 	}
 	.bottom {
 		position: absolute;
-		bottom: -300px;
+		bottom: -320px;
 	}
 	.hero {
 		min-height: 400px;
@@ -366,6 +368,61 @@
 	p {
 		font-size: 16px;
 		line-height: 150%;
+	}
+	.browser {
+		border: 1px solid rgba(0,0,0,0.4);
+		border-radius: 7px;
+		background-color: white;
+		box-shadow: 0px 3px 5px rgba(0,0,0,0.14);
+		min-height: 439px;
+		margin-bottom: -200px;
+		z-index: -1000;
+		position: relative;
+	}
+	.browser-toolbar {
+		background-image: -moz-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
+		background-image: -webkit-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
+		background-image: -ms-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
+		box-shadow: inset 0px 1px 0px white;
+		border-bottom: 1px solid black;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		height: 50px;
+		padding: 10px;
+	}
+	.browser-back, .browser-forward {
+		background-image: -moz-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
+		background-image: -webkit-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
+		background-image: -ms-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
+		border: 1px solid rgba(0,0,0,0.2);
+		box-shadow: inset 0px 1px 0px white;
+		height: 30px;
+		width: 40px;
+		padding: 5px 12px;
+		display: inline-block;
+		margin-right: -5px;
+	}
+	.browser-back {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.browser-forward {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	.browser-address {
+		background: white;
+		border: 1px solid rgba(0,0,0,0.3);
+		display: inline-block;
+		position: absolute;
+		left: 100px;
+		right: 10px;
+		border-radius: 5px;
+		padding: 5px 10px;
+		height: 30px;
+	}
+	.browser-content {
+		padding: 20px;
 	}
 	</style>
 	<style>
@@ -706,13 +763,29 @@
 <!-- HERO -->
 	<div class="animated fadeInUp hero">
 		<div class="row row-padding">
-			<div class="col-sm-5 col-sm-offset-1">
+			<div class="col-sm-4 col-sm-offset-1">
 				<div class="bottom">
 					<h1 style="font-size:26px;text-transform:uppercase;color:#33a0d3;">Modern Data Analysis Software</h1>
 					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software,<br> in an intuitive interface.</h3>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-6">
+				<div class="browser">
+					<div class="browser-toolbar">
+						<div class="browser-back">
+							<em class="ss-icon">left</em>
+						</div>
+						<div class="browser-forward">
+							<em class="ss-icon">right</em>
+						</div>
+						<div class="browser-address">
+							https://www.statwing.com/results
+						</div>
+					</div>
+					<div class="browser-content">
+						Testing content
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
