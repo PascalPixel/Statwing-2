@@ -60,7 +60,7 @@
 	.btn:hover {
 		color: #575751;
 	}
-	.btn:active {
+	.btn:active, .btn.active {
 		background-image: -moz-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
 		background-image: -webkit-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
 		background-image: -ms-linear-gradient( 90deg, #e7e7e2 0%, #d8d8d0 100%);
@@ -80,7 +80,7 @@
 	.btn-primary:hover, .card-top .btn:hover {
 		color: white;
 	}
-	.btn-primary:active, .card-top .btn:active {
+	.btn-primary:active, .btn-primary.active, .card-top .btn:active, .card-top .btn.active {
 		background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
 		background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
@@ -101,7 +101,7 @@
 	.btn-info:hover {
 		color: #32759c;
 	}
-	.btn-info:active {
+	.btn-info:active, .btn-info.active {
 		background-image: -moz-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
 		background-image: -webkit-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
 		background-image: -ms-linear-gradient( 90deg, #ddeef5 0%, #cbe6f0 100%);
@@ -122,7 +122,7 @@
 	.btn-success:hover {
 		color: white;
 	}
-	.btn-success:active {
+	.btn-success:active, .btn-success.active {
 		background-image: -moz-linear-gradient( 90deg, #8ad34a 0%, #5fbd31 100%);
 		background-image: -webkit-linear-gradient(90deg, #6aad2f 0%, #4a8f27 100%);
 		background-image: -ms-linear-gradient( 90deg, #8ad34a 0%, #5fbd31 100%);
@@ -245,31 +245,31 @@
 		background-image: url('img/line-double.png');
 		background-repeat: no-repeat;
 		padding-top: 12px;
-		height: 140px;
+		height: 210px;
 		background-size: 100% 100%;
 	}
 	.line-double .btn {
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 	.line-merge {
 		background-image: url('img/line-merge.png');
 		background-repeat: repeat-x;
 		padding-top: 12px;
-		height: 140px;
+		height: 210px;
 		background-size: 100% 100%;
 	}
 	.line-single {
 		background-image: url('img/line-single.png');
 		background-repeat: repeat-x;
 		padding-top: 25px;
-		height: 140px;
+		height: 210px;
 		background-position: center center;
 	}
 	.line-arrow {
 		background-image: url('img/line-arrow.png');
 		background-repeat: no-repeat;
-		background-position-y: 22px;
-		height: 140px;
+		background-position-y: 58px;
+		height: 210px;
 	}
 	.intrograph {
 		font-size: 20px;
@@ -375,7 +375,7 @@
 		background-color: white;
 		box-shadow: 0px 3px 5px rgba(0,0,0,0.14);
 		min-height: 439px;
-		margin-bottom: -200px;
+		margin-bottom: -70px;
 		z-index: -1000;
 		position: relative;
 	}
@@ -384,7 +384,7 @@
 		background-image: -webkit-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
 		background-image: -ms-linear-gradient( 90deg, #c8c8c8 0%, #e2e2e2 100%);
 		box-shadow: inset 0px 1px 0px white;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid rgba(0,0,0,0.4);
 		border-top-left-radius: 7px;
 		border-top-right-radius: 7px;
 		height: 50px;
@@ -763,20 +763,20 @@
 <!-- HERO -->
 	<div class="animated fadeInUp hero">
 		<div class="row row-padding">
-			<div class="col-sm-4 col-sm-offset-1">
+			<div class="col-sm-5 col-sm-offset-1">
 				<div class="bottom">
 					<h1 style="font-size:26px;text-transform:uppercase;color:#33a0d3;">Modern Data Analysis Software</h1>
 					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software,<br> in an intuitive interface.</h3>
 				</div>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-5">
 				<div class="browser">
 					<div class="browser-toolbar">
 						<div class="browser-back">
-							<em class="ss-icon">left</em>
+							&#9668;
 						</div>
 						<div class="browser-forward">
-							<em class="ss-icon">right</em>
+							&#9658;
 						</div>
 						<div class="browser-address">
 							https://www.statwing.com/results
@@ -831,78 +831,42 @@
 					<h4 class="intro center">Just upload your spreadsheet or dataset, then select the data you want to learn about.</h4>
 					<div class="row row-padding animation">
 						<div class="col-sm-3 line-double">
-							<button type="button" class="btn btn-block">
+							<button type="button" class="btn btn-block compareBtn1">
 								<span class="pull-left">
-									<span class="compare1">
-										Gender
-									</span>
+									Gender
 								</span>
 								<i class="ss-icon pull-right">
-									<span class="compare1">
-										femaleuser
-									</span>
-								</i>
-								<br>
-								<span class="pull-left">
-									<span class="compare2">
-										Age
-									</span>
-								</span>
-								<i class="ss-icon pull-right">
-									<span class="compare2">
-										piechart
-									</span>
-								</i>
-								<br>						
-								<span class="pull-left">
-									<span class="compare3">
-										Gender
-									</span>
-								</span>
-								<i class="ss-icon pull-right">
-									<span class="compare3">
-										femaleuser
-									</span>
+									femaleuser
 								</i>
 							</button>
-							<button type="button" class="btn btn-block">
+							<button type="button" class="btn btn-block compareBtn2">
 								<span class="pull-left">
-									<span class="compare1">
-										Satisfaction
-									</span>
+									Age
 								</span>
 								<i class="ss-icon pull-right">
-									<span class="compare1">
-										scatterchart
-									</span>
+									piechart
 								</i>
-								<br>
+							</button>
+							<button type="button" class="btn btn-block compareBtn3">
 								<span class="pull-left">
-									<span class="compare2">
-										Satisfaction
-									</span>
+									Satisfaction
 								</span>
 								<i class="ss-icon pull-right">
-									<span class="compare2">
-										scatterchart
-									</span>
-								</i>	
-								<br>							
+									scatterchart
+								</i>
+							</button>
+							<button type="button" class="btn btn-block compareBtn4">							
 								<span class="pull-left">
-									<span class="compare3">
-										Engagement
-									</span>
+									Engagement
 								</span>
 								<i class="ss-icon pull-right">
-									<span class="compare3">
-										linecharts
-									</span>
+									linecharts
 								</i>
 							</button>
 						</div>
 						<div class="col-sm-1 line-merge"></div>
 						<div class="col-sm-3 line-single">
-							<button type="button" class="btn btn-success btn-block relate" style="margin-top:25px;">Relate <i class="ss-icon">merge</i></button>
+							<button type="button" class="btn btn-success btn-block btn-lg relate" style="margin-top:55px;padding:14px 0 31px;">Relate <i class="ss-icon">merge</i></button>
 						</div>
 						<div class="col-sm-1 line-arrow"></div>
 						<div class="col-sm-4">
@@ -1301,7 +1265,8 @@
 	<script type="text/javascript">
 	
 		var loopCompare = function () {
-			$('.compare1').animate({ opacity: 1 }, 'slow');
+			$('.compareBtn1').addClass('active');
+			$('.compareBtn3').addClass('active');
 			window.setTimeout(function(){
 				$('.relate').addClass('active');
 				window.setTimeout(function(){
@@ -1309,7 +1274,8 @@
 					$('.compare4').animate({ opacity: 1 }, 'slow');
 					window.setTimeout(function(){
 						$('.compare4').animate({ opacity: 0 }, 'slow');
-						$('.compare1').animate({ opacity: 0 }, 'slow');
+						$('.compareBtn1').removeClass('active');
+						$('.compareBtn2').addClass('active');
 						window.setTimeout(function(){
 							$('.compare2').animate({ opacity: 1 }, 'slow');
 							window.setTimeout(function(){
