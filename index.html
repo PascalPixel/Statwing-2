@@ -363,9 +363,6 @@
 		z-index: 1000;
 		position: relative;
 	}
-	p, .serif {
-		font-family: 'Whitney', Georgia, 'Times New Roman', Times, serif;
-	}
 	p {
 		font-size: 16px;
 		line-height: 150%;
@@ -832,7 +829,7 @@
 					<h4 class="intro center">Just upload your spreadsheet or dataset, then select the data you want to learn about.</h4>
 					<div class="row row-padding animation">
 						<div class="col-sm-3 line-double">
-							<button type="button" class="btn btn-block compareBtn1">
+							<button type="button" class="btn btn-compare btn-block compareBtn1">
 								<span class="pull-left">
 									Gender
 								</span>
@@ -840,7 +837,7 @@
 									femaleuser
 								</i>
 							</button>
-							<button type="button" class="btn btn-block compareBtn2">
+							<button type="button" class="btn btn-compare btn-block compareBtn2">
 								<span class="pull-left">
 									Age
 								</span>
@@ -848,7 +845,7 @@
 									piechart
 								</i>
 							</button>
-							<button type="button" class="btn btn-block compareBtn3">
+							<button type="button" class="btn btn-compare btn-block compareBtn3">
 								<span class="pull-left">
 									Satisfaction
 								</span>
@@ -856,7 +853,7 @@
 									scatterchart
 								</i>
 							</button>
-							<button type="button" class="btn btn-block compareBtn4">							
+							<button type="button" class="btn btn-compare btn-block compareBtn4">							
 								<span class="pull-left">
 									Engagement
 								</span>
@@ -867,19 +864,28 @@
 						</div>
 						<div class="col-sm-1 line-merge"></div>
 						<div class="col-sm-3 line-single">
-							<button type="button" class="btn btn-success btn-block btn-lg relate" style="margin-top:55px;padding:14px 0 31px;">Relate <i class="ss-icon">merge</i></button>
+							<button type="button" class="btn btn-success btn-block btn-lg btn-relate" style="margin-top:55px;padding:14px 0 31px;">Relate <i class="ss-icon">merge</i></button>
 						</div>
 						<div class="col-sm-1 line-arrow"></div>
 						<div class="col-sm-4">
 							<div class="card" style="min-height:140px;">
 								<h4>
-									<span class="compare4">
+									<span class="compare1 compare-result">
 										<span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span>
 									</span>
-									<span class="compare5">
+									<span class="compare2 compare-result">
 										<span class="var_name">Age</span> is positively correlated with <span class="var_name">Satisfaction</span>
 									</span>
-									<span class="compare6">
+									<span class="compare3 compare-result">
+										There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Engagement</span>
+									</span>
+									<span class="compare4 compare-result">
+										<span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span>
+									</span>
+									<span class="compare5 compare-result">
+										<span class="var_name">Age</span> is positively correlated with <span class="var_name">Satisfaction</span>
+									</span>
+									<span class="compare6 compare-result">
 										There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Engagement</span>
 									</span>
 								</h4>
@@ -1269,9 +1275,9 @@
 			$('.compareBtn1').addClass('active');
 			$('.compareBtn3').addClass('active');
 			window.setTimeout(function(){
-				$('.relate').addClass('active');
+				$('.btn-relate').addClass('active');
 				window.setTimeout(function(){
-					$('.relate').removeClass('active');
+					$('.btn-relate').removeClass('active');
 					$('.compare4').animate({ opacity: 1 }, 'slow');
 					window.setTimeout(function(){
 						$('.compare4').animate({ opacity: 0 }, 'slow');
@@ -1280,9 +1286,9 @@
 						window.setTimeout(function(){
 							$('.compare2').animate({ opacity: 1 }, 'slow');
 							window.setTimeout(function(){
-								$('.relate').addClass('active');
+								$('.btn-relate').addClass('active');
 								window.setTimeout(function(){
-									$('.relate').removeClass('active');
+									$('.btn-relate').removeClass('active');
 									$('.compare5').animate({ opacity: 1 }, 'slow');
 									window.setTimeout(function(){
 										$('.compare5').animate({ opacity: 0 }, 'slow');
@@ -1290,9 +1296,9 @@
 										window.setTimeout(function(){
 											$('.compare3').animate({ opacity: 1 }, 'slow');
 											window.setTimeout(function(){
-												$('.relate').addClass('active');
+												$('.btn-relate').addClass('active');
 												window.setTimeout(function(){
-													$('.relate').removeClass('active');
+													$('.btn-relate').removeClass('active');
 													$('.compare6').animate({ opacity: 1 }, 'slow');
 													window.setTimeout(function(){
 														$('.compare6').animate({ opacity: 0 }, 'slow');
@@ -1314,7 +1320,47 @@
 		};
 		
 		$(document).ready(function() {
-			loopCompare();
+			/* loopCompare(); */
+
+			//The array that will always hold the two most recent selected buttons
+			var activeBtns = [];
+			$('.btn-compare').bind('click', function() {
+				var $btn = $(this);
+				//1. Hide the messages on the right box
+				$('.compare-result').animate({ opacity: 0 }, 'slow');
+				//2. Push in the array if button is pushed
+				if ( !$btn.hasClass('active') ) {
+					activeBtns.push( $btn ); //add clicked elem to array
+					if ( activeBtns.length > 2  ) { //population control :)
+						activeBtns.shift();
+					}
+				} else {
+					activeBtns = $.grep(activeBtns, function(elem, index) {
+			      return elem.attr('class') !== $btn.attr('class'); //remove clicked element from the array. I compare classes as they provide a clean result, ojects don't work
+			    });
+				}
+				//3. Run the show/hide buttons mambo jumbo
+				$('.btn-compare').removeClass('active');
+				for ( x in activeBtns ) {
+					activeBtns[x].addClass('active');
+				}
+
+	    });
+	    $('.btn-relate').bind('click', function() {
+       	if($('.compareBtn1').hasClass('active') || $('.compareBtn2').hasClass('active')) {
+        	$('.compare1').animate({ opacity: 1 }, 'slow');
+        } else if($('.compareBtn1').hasClass('active') || $('.compareBtn3').hasClass('active')) {
+        	$('.compare2').animate({ opacity: 1 }, 'slow');
+        } else if($('.compareBtn1').hasClass('active') || $('.compareBtn4').hasClass('active')) {
+        	$('.compare3').animate({ opacity: 1 }, 'slow');
+        } else if($('.compareBtn2').hasClass('active') || $('.compareBtn3').hasClass('active')) {
+        	$('.compare4').animate({ opacity: 1 }, 'slow');
+        } else if($('.compareBtn2').hasClass('active') || $('.compareBtn4').hasClass('active')) {
+        	$('.compare5').animate({ opacity: 1 }, 'slow');
+        } else if($('.compareBtn3').hasClass('active') || $('.compareBtn4').hasClass('active')) {
+        	$('.compare6').animate({ opacity: 1 }, 'slow');
+        }
+	    });
 			$('.help-popover').popover({trigger:"hover"});
 		});
 	</script>
