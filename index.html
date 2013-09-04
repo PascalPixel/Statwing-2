@@ -145,12 +145,15 @@
 		color: #33a0d3;
 	}
 	.card-top {
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 0px;
-		padding: 8px 6px;
-		width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding: 8px 6px;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 70px;
 	}
 	.card .btn {
 		padding: 7px 10px 2px;
@@ -159,7 +162,7 @@
 		background: #f7fafa;
 		border-top:1px solid #b5b4ae;
 		border-bottom:1px solid #b5b4ae;
-		padding-top: 50px;
+		padding-top: 460px;
 		padding-bottom: 50px;
 		box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 		z-index: 0;
@@ -356,12 +359,16 @@
 	}
 	.bottom {
 		position: absolute;
-		bottom: -320px;
+		bottom: -340px;
 	}
-	.hero {
-		min-height: 400px;
-		z-index: 1000;
-		position: relative;
+	#hero {
+	height: 450px;
+	z-index: 10000;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #e7f3f6;
+	overflow: hidden;
 	}
 	p {
 		font-size: 16px;
@@ -372,9 +379,7 @@
 		border-radius: 7px;
 		background-color: white;
 		box-shadow: 0px 3px 5px rgba(0,0,0,0.14);
-		min-height: 439px;
-		margin-bottom: -70px;
-		z-index: -1000;
+		min-height: 415px;
 		position: relative;
 	}
 	.browser-toolbar {
@@ -424,302 +429,303 @@
 	.browser-content {
 		padding: 20px;
 	}
-	</style>
-	<style>
-	.chart {
-	z-index: -2000;
-	height: 200px;
-	margin-top: -200px;
-	width: 100%;
-	padding-left: 3%;
-	overflow: hidden;
-	}
-	.chart .bar-wrap {
+	.bar-wrap {
 	position: relative;
 	height: 200px;
 	width: 2.3%;
 	float: left;
 	margin-right: 1%;
 	}
-	.chart .bar-wrap:last-child {
+	.chart .bar-wrap {
+	position: relative;
+	width: 5.5%;
+	height: 100%;
+	margin-right: 1%;
+	}
+	.chart {
+	width: 100%;
+	height: 100px;
+	margin: 80px 0 20px;
+	padding-left: 20px;
+	}
+	.bar-wrap:last-child {
 	margin-right: 0%;
 	}
-	.chart .bar	{
+	.bar	{
 	position: absolute;
 	bottom:0;
 	width: 100%;
-	height: 200px;
 	background-color: #d3eaf1;
 	}
 	@keyframes barchart1 {
-	0%   {height:200px;}
-	25%  {height:190px;}
-	50%  {height:100px;}
-	75%  {height:50px;}
-	100% {height:200px;}
-	}
-	@-webkit-keyframes barchart1 {
-	0%   {height:200px;}
-	25%  {height:190px;}
-	50%  {height:100px;}
-	75%  {height:50px;}
-	100% {height:200px;}
+	0%   {height:100%;}
+	25%  {height:100%;}
+	50%  {height:10%;}
+	75%  {height:10%;}
+	100% {height:100%;}
 	}
 	@keyframes barchart2 {
-	0%   {height:180px;}
-	25%  {height:130px;}
-	50%  {height:90px;}
-	75%  {height:40px;}
-	100% {height:180px;}
-	}
-	@-webkit-keyframes barchart2 {
-	0%   {height:180px;}
-	25%  {height:130px;}
-	50%  {height:90px;}
-	75%  {height:40px;}
-	100% {height:180px;}
+	0%   {height:70%;}
+	25%  {height:80%;}
+	50%  {height:12%;}
+	75%  {height:30%;}
+	100% {height:70%;}
 	}
 	@keyframes barchart3 {
-	0%   {height:160px;}
-	25%  {height:100px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:160px;}
-	}
-	@-webkit-keyframes barchart3 {
-	0%   {height:160px;}
-	25%  {height:100px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:160px;}
+	0%   {height:50%;}
+	25%  {height:60%;}
+	50%  {height:13%;}
+	75%  {height:50%;}
+	100% {height:50%;}
 	}
 	@keyframes barchart4 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart4 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
+	0%   {height:40%;}
+	25%  {height:50%;}
+	50%  {height:15%;}
+	75%  {height:70%;}
+	100% {height:40%;}
 	}
 	@keyframes barchart5 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:100px;}
-	75%  {height:80px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart5 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:100px;}
-	75%  {height:80px;}
-	100% {height:150px;}
+	0%   {height:30%;}
+	25%  {height:40%;}
+	50%  {height:16%;}
+	75%  {height:80%;}
+	100% {height:30%;}
 	}
 	@keyframes barchart6 {
-	0%   {height:40px;}
-	25%  {height:150px;}
-	50%  {height:120px;}
-	75%  {height:80px;}
-	100% {height:40px;}
-	}
-	@-webkit-keyframes barchart6 {
-	0%   {height:40px;}
-	25%  {height:150px;}
-	50%  {height:120px;}
-	75%  {height:80px;}
-	100% {height:40px;}
+	0%   {height:20%;}
+	25%  {height:30%;}
+	50%  {height:17%;}
+	75%  {height:90%;}
+	100% {height:20%;}
 	}
 	@keyframes barchart7 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart7 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:150px;}
+	0%   {height:10%;}
+	25%  {height:25%;}
+	50%  {height:19%;}
+	75%  {height:95%;}
+	100% {height:10%;}
 	}
 	@keyframes barchart8 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart8 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
+	0%   {height:10%;}
+	25%  {height:20%;}
+	50%  {height:20%;}
+	75%  {height:100%;}
+	100% {height:10%;}
 	}
 	@keyframes barchart9 {
-	0%   {height:150px;}
-	25%  {height:200px;}
-	50%  {height:100px;}
-	75%  {height:200px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart9 {
-	0%   {height:150px;}
-	25%  {height:200px;}
-	50%  {height:100px;}
-	75%  {height:200px;}
-	100% {height:150px;}
+	0%   {height:10%;}
+	25%  {height:19%;}
+	50%  {height:25%;}
+	75%  {height:95%;}
+	100% {height:10%;}
 	}
 	@keyframes barchart10 {
-	0%   {height:40px;}
-	25%  {height:150px;}
-	50%  {height:120px;}
-	75%  {height:80px;}
-	100% {height:40px;}
-	}
-	@-webkit-keyframes barchart10 {
-	0%   {height:40px;}
-	25%  {height:150px;}
-	50%  {height:120px;}
-	75%  {height:80px;}
-	100% {height:40px;}
+	0%   {height:20%;}
+	25%  {height:17%;}
+	50%  {height:30%;}
+	75%  {height:90%;}
+	100% {height:20%;}
 	}
 	@keyframes barchart11 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart11 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:150px;}
+	0%   {height:30%;}
+	25%  {height:16%;}
+	50%  {height:40%;}
+	75%  {height:80%;}
+	100% {height:30%;}
 	}
 	@keyframes barchart12 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart12 {
-	0%   {height:150px;}
-	25%  {height:80px;}
-	50%  {height:140px;}
-	75%  {height:40px;}
-	100% {height:150px;}
+	0%   {height:40%;}
+	25%  {height:15%;}
+	50%  {height:50%;}
+	75%  {height:70%;}
+	100% {height:40%;}
 	}
 	@keyframes barchart13 {
-	0%   {height:150px;}
-	25%  {height:200px;}
-	50%  {height:100px;}
-	75%  {height:200px;}
-	100% {height:150px;}
-	}
-	@-webkit-keyframes barchart13 {
-	0%   {height:150px;}
-	25%  {height:200px;}
-	50%  {height:100px;}
-	75%  {height:200px;}
-	100% {height:150px;}
+	0%   {height:50%;}
+	25%  {height:13%;}
+	50%  {height:60%;}
+	75%  {height:50%;}
+	100% {height:50%;}
 	}
 	@keyframes barchart14 {
-	0%   {height:40px;}
-	25%  {height:150px;}
-	50%  {height:120px;}
-	75%  {height:80px;}
-	100% {height:40px;}
-	}
-	@-webkit-keyframes barchart14 {
-	0%   {height:40px;}
-	25%  {height:150px;}
-	50%  {height:120px;}
-	75%  {height:80px;}
-	100% {height:40px;}
+	0%   {height:70%;}
+	25%  {height:12%;}
+	50%  {height:80%;}
+	75%  {height:30%;}
+	100% {height:70%;}
 	}
 	@keyframes barchart15 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:150px;}
+	0%   {height:100%;}
+	25%  {height:10%;}
+	50%  {height:100%;}
+	75%  {height:10%;}
+	100% {height:100%;}
+	}
+	@-webkit-keyframes barchart1 {
+	0%   {height:100%;}
+	25%  {height:100%;}
+	50%  {height:10%;}
+	75%  {height:10%;}
+	100% {height:100%;}
+	}
+	@-webkit-keyframes barchart2 {
+	0%   {height:70%;}
+	25%  {height:80%;}
+	50%  {height:12%;}
+	75%  {height:30%;}
+	100% {height:70%;}
+	}
+	@-webkit-keyframes barchart3 {
+	0%   {height:50%;}
+	25%  {height:60%;}
+	50%  {height:13%;}
+	75%  {height:50%;}
+	100% {height:50%;}
+	}
+	@-webkit-keyframes barchart4 {
+	0%   {height:40%;}
+	25%  {height:50%;}
+	50%  {height:15%;}
+	75%  {height:70%;}
+	100% {height:40%;}
+	}
+	@-webkit-keyframes barchart5 {
+	0%   {height:30%;}
+	25%  {height:40%;}
+	50%  {height:16%;}
+	75%  {height:80%;}
+	100% {height:30%;}
+	}
+	@-webkit-keyframes barchart6 {
+	0%   {height:20%;}
+	25%  {height:30%;}
+	50%  {height:17%;}
+	75%  {height:90%;}
+	100% {height:20%;}
+	}
+	@-webkit-keyframes barchart7 {
+	0%   {height:10%;}
+	25%  {height:25%;}
+	50%  {height:19%;}
+	75%  {height:95%;}
+	100% {height:10%;}
+	}
+	@-webkit-keyframes barchart8 {
+	0%   {height:10%;}
+	25%  {height:20%;}
+	50%  {height:20%;}
+	75%  {height:100%;}
+	100% {height:10%;}
+	}
+	@-webkit-keyframes barchart9 {
+	0%   {height:10%;}
+	25%  {height:19%;}
+	50%  {height:25%;}
+	75%  {height:95%;}
+	100% {height:10%;}
+	}
+	@-webkit-keyframes barchart10 {
+	0%   {height:20%;}
+	25%  {height:17%;}
+	50%  {height:30%;}
+	75%  {height:90%;}
+	100% {height:20%;}
+	}
+	@-webkit-keyframes barchart11 {
+	0%   {height:30%;}
+	25%  {height:16%;}
+	50%  {height:40%;}
+	75%  {height:80%;}
+	100% {height:30%;}
+	}
+	@-webkit-keyframes barchart12 {
+	0%   {height:40%;}
+	25%  {height:15%;}
+	50%  {height:50%;}
+	75%  {height:70%;}
+	100% {height:40%;}
+	}
+	@-webkit-keyframes barchart13 {
+	0%   {height:50%;}
+	25%  {height:13%;}
+	50%  {height:60%;}
+	75%  {height:50%;}
+	100% {height:50%;}
+	}
+	@-webkit-keyframes barchart14 {
+	0%   {height:70%;}
+	25%  {height:12%;}
+	50%  {height:80%;}
+	75%  {height:30%;}
+	100% {height:70%;}
 	}
 	@-webkit-keyframes barchart15 {
-	0%   {height:150px;}
-	25%  {height:50px;}
-	50%  {height:70px;}
-	75%  {height:130px;}
-	100% {height:150px;}
+	0%   {height:100%;}
+	25%  {height:10%;}
+	50%  {height:100%;}
+	75%  {height:10%;}
+	100% {height:100%;}
 	}
-	.chart .bar-1 {
-	animation:barchart1 5s infinite;
-	-webkit-animation:barchart1 5s infinite;
+	.bar-1 {
+	animation:barchart1 10s infinite;
+	-webkit-animation:barchart1 10s infinite;
 	}
-	.chart .bar-2 {
-	animation:barchart2 5s infinite;
-	-webkit-animation:barchart2 5s infinite;
+	.bar-2 {
+	animation:barchart2 10s infinite;
+	-webkit-animation:barchart2 10s infinite;
 	}
-	.chart .bar-3 {
-	animation:barchart3 5s infinite;
-	-webkit-animation:barchart3 5s infinite;
+	.bar-3 {
+	animation:barchart3 10s infinite;
+	-webkit-animation:barchart3 10s infinite;
 	}
-	.chart .bar-4 {
-	animation:barchart4 5s infinite;
-	-webkit-animation:barchart4 5s infinite;
+	.bar-4 {
+	animation:barchart4 10s infinite;
+	-webkit-animation:barchart4 10s infinite;
 	}
-	.chart .bar-5 {
-	animation:barchart5 5s infinite;
-	-webkit-animation:barchart5 5s infinite;
+	.bar-5 {
+	animation:barchart5 10s infinite;
+	-webkit-animation:barchart5 10s infinite;
 	}
-	.chart .bar-6 {
-	animation:barchart6 5s infinite;
-	-webkit-animation:barchart6 5s infinite;
+	.bar-6 {
+	animation:barchart6 10s infinite;
+	-webkit-animation:barchart6 10s infinite;
 	}
-	.chart .bar-7 {
-	animation:barchart7 5s infinite;
-	-webkit-animation:barchart7 5s infinite;
+	.bar-7 {
+	animation:barchart7 10s infinite;
+	-webkit-animation:barchart7 10s infinite;
 	}
-	.chart .bar-8 {
-	animation:barchart8 5s infinite;
-	-webkit-animation:barchart8 5s infinite;
+	.bar-8 {
+	animation:barchart8 10s infinite;
+	-webkit-animation:barchart8 10s infinite;
 	}
-	.chart .bar-9 {
-	animation:barchart9 5s infinite;
-	-webkit-animation:barchart9 5s infinite;
+	.bar-9 {
+	animation:barchart9 10s infinite;
+	-webkit-animation:barchart9 10s infinite;
 	}
-	.chart .bar-10 {
-	animation:barchart10 5s infinite;
-	-webkit-animation:barchart10 5s infinite;
+	.bar-10 {
+	animation:barchart10 10s infinite;
+	-webkit-animation:barchart10 10s infinite;
 	}
-	.chart .bar-11 {
-	animation:barchart11 5s infinite;
-	-webkit-animation:barchart11 5s infinite;
+	.bar-11 {
+	animation:barchart11 10s infinite;
+	-webkit-animation:barchart11 10s infinite;
 	}
-	.chart .bar-12 {
-	animation:barchart12 5s infinite;
-	-webkit-animation:barchart12 5s infinite;
+	.bar-12 {
+	animation:barchart12 10s infinite;
+	-webkit-animation:barchart12 10s infinite;
 	}
-	.chart .bar-13 {
-	animation:barchart13 5s infinite;
-	-webkit-animation:barchart13 5s infinite;
+	.bar-13 {
+	animation:barchart13 10s infinite;
+	-webkit-animation:barchart13 10s infinite;
 	}
-	.chart .bar-14 {
-	animation:barchart14 5s infinite;
-	-webkit-animation:barchart14 5s infinite;
+	.bar-14 {
+	animation:barchart14 10s infinite;
+	-webkit-animation:barchart14 10s infinite;
 	}
-	.chart .bar-15 {
-	animation:barchart15 5s infinite;
-	-webkit-animation:barchart15 5s infinite;
+	.bar-15 {
+	animation:barchart15 10s infinite;
+	-webkit-animation:barchart15 10s infinite;
 	}
 	</style>
 </head>
@@ -733,21 +739,20 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="btn btn-primary" style="margin-top: 8px;margin-right:10px;"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
 		</div>
 		<div class="navbar-collapse collapse" id="scrollspy">
 			<ul class="nav navbar-nav hidden-sm">
 				<li class="active">
+					<a href="#hero" style="font-weight:bold;text-transform:uppercase;"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
+				</li>
+				<li>
 					<a href="#howitworks"><em class="ss-icon">merge</em> How it works</a>
 				</li>
 				<li>
-					<a href="#press"><em class="ss-icon">news</em> Press</a>
+					<a href="#usecases"><em class="ss-icon">user</em> Examples of use</a>
 				</li>
 				<li>
 					<a href="#pricing"><em class="ss-icon">cash</em> Pricing</a>
-				</li>
-				<li>
-					<a href="#contact"><em class="ss-icon">send</em> Contact</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -761,12 +766,45 @@
 		</div><!--/.nav-collapse -->
 	</nav>
 <!-- HERO -->
-	<div class="animated fadeInUp hero">
+	<div id="hero" class="animated fadeInUp">
+		<div class="row">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="scrollspy">
+				<ul class="nav navbar-nav hidden-sm">
+					<li class="active">
+						<a href="#hero" style="font-weight:bold;text-transform:uppercase;"><img src="img/statwing_logo_small.png" style="width:20px;margin-top:-5px;"> Statwing</a>
+					</li>
+					<li>
+						<a href="#howitworks"><em class="ss-icon">merge</em> How it works</a>
+					</li>
+					<li>
+						<a href="#usecases"><em class="ss-icon">user</em> Examples of use</a>
+					</li>
+					<li>
+						<a href="#pricing"><em class="ss-icon">cash</em> Pricing</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<a class="btn btn-primary" href="blog.html"><em class="ss-icon">list</em> Blog</a>
+					<a class="btn btn-primary" href="blog.html"><em class="ss-icon">work</em> Jobs</a>
+					<div class="btn-group">
+						<a class="btn navbar-btn btn-primary" href="#"><em class="ss-icon">user</em> Sign In</a> <a class="btn navbar-btn btn-primary" href="#"><em class="ss-icon">form</em> Sign Up</a>
+					</div>
+					<a class="btn btn-success" href="blog.html"><em class="ss-icon">play</em> try demo</a>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
 		<div class="row row-padding" style="margin-left:0;margin-right:0;">
 			<div class="col-sm-5 col-sm-offset-1">
 				<div class="bottom">
 					<h1 style="font-size:26px;text-transform:uppercase;color:#33a0d3;">Modern Data Analysis Software</h1>
-					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software,<br> in an intuitive interface.</h3>
+					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software, in an intuitive interface.</h3>
 				</div>
 			</div>
 			<div class="col-sm-5">
@@ -809,45 +847,32 @@
 									</span>
 								</div>
 	 						</div>
-							<h4><span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span></h4>
+							<div class="chart">
+								<div class="bar-wrap"><div class="bar bar-1"></div></div>
+								<div class="bar-wrap"><div class="bar bar-2"></div></div>
+								<div class="bar-wrap"><div class="bar bar-3"></div></div>
+								<div class="bar-wrap"><div class="bar bar-4"></div></div>
+								<div class="bar-wrap"><div class="bar bar-5"></div></div>
+								<div class="bar-wrap"><div class="bar bar-6"></div></div>
+								<div class="bar-wrap"><div class="bar bar-7"></div></div>
+								<div class="bar-wrap"><div class="bar bar-8"></div></div>
+								<div class="bar-wrap"><div class="bar bar-9"></div></div>
+								<div class="bar-wrap"><div class="bar bar-10"></div></div>
+								<div class="bar-wrap"><div class="bar bar-11"></div></div>
+								<div class="bar-wrap"><div class="bar bar-12"></div></div>
+								<div class="bar-wrap"><div class="bar bar-13"></div></div>
+								<div class="bar-wrap"><div class="bar bar-14"></div></div>
+								<div class="bar-wrap"><div class="bar bar-15"></div></div>
+							</div>
+	 					</div>
+	 					<div class="center" style="bottom:40px;position:absolute;right:20px;left:20px;">
+	 					<button type="button" class="btn btn-success btn-block btn-lg btn-relate" style="height:60px;font-size:20px;"><i class="ss-icon">layout</i> Try the demo</button>
+	 					<small>(No sign up required)</small>
 	 					</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- HERO BARS -->
-	<div class="chart animated delay2 fadeInUp">
-		<div class="bar-wrap"><div class="bar bar-1"></div></div>
-		<div class="bar-wrap"><div class="bar bar-2"></div></div>
-		<div class="bar-wrap"><div class="bar bar-3"></div></div>
-		<div class="bar-wrap"><div class="bar bar-4"></div></div>
-		<div class="bar-wrap"><div class="bar bar-5"></div></div>
-		<div class="bar-wrap"><div class="bar bar-6"></div></div>
-		<div class="bar-wrap"><div class="bar bar-7"></div></div>
-		<div class="bar-wrap"><div class="bar bar-8"></div></div>
-		<div class="bar-wrap"><div class="bar bar-9"></div></div>
-		<div class="bar-wrap"><div class="bar bar-10"></div></div>
-		<div class="bar-wrap"><div class="bar bar-11"></div></div>
-		<div class="bar-wrap"><div class="bar bar-12"></div></div>
-		<div class="bar-wrap"><div class="bar bar-13"></div></div>
-		<div class="bar-wrap"><div class="bar bar-14"></div></div>
-		<div class="bar-wrap"><div class="bar bar-15"></div></div>
-		<div class="bar-wrap"><div class="bar bar-1"></div></div>
-		<div class="bar-wrap"><div class="bar bar-2"></div></div>
-		<div class="bar-wrap"><div class="bar bar-3"></div></div>
-		<div class="bar-wrap"><div class="bar bar-4"></div></div>
-		<div class="bar-wrap"><div class="bar bar-5"></div></div>
-		<div class="bar-wrap"><div class="bar bar-6"></div></div>
-		<div class="bar-wrap"><div class="bar bar-7"></div></div>
-		<div class="bar-wrap"><div class="bar bar-8"></div></div>
-		<div class="bar-wrap"><div class="bar bar-9"></div></div>
-		<div class="bar-wrap"><div class="bar bar-10"></div></div>
-		<div class="bar-wrap"><div class="bar bar-11"></div></div>
-		<div class="bar-wrap"><div class="bar bar-12"></div></div>
-		<div class="bar-wrap"><div class="bar bar-13"></div></div>
-		<div class="bar-wrap"><div class="bar bar-14"></div></div>
-		<div class="bar-wrap"><div class="bar bar-15"></div></div>
 	</div>
 <!-- MAIN AREA -->
 	<div class="wrap animated delay2 fadeInUp">
@@ -858,7 +883,7 @@
 					<h4 class="intro center">Just upload your spreadsheet or dataset, then select the data you want to learn about.</h4>
 					<div class="row row-padding animation">
 						<div class="col-sm-3 line-double">
-							<button type="button" class="btn btn-compare btn-block compareBtn1">
+							<button id="compareBtn1" type="button" class="btn btn-compare btn-block">
 								<span class="pull-left">
 									Gender
 								</span>
@@ -866,7 +891,7 @@
 									femaleuser
 								</i>
 							</button>
-							<button type="button" class="btn btn-compare btn-block compareBtn2">
+							<button id="compareBtn2" type="button" class="btn btn-compare btn-block">
 								<span class="pull-left">
 									Age
 								</span>
@@ -874,7 +899,7 @@
 									piechart
 								</i>
 							</button>
-							<button type="button" class="btn btn-compare btn-block compareBtn3">
+							<button id="compareBtn3" type="button" class="btn btn-compare btn-block">
 								<span class="pull-left">
 									Satisfaction
 								</span>
@@ -882,7 +907,7 @@
 									scatterchart
 								</i>
 							</button>
-							<button type="button" class="btn btn-compare btn-block compareBtn4">							
+							<button id="compareBtn4" type="button" class="btn btn-compare btn-block">							
 								<span class="pull-left">
 									Engagement
 								</span>
@@ -893,29 +918,29 @@
 						</div>
 						<div class="col-sm-1 line-merge"></div>
 						<div class="col-sm-3 line-single">
-							<button type="button" class="btn btn-success btn-block btn-lg btn-relate" style="margin-top:55px;padding:14px 0 31px;">Relate <i class="ss-icon">merge</i></button>
+							<button type="button" class="btn btn-primary btn-block btn-lg btn-relate" style="margin-top:55px;padding:14px 0 31px;">Relate <i class="ss-icon">merge</i></button>
 						</div>
 						<div class="col-sm-1 line-arrow"></div>
 						<div class="col-sm-4">
-							<div class="card" style="min-height:140px;">
+							<div class="card" style="min-height:200px;">
 								<h4>
 									<span class="compare1 compare-result">
-										<span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span>
+										There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span>
 									</span>
 									<span class="compare2 compare-result">
-										<span class="var_name">Age</span> is positively correlated with <span class="var_name">Satisfaction</span>
-									</span>
-									<span class="compare3 compare-result">
-										There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Engagement</span>
-									</span>
-									<span class="compare4 compare-result">
 										<span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span>
 									</span>
+									<span class="compare3 compare-result">
+										<span class="var_name">Males</span> tend to have slightly higher values for <span class="var_name">Engagement</span> than <span class="var_name">Females</span>
+									</span>
+									<span class="compare4 compare-result">
+										<span class="var_name">Age</span> is weakly positively correlated with <span class="var_name">Satisfaction</span>
+									</span>
 									<span class="compare5 compare-result">
-										<span class="var_name">Age</span> is positively correlated with <span class="var_name">Satisfaction</span>
+										<span class="var_name">Age</span> is strongly negatively correlated with <span class="var_name">Engagement</span>
 									</span>
 									<span class="compare6 compare-result">
-										There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Engagement</span>
+										There is a statistically significant relationship between <span class="var_name">Satisfaction</span> and <span class="var_name">Engagement</span>
 									</span>
 								</h4>
 							</div>
@@ -1011,9 +1036,9 @@
 			</div>
 <!-- USECASES -->
 			<hr>
-			<div class="row center row-padding-small" id="press">
+			<div class="row center row-padding-small" id="usecases">
 				<div class="col-sm-12">
-					<h2>What can Statwing do for you?</h2>
+					<h2>Examples of use</h2>
 				</div>
 			</div>
 			<div class="row row-padding-small usecases">
@@ -1021,10 +1046,19 @@
 					<div class="box">
 						<h4 class="box-header top-blue">Surveys <i class="ss-icon pull-right">form</i></h4>
 						<p class="intrograph">Understand the results of your survey in minutes instead of hours</p>
-						<p>Analyze and visualize answers to questions like “Is there a correlation between my customers' age and their satisfaction?” or “What if I filter that analysis by gender?”</p>
+						<p>Analyze and visualize answers to questions like "Is there a correlation between my customers' age and their satisfaction?" or "What if I filter that analysis by gender?"</p>
 						<p>Use Statwing when you want to go beyond the basic reporting tools of survey providers but you don't want to waste time learning expert statistical tools or shuffling data around in Excel.</p>
 						<p>Then share a link with clients or colleagues so they can see your analyses and run more of their own.</p>
-						<h5 class="box-footer">Results from a survey of 10,000 software developers <a href="#" class="btn btn-primary btn-xs pull-right" style="margin-top:-4px;">TRY THIS EXAMPLE</a></h5>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-md-8">
+									<b>Results from a survey of 10,000 software developers</b>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1033,8 +1067,17 @@
 						<p class="intrograph">Ask deep questions about your users, their behavior, and the results of your marketing efforts</p>
 						<p>Marketing tools give you the ability to ask a few standard questions about your data. But if you want to dive deep or mix data from multiple sources, you'll need to pull the data out and do your own analysis in a tool like Statwing.</p>
 						<p>Marketing analysts use Statwing to ask questions like, “Is there a correlation between customer demographics and customer engagement?” or “Which of my marketing efforts had the best performance?”</p>
-						<h5 class="box-footer">Results of combining email marketing 
-data with website behavioral data <a href="#" class="btn btn-primary btn-xs pull-right" style="margin-top:-4px;">TRY THIS EXAMPLE</a></h5>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-md-8">
+									<b>Results of combining email marketing 
+data with website behavioral data</b>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1043,7 +1086,16 @@ data with website behavioral data <a href="#" class="btn btn-primary btn-xs pull
 						<p class="intrograph">Statistically analyze your quantified self data to understand if the trends and patterns you see are actually real</p>
 						<p>It's easy to look at quantified self data and see patterns where there are none. Statwing provides objective analyses of relationships in your data.</p>
 						<p>Quantified Self devotees have used Statwing to ask questions like, “Am I happier when I walk more?” or “Am I more likely to work out when I wake up earlier?”</p>
-						<h5 class="box-footer">One man's quantified self dataset <a href="#" class="btn btn-primary btn-xs pull-right" style="margin-top:-4px;">TRY THIS EXAMPLE</a></h5>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-md-8">
+									<b>One man's quantified self dataset</b>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1055,7 +1107,16 @@ data with website behavioral data <a href="#" class="btn btn-primary btn-xs pull
 						<p>Identify patterns and trends in the data without having to dive deep into statistical terminology.</p>
 						<p>Create publishable visualizations in just a couple clicks.</p>
 						<p>Statwing analyses and visualizations have been used at <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Guardian</a> and <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Motley Fool</a>, among others.
-						<h5 class="box-footer">Congressional lobbying and the SOPA/PIPA bill <a href="#" class="btn btn-primary btn-xs pull-right" style="margin-top:-4px;">TRY THIS EXAMPLE</a></h5>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-md-8">
+									<b>Congressional lobbying and the SOPA/PIPA bill</b>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1064,7 +1125,16 @@ data with website behavioral data <a href="#" class="btn btn-primary btn-xs pull
 						<p class="intrograph">Statwing makes sure you're using the correct statistical tests, protecting your analyses against common mistakes</p>
 						<p>Statwing automatically detects outliers or too-small sample sizes, then alerts you to the issue.</p>
 						<p>Unlike any other statistical software, Statwing automatically reports effect sizes, not just p-values.</p>
-						<h5 class="box-footer">Psychological Survey Results <a href="#" class="btn btn-primary btn-xs pull-right" style="margin-top:-4px;">TRY THIS EXAMPLE</a></h5>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-md-8">
+									<b>Psychological Survey Results</b>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -1072,7 +1142,16 @@ data with website behavioral data <a href="#" class="btn btn-primary btn-xs pull
 						<h4 class="box-header top-blue">Curiosity <i class="ss-icon pull-right">like</i></h4>
 						<p class="intrograph">Statwing's ease of use lets you concentrate on having fun exploring data, not worrying about the logistics of using your data analysis tool</p>
 						<p>Find fun datasets from around the web and pop them into Statwing to get instant visualizations</p>
-						<h5 class="box-footer">Titanic Passenger List <a href="#" class="btn btn-primary btn-xs pull-right" style="margin-top:-4px;">TRY THIS EXAMPLE</a></h5>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-md-8">
+									<b>Titanic Passenger List</b>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1276,106 +1355,137 @@ data with website behavioral data <a href="#" class="btn btn-primary btn-xs pull
 	<!-- Demo's animation -->
 	<script type="text/javascript">
 	
-		var loopCompare = function () {
-			$('.compareBtn1').addClass('active');
-			$('.compareBtn3').addClass('active');
-			$('.line-double').css("background-image", "url(img/line-double_1.png)");
-			window.setTimeout(function(){
-				$('.btn-relate').addClass('active');
-				window.setTimeout(function(){
-					$('.btn-relate').removeClass('active');
-					$('.compare1').animate({ opacity: 1 }, 'slow');
-					window.setTimeout(function(){
-						$('.compare1').animate({ opacity: 0 }, 'slow');
-						$('.compareBtn1').removeClass('active');
-						$('.compareBtn2').addClass('active');
-						$('.line-double').css("background-image", "url(img/line-double_2.png)");
-						window.setTimeout(function(){
-							$('.btn-relate').addClass('active');
-							window.setTimeout(function(){
-								$('.btn-relate').removeClass('active');
-								$('.compare2').animate({ opacity: 1 }, 'slow');
-								window.setTimeout(function(){
-									$('.compare2').animate({ opacity: 0 }, 'slow');
-									$('.compareBtn2').removeClass('active');
-									$('.compareBtn3').removeClass('active');
-									$('.compareBtn1').addClass('active');
-									$('.compareBtn4').addClass('active');
-									$('.line-double').css("background-image", "url(img/line-double_3.png)");
-									window.setTimeout(function(){
-										$('.btn-relate').addClass('active');
-										window.setTimeout(function(){
-											$('.btn-relate').removeClass('active');
-											$('.compare2').animate({ opacity: 1 }, 'slow');
-											window.setTimeout(function(){
-												$('.compare2').animate({ opacity: 0 }, 'slow');
-												$('.compareBtn2').removeClass('active');
-												$('.compareBtn3').removeClass('active');
-												$('.compareBtn1').addClass('active');
-												$('.compareBtn4').addClass('active');
-												$('.line-double').css("background-image", "url(img/line-double_3.png)");
-												window.setTimeout(function(){
-													$('.compareBtn1').removeClass('active');
-													$('.compareBtn4').removeClass('active');
-													window.setTimeout(function(){
-														loopCompare();
-													},1000);
-												},1000);
-											},1000);
-										},1000);
-									},1000);
-								},1000);
-							},1000);
-						},1000);
-					},1000);
-				},200);
-			},1000);
-		};
+	var loopCompare = function() {
+		$('#compareBtn1').addClass('active');
+		$('#compareBtn3').addClass('active');
+		$('.line-double').css("background-image", "url(img/line-double_1.png)");
+		window.setTimeout(function() {
+			$('.btn-relate').addClass('active');
+			window.setTimeout(function() {
+				$('.btn-relate').removeClass('active');
+				$('.compare1').animate({
+					opacity: 1
+				}, 'slow');
+				window.setTimeout(function() {
+					$('.compare1').animate({
+						opacity: 0
+					}, 'slow');
+					$('#compareBtn1').removeClass('active');
+					$('#compareBtn2').addClass('active');
+					$('.line-double').css("background-image", "url(img/line-double_2.png)");
+					window.setTimeout(function() {
+						$('.btn-relate').addClass('active');
+						window.setTimeout(function() {
+							$('.btn-relate').removeClass('active');
+							$('.compare2').animate({
+								opacity: 1
+							}, 'slow');
+							window.setTimeout(function() {
+								$('.compare2').animate({
+									opacity: 0
+								}, 'slow');
+								$('#compareBtn2').removeClass('active');
+								$('#compareBtn3').removeClass('active');
+								$('#compareBtn1').addClass('active');
+								$('#compareBtn4').addClass('active');
+								$('.line-double').css("background-image", "url(img/line-double_3.png)");
+								window.setTimeout(function() {
+									$('.btn-relate').addClass('active');
+									window.setTimeout(function() {
+										$('.btn-relate').removeClass('active');
+										$('.compare2').animate({
+											opacity: 1
+										}, 'slow');
+										window.setTimeout(function() {
+											$('.compare2').animate({
+												opacity: 0
+											}, 'slow');
+											$('#compareBtn2').removeClass('active');
+											$('#compareBtn3').removeClass('active');
+											$('#compareBtn1').addClass('active');
+											$('#compareBtn4').addClass('active');
+											$('.line-double').css("background-image", "url(img/line-double_3.png)");
+											window.setTimeout(function() {
+												$('#compareBtn1').removeClass('active');
+												$('#compareBtn4').removeClass('active');
+												window.setTimeout(function() {
+													loopCompare();
+												}, 1000);
+											}, 1000);
+										}, 1000);
+									}, 1000);
+								}, 1000);
+							}, 1000);
+						}, 1000);
+					}, 1000);
+				}, 1000);
+			}, 200);
+		}, 1000);
+	};
+	
+	$(document).ready(function() { 
+	
+		/* loopCompare(); */
 		
-		$(document).ready(function() {
-			/* loopCompare(); */
-
-			//The array that will always hold the two most recent selected buttons
-			var activeBtns = [];
-			$('.btn-compare').bind('click', function() {
-				var $btn = $(this);
-				//1. Hide the messages on the right box
-				$('.compare-result').animate({ opacity: 0 }, 'slow');
-				//2. Push in the array if button is pushed
-				if ( !$btn.hasClass('active') ) {
-					activeBtns.push( $btn ); //add clicked elem to array
-					if ( activeBtns.length > 2  ) { //population control :)
-						activeBtns.shift();
-					}
-				} else {
-					activeBtns = $.grep(activeBtns, function(elem, index) {
-			      return elem.attr('class') !== $btn.attr('class'); //remove clicked element from the array. I compare classes as they provide a clean result, ojects don't work
-			    });
+		//The array that will always hold the two most recent selected buttons
+		var activeBtns = [];
+		$('.btn-compare').bind('click', function() {
+			var $btn = $(this);
+			//1. Hide the messages on the right box
+			$('.compare-result').animate({
+				opacity: 0
+			}, 'slow');
+			//2. Push in the array if button is pushed
+			if (!$btn.hasClass('active')) {
+				activeBtns.push($btn); //add clicked elem to array
+				if (activeBtns.length > 2) { //population control :)
+					activeBtns.shift();
 				}
-				//3. Run the show/hide buttons mambo jumbo
-				$('.btn-compare').removeClass('active');
-				for ( x in activeBtns ) {
-					activeBtns[x].addClass('active');
-				}
-
-	    });
-	    $('.btn-relate').bind('click', function() {
-       	if($('.compareBtn1').hasClass('active') || $('.compareBtn2').hasClass('active')) {
-        	$('.compare1').animate({ opacity: 1 }, 'slow');
-        } else if($('.compareBtn1').hasClass('active') || $('.compareBtn3').hasClass('active')) {
-        	$('.compare2').animate({ opacity: 1 }, 'slow');
-        } else if($('.compareBtn1').hasClass('active') || $('.compareBtn4').hasClass('active')) {
-        	$('.compare3').animate({ opacity: 1 }, 'slow');
-        } else if($('.compareBtn2').hasClass('active') || $('.compareBtn3').hasClass('active')) {
-        	$('.compare4').animate({ opacity: 1 }, 'slow');
-        } else if($('.compareBtn2').hasClass('active') || $('.compareBtn4').hasClass('active')) {
-        	$('.compare5').animate({ opacity: 1 }, 'slow');
-        } else if($('.compareBtn3').hasClass('active') || $('.compareBtn4').hasClass('active')) {
-        	$('.compare6').animate({ opacity: 1 }, 'slow');
-        }
-	    });
-			$('.help-popover').popover({trigger:"hover"});
+			} else {
+				activeBtns = $.grep(activeBtns, function(elem, index) {
+					return elem.attr('class') !== $btn.attr('class'); //remove clicked element from the array. I compare classes as they provide a clean result, objects don't work
+				});
+			}
+			//3. Run the show/hide buttons mambo jumbo
+			$('.btn-compare').removeClass('active');
+			for (x in activeBtns) {
+				activeBtns[x].addClass('active');
+			}
 		});
+		
+		$('.btn-relate').bind('click', function() {
+			if ($('#compareBtn1').hasClass('active') && $('#compareBtn2').hasClass('active')) {
+				$('.compare1').animate({
+					opacity: 1
+				}, 'slow');
+			} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn3').hasClass('active')) {
+				$('.compare2').animate({
+					opacity: 1
+				}, 'slow');
+			} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+				$('.compare3').animate({
+					opacity: 1
+				}, 'slow');
+			} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn3').hasClass('active')) {
+				$('.compare4').animate({
+					opacity: 1
+				}, 'slow');
+			} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+				$('.compare5').animate({
+					opacity: 1
+				}, 'slow');
+			} else if ($('#compareBtn3').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+				$('.compare6').animate({
+					opacity: 1
+				}, 'slow');
+			}
+		});
+		
+		$('.help-popover').popover({
+			trigger: "hover"
+		});
+		
+	});
 	</script>
 </body>
 
