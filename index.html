@@ -23,48 +23,31 @@
 
 <body data-spy="scroll" data-target="#scrollspy">
 <!-- NAVBAR -->
-	<nav class="navbar navbar-default navbar-fixed-top animated delay1 fadeInDown">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse collapse" id="scrollspy">
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="#hero" style="color:#33a0d3;"><img src="img/statwing_logo.png" style="width:20px;margin-top:-5px;"> Statwing</a>
-					</li>
-					<li class="hidden-sm">
-						<a href="#howitworks"><em class="ss-icon">merge</em> How it works</a>
-					</li>
-					<li class="hidden-sm">
-						<a href="#usecases"><em class="ss-icon">user</em> Examples of use</a>
-					</li>
-					<li class="hidden-sm">
-						<a href="#pricing"><em class="ss-icon">cash</em> Pricing</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#pricing">Pricing</a>
-					</li>
-					<li>
-						<a href="blog.html">Blog</a>
-					</li>
-					<li>
-						<a href="blog.html">Jobs</a>
-					</li>
-					<li>
-						<a style="margin-right:0px;" href="#">Sign In</a>
-					</li>
-					<a class="btn btn-success" href="blog.html" style="margin-top:8px;"><em class="ss-icon">play</em> try demo</a>
-				</ul>
-			</div>
-		</div><!--/.nav-collapse -->
-	</nav>
+	<div class="navbar navbar-default navbar-fixed-top animated delay1 fadeInDown">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/statwing_logo.png" style="width:20px;margin-top:-5px;"> Statwing</a>
+        </div>
+        <div class="navbar-collapse collapse" id="scrollspy">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#howitworks">How it works</a></li>
+            <li><a href="#usecases">Examples of use</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html">Jobs</a></li>
+            <li><a class="btn" href="#">Sign In</a></li>
+            <li><a class="btn btn-success" href="blog.html"><i class="ss-icon">play</i> try demo</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 <!-- HERO -->
 	<div id="hero">
 		<div class="container">
@@ -126,10 +109,10 @@
 						</button>
 						<button id="compareBtn4" type="button" class="btn btn-compare btn-block">							
 							<span class="pull-left">
-								Engagement
+								Country
 							</span>
 							<i class="ss-icon pull-right">
-								linecharts
+								globe
 							</i>
 						</button>
 					</div>
@@ -149,7 +132,6 @@
 											<button class="btn btn-info"><i class="ss-icon">piechart</i> Age</button>
 										</div>
 									</div>
-									
 								</div>
 								<h4>There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span></h4>
 							</div>
@@ -164,22 +146,41 @@
 									</div>
 								</div>
 								<h4><span class="var_name">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name">Females</span></h4>
-								<div class="chart">
-									<div class="bar-wrap"><div class="bar bar-1"></div></div>
-									<div class="bar-wrap"><div class="bar bar-2"></div></div>
-									<div class="bar-wrap"><div class="bar bar-3"></div></div>
-									<div class="bar-wrap"><div class="bar bar-4"></div></div>
-									<div class="bar-wrap"><div class="bar bar-5"></div></div>
-									<div class="bar-wrap"><div class="bar bar-6"></div></div>
-									<div class="bar-wrap"><div class="bar bar-7"></div></div>
-									<div class="bar-wrap"><div class="bar bar-8"></div></div>
-									<div class="bar-wrap"><div class="bar bar-9"></div></div>
-									<div class="bar-wrap"><div class="bar bar-10"></div></div>
-									<div class="bar-wrap"><div class="bar bar-11"></div></div>
-									<div class="bar-wrap"><div class="bar bar-12"></div></div>
-									<div class="bar-wrap"><div class="bar bar-13"></div></div>
-									<div class="bar-wrap"><div class="bar bar-14"></div></div>
-									<div class="bar-wrap"><div class="bar bar-15"></div></div>
+								<div class="relative">
+									<div class="chart-male">
+										<div class="bar-wrap"><div class="bar bar-1"></div></div>
+										<div class="bar-wrap"><div class="bar bar-2"></div></div>
+										<div class="bar-wrap"><div class="bar bar-3"></div></div>
+										<div class="bar-wrap"><div class="bar bar-4"></div></div>
+										<div class="bar-wrap"><div class="bar bar-5"></div></div>
+										<div class="bar-wrap"><div class="bar bar-6"></div></div>
+										<div class="bar-wrap"><div class="bar bar-7"></div></div>
+										<div class="bar-wrap"><div class="bar bar-8"></div></div>
+										<div class="bar-wrap"><div class="bar bar-9"></div></div>
+										<div class="bar-wrap"><div class="bar bar-10"></div></div>
+										<div class="bar-wrap"><div class="bar bar-11"></div></div>
+										<div class="bar-wrap"><div class="bar bar-12"></div></div>
+										<div class="bar-wrap"><div class="bar bar-13"></div></div>
+										<div class="bar-wrap"><div class="bar bar-14"></div></div>
+										<div class="bar-wrap"><div class="bar bar-15"></div></div>
+									</div>
+									<div class="chart-female">
+										<div class="bar-wrap"><div class="bar bar-1"></div></div>
+										<div class="bar-wrap"><div class="bar bar-2"></div></div>
+										<div class="bar-wrap"><div class="bar bar-3"></div></div>
+										<div class="bar-wrap"><div class="bar bar-4"></div></div>
+										<div class="bar-wrap"><div class="bar bar-5"></div></div>
+										<div class="bar-wrap"><div class="bar bar-6"></div></div>
+										<div class="bar-wrap"><div class="bar bar-7"></div></div>
+										<div class="bar-wrap"><div class="bar bar-8"></div></div>
+										<div class="bar-wrap"><div class="bar bar-9"></div></div>
+										<div class="bar-wrap"><div class="bar bar-10"></div></div>
+										<div class="bar-wrap"><div class="bar bar-11"></div></div>
+										<div class="bar-wrap"><div class="bar bar-12"></div></div>
+										<div class="bar-wrap"><div class="bar bar-13"></div></div>
+										<div class="bar-wrap"><div class="bar bar-14"></div></div>
+										<div class="bar-wrap"><div class="bar bar-15"></div></div>
+									</div>
 								</div>
 							</div>
 							<div class="card compare3 compare-result">
@@ -188,12 +189,11 @@
 										<div class="btn-group">
 											<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
 											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">linecharts</i> Engagement</button>
+											<button class="btn btn-info"><i class="ss-icon">globe</i> Country</button>
 										</div>
 									</div>
-									
 								</div>
-								<h4><span class="var_name">Males</span> tend to have slightly higher values for <span class="var_name">Engagement</span> than <span class="var_name">Females</span></h4>
+								<h4>There is no statistically significant relationship between <span class="var_name">Country</span> and <span class="var_name">Gender</span></h4>
 							</div>
 							<div class="card compare4 compare-result">
 								<div class="card-top clearfix">
@@ -204,7 +204,6 @@
 											<button class="btn btn-info"><i class="ss-icon">barchart</i> Satisfaction</button>
 										</div>
 									</div>
-									
 								</div>
 								<h4><span class="var_name">Age</span> is weakly positively correlated with <span class="var_name">Satisfaction</span></h4>
 							</div>
@@ -214,12 +213,11 @@
 										<div class="btn-group">
 											<button class="btn btn-info"><i class="ss-icon">piechart</i> Age</button>
 											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">linecharts</i> Engagement</button>
+											<button class="btn btn-info"><i class="ss-icon">globe</i> Country</button>
 										</div>
 									</div>
-									
 								</div>
-								<h4><span class="var_name">Age</span> is strongly negatively correlated with <span class="var_name">Engagement</span></h4>
+								<h4>There is no statistically significant relationship between <span class="var_name">Age</span> and <span class="var_name">Country</span></h4>
 							</div>
 							<div class="card compare6 compare-result">
 								<div class="card-top clearfix">
@@ -227,12 +225,11 @@
 										<div class="btn-group">
 											<button class="btn btn-info"><i class="ss-icon">scatterchart</i> Satisfaction</button>
 											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">linecharts</i> Engagement</button>
+											<button class="btn btn-info"><i class="ss-icon">globe</i> Country</button>
 										</div>
 									</div>
-									
 								</div>
-								<h4>There is a statistically significant relationship between <span class="var_name">Satisfaction</span> and <span class="var_name">Engagement</span></h4>
+								<h4>There is a statistically significant relationship between <span class="var_name">Satisfaction</span> and <span class="var_name">Country</span></h4>
 							</div>
 						</div>
 					</div>
@@ -673,6 +670,40 @@ data with website behavioral data</b>
 	<!-- Demo's animation -->
 	<script type="text/javascript">
 	$(document).ready(function() {
+	
+		//Animation Gender v. Satisfaction
+		//var genderVSsatisfaction = function(){
+			$('.chart-male .bar-1').animate({height: "100%"}, 300);
+			$('.chart-male .bar-2').animate({height: "100%"}, 300);
+			$('.chart-male .bar-3').animate({height: "100%"}, 300);
+			$('.chart-male .bar-4').animate({height: "100%"}, 300);
+			$('.chart-male .bar-5').animate({height: "100%"}, 300);
+			$('.chart-male .bar-6').animate({height: "100%"}, 300);
+			$('.chart-male .bar-7').animate({height: "100%"}, 300);
+			$('.chart-male .bar-8').animate({height: "100%"}, 300);
+			$('.chart-male .bar-9').animate({height: "100%"}, 300);
+			$('.chart-male .bar-10').animate({height: "100%"}, 300);
+			$('.chart-male .bar-11').animate({height: "100%"}, 300);
+			$('.chart-male .bar-12').animate({height: "100%"}, 300);
+			$('.chart-male .bar-13').animate({height: "100%"}, 300);
+			$('.chart-male .bar-14').animate({height: "100%"}, 300);
+			$('.chart-male .bar-15').animate({height: "100%"}, 300);
+			$('.chart-female .bar-1').animate({height: "100%"}, 300);
+			$('.chart-female .bar-2').animate({height: "100%"}, 300);
+			$('.chart-female .bar-3').animate({height: "100%"}, 300);
+			$('.chart-female .bar-4').animate({height: "100%"}, 300);
+			$('.chart-female .bar-5').animate({height: "100%"}, 300);
+			$('.chart-female .bar-6').animate({height: "100%"}, 300);
+			$('.chart-female .bar-7').animate({height: "100%"}, 300);
+			$('.chart-female .bar-8').animate({height: "100%"}, 300);
+			$('.chart-female .bar-9').animate({height: "100%"}, 300);
+			$('.chart-female .bar-10').animate({height: "100%"}, 300);
+			$('.chart-female .bar-11').animate({height: "100%"}, 300);
+			$('.chart-female .bar-12').animate({height: "100%"}, 300);
+			$('.chart-female .bar-13').animate({height: "100%"}, 300);
+			$('.chart-female .bar-14').animate({height: "100%"}, 300);
+			$('.chart-female .bar-15').animate({height: "100%"}, 300);
+		//};
 	
 		// Relate selected buttons function
 		var relate = function(){

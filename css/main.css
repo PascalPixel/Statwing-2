@@ -23,8 +23,24 @@ a {
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-	padding-top: 10px;
-	padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+	.navbar-fixed-top {
+	background: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+	padding-top: 20px;
+	}
+}
+.navbar-default .navbar-brand {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #33a0d3;
+	font-size: 16px;
+	padding-top: 18px;
+	padding-bottom: 0px;
 }
 .btn {
 	border:1px solid #b7c3c4;
@@ -121,6 +137,7 @@ a {
 	color: #a7b3ba;
 	margin-bottom: 20px;
 	position: relative;
+	height: 220px;
 }
 .card h4 {
 	padding: 10px 20px;
@@ -350,21 +367,6 @@ img {
 	position: relative;
 	height: 38px;
 }
-.navbar-nav>li>a {
-	padding: 19px 25px 16px;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	border-left: 1px solid #2e7cb4;
-	border-right: 1px solid #2e7cb4;
-	background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
-	background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
-	background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
-	color: #d2ebf8;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
-}
-.navbar-default .navbar-nav>li>a {
-	color: #d2ebf8;
-}
 .bottom {
 	position: absolute;
 	bottom: -340px;
@@ -373,51 +375,33 @@ p {
 	font-size: 16px;
 	line-height: 150%;
 }
-.navbar-nav a {
-	font-weight:bold;
-	text-transform:uppercase;
-	margin-right: 30px;
-	color: #788083;
-}
 .first-menu a:hover {
 	text-decoration: none;
 }
 #hero {
 width: 100%;
-box-shadow: inset 0px 0px 500px #e7f3f6;
+/* box-shadow: inset 0px 0px 500px #e7f3f6; */
 padding-top: 50px;
 }
 .btn .hidden-sm, .btn .hidden-md {
 display: inline-block!important;
 }
 @media (max-width: 991px) and (min-width: 768px) {
-.btn .hidden-sm {
-display: none!important;
-}
+	.btn .hidden-sm {
+	display: none!important;
+	}
 }
 @media (max-width: 1199px) and (min-width: 992px) {
-.btn .hidden-md {
-display: none!important;
-}
+	.btn .hidden-md {
+	display: none!important;
+	}
 }
 .bar-wrap {
 position: relative;
 height: 100px;
-width: 4.8%;
+width: 4.7%;
 float: left;
 margin: 0 1%;
-}
-.chart .bar-wrap {
-position: relative;
-width: 5.5%;
-height: 100%;
-margin-right: 1%;
-}
-.chart {
-width: 100%;
-height: 60px;
-margin: -10px 0 20px;
-padding-left: 20px;
 }
 .chart-big {
 z-index: -2000;
@@ -428,106 +412,10 @@ position: absolute;
 .relative {
 	position: relative;
 }
-.scatterchart {
-background-color: white;
-border-radius: 5px;
-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-padding: 20px;
-height: 240px;
-background-image: url('../img/raster.png');
-position: relative;
-}
-.scatterchart .point {
-border-radius: 5px;
-background-color: #9be424;
-position: absolute;
-height: 10px;
-width: 10px;
-}
-.scatterchart .point1 {
-bottom:10%;
-left:5%;
-}
-.scatterchart .point2 {
-bottom:16%;
-left:8%;
-}
-.scatterchart .point3 {
-bottom:11%;
-left:12%;
-}
-.scatterchart .point4 {
-bottom:21%;
-left:15%;
-}
-.scatterchart .point5 {
-bottom:28%;
-left:19%;
-}
-.scatterchart .point6 {
-bottom:38%;
-left:23%;
-}
-.scatterchart .point7 {
-bottom:29%;
-left:27%;
-}
-.scatterchart .point8 {
-bottom:45%;
-left:29%;
-}
-.scatterchart .point9 {
-bottom:50%;
-left:50%;
-}
-.scatterchart .point10 {
-bottom:55%;
-left:55%;
-}
-.scatterchart .point11 {
-bottom:60%;
-left:60%;
-}
-.scatterchart .point12 {
-bottom:65%;
-left:65%;
-}
-.scatterchart .point13 {
-bottom:70%;
-left:70%;
-}
-.scatterchart .point14 {
-bottom:75%;
-left:75%;
-}
-.scatterchart .point15 {
-bottom:80%;
-left:80%;
-}
-.scatterchart .point16 {
-bottom:85%;
-left:85%;
-}
-.scatterchart .point17 {
-bottom:90%;
-left:90%;
-}
-.scatterchart .point18 {
-bottom:78%;
-left:78%;
-}
-.scatterchart .point19 {
-bottom:20%;
-left:56%;
-}
-.scatterchart .point20 {
-bottom:91%;
-left:76%;
-}
-.bar-wrap:last-child {
+.chart-big .bar-wrap:last-child {
 margin-right: 0%;
 }
-.bar	{
+.chart-big .bar	{
 position: absolute;
 bottom:0;
 width: 100%;
@@ -802,4 +690,128 @@ animation:barchart14 10s infinite;
 .chart-big .bar-15 {
 animation:barchart15 10s infinite;
 -webkit-animation:barchart15 10s infinite;
+}
+.chart-male, .chart-female {
+width: 100%;
+height: 60px;
+top: 0;
+padding-left: 20px;
+position: absolute;
+}
+.chart-female {
+	left:3%;
+}
+.chart-male .bar, .chart-female .bar {
+position: absolute;
+bottom:0;
+width: 100%;
+height: 5px;
+background-color: #68cae7;
+transition: height 5s;
+-webkit-transition: height 5s;
+}
+.chart-female .bar {
+background-color: #ffa1af;
+}
+.chart-male .bar-wrap, .chart-female .bar-wrap {
+position: relative;
+width: 3.5%;
+height: 100%;
+margin-right: 2%;
+}
+.scatterchart {
+background-color: white;
+border-radius: 5px;
+box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+padding: 20px;
+height: 240px;
+background-image: url('../img/raster.png');
+position: relative;
+}
+.scatterchart .point {
+border-radius: 5px;
+background-color: #9be424;
+position: absolute;
+height: 10px;
+width: 10px;
+}
+.scatterchart .point1 {
+bottom:10%;
+left:5%;
+}
+.scatterchart .point2 {
+bottom:16%;
+left:8%;
+}
+.scatterchart .point3 {
+bottom:11%;
+left:12%;
+}
+.scatterchart .point4 {
+bottom:21%;
+left:15%;
+}
+.scatterchart .point5 {
+bottom:28%;
+left:19%;
+}
+.scatterchart .point6 {
+bottom:38%;
+left:23%;
+}
+.scatterchart .point7 {
+bottom:29%;
+left:27%;
+}
+.scatterchart .point8 {
+bottom:45%;
+left:29%;
+}
+.scatterchart .point9 {
+bottom:50%;
+left:50%;
+}
+.scatterchart .point10 {
+bottom:55%;
+left:55%;
+}
+.scatterchart .point11 {
+bottom:60%;
+left:60%;
+}
+.scatterchart .point12 {
+bottom:65%;
+left:65%;
+}
+.scatterchart .point13 {
+bottom:70%;
+left:70%;
+}
+.scatterchart .point14 {
+bottom:75%;
+left:75%;
+}
+.scatterchart .point15 {
+bottom:80%;
+left:80%;
+}
+.scatterchart .point16 {
+bottom:85%;
+left:85%;
+}
+.scatterchart .point17 {
+bottom:90%;
+left:90%;
+}
+.scatterchart .point18 {
+bottom:78%;
+left:78%;
+}
+.scatterchart .point19 {
+bottom:20%;
+left:56%;
+}
+.scatterchart .point20 {
+bottom:91%;
+left:76%;
 }
