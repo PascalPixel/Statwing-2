@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 body {
 	background-color: #e7f3f6;
-	padding-top: 60px;
+	padding-top: 50px;
 	color: #788083;
 	background-image: url('../img/raster.png');
 	padding-bottom: 30px;
@@ -18,21 +18,13 @@ body {
 a {
 	color: #33a0d3;
 }
-.navbar-fixed-top {
+.navbar-default {
 	background: rgba(255,255,255,0.95);
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-}
-@media (min-width: 768px) {
-	.navbar-fixed-top {
-	background: transparent;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	border: 0;
-	padding-top: 20px;
-	}
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .navbar-default .navbar-brand {
 	text-transform: uppercase;
@@ -147,29 +139,27 @@ a {
 	color: #33a0d3;
 }
 .card-top {
-border-top-left-radius: 4px;
-border-top-right-radius: 4px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-padding: 8px 6px;
-position: absolute;
-left: -1px;
-right: -1px;
-top: -1px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding: 8px 6px;
+	position: absolute;
+	left: -1px;
+	right: -1px;
+	top: -1px;
 }
 .card-wrap {
-min-height: 215px;
+	min-height: 215px;
 }
 .card .btn {
 	padding: 7px 10px 2px;
 }
 .wrap {
 	background: #f7fafa;
-	border-top:1px solid #b5b4ae;
-	border-bottom:1px solid #b5b4ae;
 	padding-top: 20px;
 	padding-bottom: 50px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
 	z-index: 0;
 	position: relative;
 }
@@ -240,11 +230,11 @@ min-height: 215px;
 	padding: 0px;
 }
 .footer .box {
-	border: 4px solid rgba(0,0,0,0.1);
-	border-radius: 7px;
-	padding: 20px;
-	margin-bottom: 20px;
+	border-color: white;
 	background: white;
+}
+.footer .box-header {
+	border-bottom: 3px solid rgba(0,0,0,0.1);
 }
 .footer .box hr {
 	border-top-color: rgba(0,0,0,0.1);
@@ -303,7 +293,6 @@ min-height: 215px;
 }
 .intrograph {
 	font-size: 20px;
-	line-height: 150%;
 	color: #33a0d3;
 }
 img {
@@ -375,13 +364,9 @@ p {
 	font-size: 16px;
 	line-height: 150%;
 }
-.first-menu a:hover {
-	text-decoration: none;
-}
 #hero {
 width: 100%;
-/* box-shadow: inset 0px 0px 500px #e7f3f6; */
-padding-top: 50px;
+padding-bottom: 30px;
 }
 .btn .hidden-sm, .btn .hidden-md {
 display: inline-block!important;
@@ -394,6 +379,30 @@ display: inline-block!important;
 @media (max-width: 1199px) and (min-width: 992px) {
 	.btn .hidden-md {
 	display: none!important;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-default {
+	background: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #e7f3f6;
+	color: #788083;
+	background-image: url('../img/raster.png');
+	}
+	#hero {
+	padding-top: 50px;
+	padding-bottom: 0px;
+	}
+	.navbar-nav>li>a {
+	padding: 5px 8px 3px;
+	margin-top: 13px;
+	margin-right: 20px;
+	color: #aec4cb !important;
 	}
 }
 .bar-wrap {
@@ -695,29 +704,29 @@ animation:barchart15 10s infinite;
 width: 100%;
 height: 60px;
 top: 0;
-padding-left: 20px;
 position: absolute;
 }
 .chart-female {
-	left:3%;
+left:3%;
 }
 .chart-male .bar, .chart-female .bar {
 position: absolute;
 bottom:0;
 width: 100%;
 height: 5px;
-background-color: #68cae7;
+background-color: #ddccef;
 transition: height 5s;
 -webkit-transition: height 5s;
 }
 .chart-female .bar {
-background-color: #ffa1af;
+background-color: #c1b3e9;
 }
 .chart-male .bar-wrap, .chart-female .bar-wrap {
 position: relative;
-width: 3.5%;
+width: 3%;
 height: 100%;
-margin-right: 2%;
+margin-right: 3%;
+margin-left: 0%;
 }
 .scatterchart {
 background-color: white;
