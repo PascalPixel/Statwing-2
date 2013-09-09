@@ -14,7 +14,7 @@
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Animate -->
-	<!-- <link href='css/animate-custom.css' rel='stylesheet' type='text/css'> -->
+	<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
 	<!-- H&FJ -->
 	<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/6665052/714022/css/fonts.css" />
 	<!-- CSS -->
@@ -35,7 +35,7 @@
         </div>
         <div class="navbar-collapse collapse" id="scrollspy">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#howitworks">How it works</a></li>
+            <li><a href="#howitworks">How it works</a></li>
             <li><a href="#usecases">Examples of use</a></li>
             <li><a href="#pricing">Pricing</a></li>
           </ul>
@@ -707,7 +707,6 @@ data with website behavioral data</b>
 			$('.chart-female .bar-15').css("height", "10%");
 			$('.chart-female .bar-16').css("height", "5%");
 		};
-		genderVSsatisfaction();
 	
 		// Relate selected buttons function
 		var relate = function(){
@@ -778,6 +777,9 @@ data with website behavioral data</b>
 		$('.btn-relate').bind('click', function() {
 			relate();
 		});
+		
+		//6. Relate on startup
+		setTimeout(function(){relate();},1000);
 		
 		$('.help-popover').popover({
 			trigger: "hover"
