@@ -364,6 +364,17 @@ p {
 	font-size: 16px;
 	line-height: 150%;
 }
+.summary {
+	background-color: white;
+	margin-top: -20px;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.summary .ss-icon {
+	font-size: 40px;
+	line-height: 50px;
+}
 #hero {
 width: 100%;
 padding-bottom: 30px;
