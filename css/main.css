@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 body {
 	background-color: #e7f3f6;
-	padding-top: 60px;
+	padding-top: 50px;
 	color: #788083;
 	background-image: url('../img/raster.png');
 	padding-bottom: 30px;
@@ -18,14 +18,21 @@ body {
 a {
 	color: #33a0d3;
 }
-.navbar-fixed-top {
-	border-top:1px solid #2e7cb4;
-	border-bottom:1px solid #2e7cb4;
-	background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	background-image: -webkit-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
-	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
-	padding: 0px 10px;
+.navbar-default {
+	background: rgba(255,255,255,0.95);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-default .navbar-brand {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #33a0d3;
+	font-size: 16px;
+	padding-top: 18px;
+	padding-bottom: 0px;
 }
 .btn {
 	border:1px solid #b7c3c4;
@@ -122,6 +129,7 @@ a {
 	color: #a7b3ba;
 	margin-bottom: 20px;
 	position: relative;
+	height: 220px;
 }
 .card h4 {
 	padding: 10px 20px;
@@ -131,30 +139,27 @@ a {
 	color: #33a0d3;
 }
 .card-top {
-border-top-left-radius: 4px;
-border-top-right-radius: 4px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-padding: 8px 6px;
-position: absolute;
-left: -1px;
-right: -1px;
-top: -1px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding: 8px 6px;
+	position: absolute;
+	left: -1px;
+	right: -1px;
+	top: -1px;
 }
 .card-wrap {
-min-height: 215px;
+	min-height: 215px;
 }
 .card .btn {
 	padding: 7px 10px 2px;
 }
 .wrap {
 	background: #f7fafa;
-	border-top:1px solid #b5b4ae;
-	border-bottom:1px solid #b5b4ae;
 	padding-top: 20px;
-	margin-top: 520px;
 	padding-bottom: 50px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
 	z-index: 0;
 	position: relative;
 }
@@ -225,11 +230,11 @@ min-height: 215px;
 	padding: 0px;
 }
 .footer .box {
-	border: 4px solid rgba(0,0,0,0.1);
-	border-radius: 7px;
-	padding: 20px;
-	margin-bottom: 20px;
+	border-color: white;
 	background: white;
+}
+.footer .box-header {
+	border-bottom: 3px solid rgba(0,0,0,0.1);
 }
 .footer .box hr {
 	border-top-color: rgba(0,0,0,0.1);
@@ -288,7 +293,6 @@ min-height: 215px;
 }
 .intrograph {
 	font-size: 20px;
-	line-height: 150%;
 	color: #33a0d3;
 }
 img {
@@ -352,21 +356,6 @@ img {
 	position: relative;
 	height: 38px;
 }
-.navbar-nav>li>a {
-	padding: 19px 25px 16px;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	border-left: 1px solid #2e7cb4;
-	border-right: 1px solid #2e7cb4;
-	background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
-	background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
-	background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
-	color: #d2ebf8;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
-}
-.navbar-default .navbar-nav>li>a {
-	color: #d2ebf8;
-}
 .bottom {
 	position: absolute;
 	bottom: -340px;
@@ -375,148 +364,33 @@ p {
 	font-size: 16px;
 	line-height: 150%;
 }
-.first-menu {
-	padding-top: 30px;
-	padding-bottom: 70px;
-}
-.first-menu a {
-	font-weight:bold;
-	text-transform:uppercase;
-	margin-right: 30px;
-	color: #788083;
-}
-.first-menu a:hover {
-	text-decoration: none;
-}
 #hero {
-z-index: 10000;
-position: absolute;
-top: 0;
 width: 100%;
-background-color: #e7f3f6;
-background-image: url('../img/raster.png');
-padding-bottom: 25px;
-box-shadow: inset 0px 0px 500px #e7f3f6;
+padding-bottom: 30px;
+}
+.btn .hidden-sm, .btn .hidden-md {
+display: inline-block!important;
 }
 .bar-wrap {
 position: relative;
-height: 200px;
-width: 2.3%;
+height: 100px;
+width: 4.7%;
 float: left;
-margin-right: 1%;
+margin: 0 1%;
 }
-.chart .bar-wrap {
-position: relative;
-width: 5.5%;
-height: 100%;
-margin-right: 1%;
-}
-.chart {
+.chart-big {
+z-index: -2000;
 width: 100%;
-height: 60px;
-margin: -10px 0 20px;
-padding-left: 20px;
-}
-.scatterchart {
-background-color: white;
-border-radius: 5px;
-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-padding: 20px;
-height: 240px;
-background-image: url('../img/raster.png');
-position: relative;
-}
-.scatterchart .point {
-border-radius: 5px;
-background-color: #9be424;
+bottom: 0;
 position: absolute;
-height: 10px;
-width: 10px;
 }
-.scatterchart .point1 {
-bottom:10%;
-left:5%;
+.relative {
+	position: relative;
 }
-.scatterchart .point2 {
-bottom:16%;
-left:8%;
-}
-.scatterchart .point3 {
-bottom:11%;
-left:12%;
-}
-.scatterchart .point4 {
-bottom:21%;
-left:15%;
-}
-.scatterchart .point5 {
-bottom:28%;
-left:19%;
-}
-.scatterchart .point6 {
-bottom:38%;
-left:23%;
-}
-.scatterchart .point7 {
-bottom:29%;
-left:27%;
-}
-.scatterchart .point8 {
-bottom:45%;
-left:29%;
-}
-.scatterchart .point9 {
-bottom:50%;
-left:50%;
-}
-.scatterchart .point10 {
-bottom:55%;
-left:55%;
-}
-.scatterchart .point11 {
-bottom:60%;
-left:60%;
-}
-.scatterchart .point12 {
-bottom:65%;
-left:65%;
-}
-.scatterchart .point13 {
-bottom:70%;
-left:70%;
-}
-.scatterchart .point14 {
-bottom:75%;
-left:75%;
-}
-.scatterchart .point15 {
-bottom:80%;
-left:80%;
-}
-.scatterchart .point16 {
-bottom:85%;
-left:85%;
-}
-.scatterchart .point17 {
-bottom:90%;
-left:90%;
-}
-.scatterchart .point18 {
-bottom:78%;
-left:78%;
-}
-.scatterchart .point19 {
-bottom:20%;
-left:56%;
-}
-.scatterchart .point20 {
-bottom:91%;
-left:76%;
-}
-.bar-wrap:last-child {
+.chart-big .bar-wrap:last-child {
 margin-right: 0%;
 }
-.bar	{
+.chart-big .bar	{
 position: absolute;
 bottom:0;
 width: 100%;
@@ -732,63 +606,235 @@ background-color: #d3eaf1;
 75%  {height:10%;}
 100% {height:100%;}
 }
-.bar-1 {
+.chart-big .bar-1 {
 animation:barchart1 10s infinite;
 -webkit-animation:barchart1 10s infinite;
 }
-.bar-2 {
+.chart-big .bar-2 {
 animation:barchart2 10s infinite;
 -webkit-animation:barchart2 10s infinite;
 }
-.bar-3 {
+.chart-big .bar-3 {
 animation:barchart3 10s infinite;
 -webkit-animation:barchart3 10s infinite;
 }
-.bar-4 {
+.chart-big .bar-4 {
 animation:barchart4 10s infinite;
 -webkit-animation:barchart4 10s infinite;
 }
-.bar-5 {
+.chart-big .bar-5 {
 animation:barchart5 10s infinite;
 -webkit-animation:barchart5 10s infinite;
 }
-.bar-6 {
+.chart-big .bar-6 {
 animation:barchart6 10s infinite;
 -webkit-animation:barchart6 10s infinite;
 }
-.bar-7 {
+.chart-big .bar-7 {
 animation:barchart7 10s infinite;
 -webkit-animation:barchart7 10s infinite;
 }
-.bar-8 {
+.chart-big .bar-8 {
 animation:barchart8 10s infinite;
 -webkit-animation:barchart8 10s infinite;
 }
-.bar-9 {
+.chart-big .bar-9 {
 animation:barchart9 10s infinite;
 -webkit-animation:barchart9 10s infinite;
 }
-.bar-10 {
+.chart-big .bar-10 {
 animation:barchart10 10s infinite;
 -webkit-animation:barchart10 10s infinite;
 }
-.bar-11 {
+.chart-big .bar-11 {
 animation:barchart11 10s infinite;
 -webkit-animation:barchart11 10s infinite;
 }
-.bar-12 {
+.chart-big .bar-12 {
 animation:barchart12 10s infinite;
 -webkit-animation:barchart12 10s infinite;
 }
-.bar-13 {
+.chart-big .bar-13 {
 animation:barchart13 10s infinite;
 -webkit-animation:barchart13 10s infinite;
 }
-.bar-14 {
+.chart-big .bar-14 {
 animation:barchart14 10s infinite;
 -webkit-animation:barchart14 10s infinite;
 }
-.bar-15 {
+.chart-big .bar-15 {
 animation:barchart15 10s infinite;
 -webkit-animation:barchart15 10s infinite;
+}
+.chart-male, .chart-female {
+width: 100%;
+height: 60px;
+top: 0;
+position: absolute;
+}
+.chart-female {
+left:3%;
+}
+.chart-male .bar, .chart-female .bar {
+position: absolute;
+bottom:0;
+width: 100%;
+height: 5px;
+background-color: #ddccef;
+transition: height 5s;
+-webkit-transition: height 5s;
+}
+.chart-female .bar {
+background-color: #c1b3e9;
+}
+.chart-male .bar-wrap, .chart-female .bar-wrap {
+position: relative;
+width: 3%;
+height: 100%;
+margin-right: 3%;
+margin-left: 0%;
+}
+.scatterchart {
+background-color: white;
+border-radius: 5px;
+box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+padding: 20px;
+height: 240px;
+background-image: url('../img/raster.png');
+position: relative;
+}
+.scatterchart .point {
+border-radius: 5px;
+background-color: #9be424;
+position: absolute;
+height: 10px;
+width: 10px;
+}
+.scatterchart .point1 {
+bottom:10%;
+left:5%;
+}
+.scatterchart .point2 {
+bottom:16%;
+left:8%;
+}
+.scatterchart .point3 {
+bottom:11%;
+left:12%;
+}
+.scatterchart .point4 {
+bottom:21%;
+left:15%;
+}
+.scatterchart .point5 {
+bottom:28%;
+left:19%;
+}
+.scatterchart .point6 {
+bottom:38%;
+left:23%;
+}
+.scatterchart .point7 {
+bottom:29%;
+left:27%;
+}
+.scatterchart .point8 {
+bottom:45%;
+left:29%;
+}
+.scatterchart .point9 {
+bottom:50%;
+left:50%;
+}
+.scatterchart .point10 {
+bottom:55%;
+left:55%;
+}
+.scatterchart .point11 {
+bottom:60%;
+left:60%;
+}
+.scatterchart .point12 {
+bottom:65%;
+left:65%;
+}
+.scatterchart .point13 {
+bottom:70%;
+left:70%;
+}
+.scatterchart .point14 {
+bottom:75%;
+left:75%;
+}
+.scatterchart .point15 {
+bottom:80%;
+left:80%;
+}
+.scatterchart .point16 {
+bottom:85%;
+left:85%;
+}
+.scatterchart .point17 {
+bottom:90%;
+left:90%;
+}
+.scatterchart .point18 {
+bottom:78%;
+left:78%;
+}
+.scatterchart .point19 {
+bottom:20%;
+left:56%;
+}
+.scatterchart .point20 {
+bottom:91%;
+left:76%;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.btn .hidden-sm {
+	display: none!important;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+	.btn .hidden-md {
+	display: none!important;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-default {
+	background: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #e7f3f6;
+	color: #788083;
+	background-image: url('../img/raster.png');
+	}
+	#hero {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	}
+	.navbar-nav>li>a {
+	padding: 5px 8px 3px;
+	margin-top: 13px;
+	margin-right: 20px;
+	color: #aec4cb !important;
+	}
+	.navbar-default .navbar-nav>.active>a {
+		color: white !important;
+		background-color: #aec4cb;
+	}
+	.chart-big {
+		bottom: -30px;
+	}
+	.navbar-right .btn {
+		border: 3px solid #aec4cb;
+		border-radius: 5px;
+		display: block;
+		background: transparent;
+		padding: 2px 5px 0px;
+	}
 }
