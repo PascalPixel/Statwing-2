@@ -14,7 +14,7 @@
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Animate -->
-	<!-- <link href='css/animate-custom.css' rel='stylesheet' type='text/css'> -->
+	<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
 	<!-- H&FJ -->
 	<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/6665052/714022/css/fonts.css" />
 	<!-- CSS -->
@@ -36,13 +36,13 @@
         <div class="navbar-collapse collapse" id="scrollspy">
           <ul class="nav navbar-nav">
             <li><a href="#howitworks">How it works</a></li>
-            <li><a href="#usecases">Examples of use</a></li>
+            <li><a href="#usecases">Usecases</a></li>
             <li><a href="#pricing">Pricing</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="blog.html">Blog</a></li>
             <li><a href="blog.html">Jobs</a></li>
-            <li><a href="#" class="btn">Sign In</a></li>
+            <li><div class="btn-group"><a href="#" class="btn">Sign Up</a><a href="#" class="btn">Sign In</a></div></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -50,188 +50,114 @@
 <!-- HERO -->
 	<div id="hero">
 		<div class="container">
-			<!-- BAR ANIMATIONS -->
-			<div class="relative">
-				<div class="chart-big hidden-xs animated delay2 fadeIn">
-					<div class="bar-wrap"><div class="bar bar-1"></div></div>
-					<div class="bar-wrap"><div class="bar bar-2"></div></div>
-					<div class="bar-wrap"><div class="bar bar-3"></div></div>
-					<div class="bar-wrap"><div class="bar bar-4"></div></div>
-					<div class="bar-wrap"><div class="bar bar-5"></div></div>
-					<div class="bar-wrap"><div class="bar bar-6"></div></div>
-					<div class="bar-wrap"><div class="bar bar-7"></div></div>
-					<div class="bar-wrap"><div class="bar bar-8"></div></div>
-					<div class="bar-wrap"><div class="bar bar-9"></div></div>
-					<div class="bar-wrap"><div class="bar bar-10"></div></div>
-					<div class="bar-wrap"><div class="bar bar-11"></div></div>
-					<div class="bar-wrap"><div class="bar bar-12"></div></div>
-					<div class="bar-wrap"><div class="bar bar-13"></div></div>
-					<div class="bar-wrap"><div class="bar bar-14"></div></div>
-					<div class="bar-wrap"><div class="bar bar-15"></div></div>
+			<div class="row animated fadeInUp">
+				<div class="col-sm-9">
+					<h1 style="font-size:28px;color:#33a0d3;">Modern Data Analysis Software</h1>
+					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software, in an intuitive interface.</h3>
 				</div>
-				<div class="row animated fadeInUp">
-					<div class="col-sm-9">
-						<h1 style="font-size:28px;color:#33a0d3;">Modern Data Analysis Software</h1>
-						<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software, in an intuitive interface.</h3>
-					</div>
-					<div class="col-sm-3 center">
-						<button type="button" class="btn btn-success btn-block btn-lg btn-relate" style="height:60px;font-size:18px;margin-top:20px;">
-							<i class="ss-icon">layout</i> Try <span class="hidden-sm">the</span> <span class="hidden-md hidden-sm">full</span> demo</button>
-						<small>(No sign up, completely free)</small>
-					</div>
+				<div class="col-sm-3 center">
+					<button type="button" class="btn btn-success btn-block btn-lg btn-relate" style="height:60px;font-size:18px;margin-top:20px;">
+						<i class="ss-icon">layout</i> Try <span class="hidden-sm">the</span> <span class="hidden-md hidden-sm">full</span> demo</button>
+					<small>(No sign up, completely free)</small>
 				</div>
-				<div class="row row-padding animated delay1 fadeInUp hidden-xs">
-					<div class="col-sm-3 line-double">
-						<button id="compareBtn1" type="button" class="btn btn-compare btn-block active">
-							<span class="pull-left">
-								Gender
-							</span>
-							<i class="ss-icon pull-right">
-								femaleuser
-							</i>
-						</button>
-						<button id="compareBtn2" type="button" class="btn btn-compare btn-block">
-							<span class="pull-left">
-								Age
-							</span>
-							<i class="ss-icon pull-right">
-								piechart
-							</i>
-						</button>
-						<button id="compareBtn3" type="button" class="btn btn-compare btn-block active">
-							<span class="pull-left">
-								Satisfaction
-							</span>
-							<i class="ss-icon pull-right">
-								scatterchart
-							</i>
-						</button>
-						<button id="compareBtn4" type="button" class="btn btn-compare btn-block">							
-							<span class="pull-left">
-								Country
-							</span>
-							<i class="ss-icon pull-right">
-								globe
-							</i>
-						</button>
-					</div>
-					<div class="col-sm-1 line-merge"></div>
-					<div class="col-sm-2 line-single">
-						<button type="button" class="btn btn-primary btn-block btn-relate" style="margin-top:60px;">Relate <i class="ss-icon">merge</i></button>
-					</div>
-					<div class="col-sm-1 line-arrow"></div>
-					<div class="col-sm-5">
-						<div class="card-wrap">	
-							<div class="card compare1 compare-result">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
-											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">piechart</i> Age</button>
-										</div>
-									</div>
+			</div>
+			<div class="row row-padding animated delay1 fadeInUp hidden-xs">
+				<div class="col-sm-3 line-double">
+					<button id="compareBtn1" type="button" class="btn btn-compare btn-block active">
+						<span class="pull-left">
+							Gender
+						</span>
+						<i class="ss-icon pull-right">
+							femaleuser
+						</i>
+					</button>
+					<button id="compareBtn2" type="button" class="btn btn-compare btn-block">
+						<span class="pull-left">
+							Age
+						</span>
+						<i class="ss-icon pull-right">
+							piechart
+						</i>
+					</button>
+					<button id="compareBtn3" type="button" class="btn btn-compare btn-block active">
+						<span class="pull-left">
+							Satisfaction
+						</span>
+						<i class="ss-icon pull-right">
+							scatterchart
+						</i>
+					</button>
+					<button id="compareBtn4" type="button" class="btn btn-compare btn-block">							
+						<span class="pull-left">
+							Country
+						</span>
+						<i class="ss-icon pull-right">
+							globe
+						</i>
+					</button>
+				</div>
+				<div class="col-sm-1 line-merge"></div>
+				<div class="col-sm-2 line-single">
+					<button type="button" class="btn btn-primary btn-block btn-relate" style="margin-top:60px;">Relate <i class="ss-icon">merge</i></button>
+				</div>
+				<div class="col-sm-1 line-arrow"></div>
+				<div class="col-sm-5">
+					<div class="card-wrap">	
+						<div class="card compare1 compare-result">
+							<h4>There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span></h4>
+						</div>
+						<div class="card compare2 compare-result">
+							<h4><span class="var_name" style="color: #8fc3db">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name" style="color: #c0d6e0">Females</span></h4>
+							<div class="relative" style="margin-left:20px;">
+								<div class="chart-male">
+									<div class="bar-wrap"><div class="bar bar-1"></div></div>
+									<div class="bar-wrap"><div class="bar bar-2"></div></div>
+									<div class="bar-wrap"><div class="bar bar-3"></div></div>
+									<div class="bar-wrap"><div class="bar bar-4"></div></div>
+									<div class="bar-wrap"><div class="bar bar-5"></div></div>
+									<div class="bar-wrap"><div class="bar bar-6"></div></div>
+									<div class="bar-wrap"><div class="bar bar-7"></div></div>
+									<div class="bar-wrap"><div class="bar bar-8"></div></div>
+									<div class="bar-wrap"><div class="bar bar-9"></div></div>
+									<div class="bar-wrap"><div class="bar bar-10"></div></div>
+									<div class="bar-wrap"><div class="bar bar-11"></div></div>
+									<div class="bar-wrap"><div class="bar bar-12"></div></div>
+									<div class="bar-wrap"><div class="bar bar-13"></div></div>
+									<div class="bar-wrap"><div class="bar bar-14"></div></div>
+									<div class="bar-wrap"><div class="bar bar-15"></div></div>
+									<div class="bar-wrap"><div class="bar bar-16"></div></div>
 								</div>
-								<h4>There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span></h4>
-							</div>
-							<div class="card compare2 compare-result">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
-											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">scatterchart</i> Satisfaction</button>
-										</div>
-									</div>
-								</div>
-								<h4><span class="var_name" style="color: #ddccef;">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name" style="color: #c1b3e9;">Females</span></h4>
-								<div class="relative" style="margin-left:20px;">
-									<div class="chart-male">
-										<div class="bar-wrap"><div class="bar bar-1"></div></div>
-										<div class="bar-wrap"><div class="bar bar-2"></div></div>
-										<div class="bar-wrap"><div class="bar bar-3"></div></div>
-										<div class="bar-wrap"><div class="bar bar-4"></div></div>
-										<div class="bar-wrap"><div class="bar bar-5"></div></div>
-										<div class="bar-wrap"><div class="bar bar-6"></div></div>
-										<div class="bar-wrap"><div class="bar bar-7"></div></div>
-										<div class="bar-wrap"><div class="bar bar-8"></div></div>
-										<div class="bar-wrap"><div class="bar bar-9"></div></div>
-										<div class="bar-wrap"><div class="bar bar-10"></div></div>
-										<div class="bar-wrap"><div class="bar bar-11"></div></div>
-										<div class="bar-wrap"><div class="bar bar-12"></div></div>
-										<div class="bar-wrap"><div class="bar bar-13"></div></div>
-										<div class="bar-wrap"><div class="bar bar-14"></div></div>
-										<div class="bar-wrap"><div class="bar bar-15"></div></div>
-										<div class="bar-wrap"><div class="bar bar-16"></div></div>
-									</div>
-									<div class="chart-female">
-										<div class="bar-wrap"><div class="bar bar-1"></div></div>
-										<div class="bar-wrap"><div class="bar bar-2"></div></div>
-										<div class="bar-wrap"><div class="bar bar-3"></div></div>
-										<div class="bar-wrap"><div class="bar bar-4"></div></div>
-										<div class="bar-wrap"><div class="bar bar-5"></div></div>
-										<div class="bar-wrap"><div class="bar bar-6"></div></div>
-										<div class="bar-wrap"><div class="bar bar-7"></div></div>
-										<div class="bar-wrap"><div class="bar bar-8"></div></div>
-										<div class="bar-wrap"><div class="bar bar-9"></div></div>
-										<div class="bar-wrap"><div class="bar bar-10"></div></div>
-										<div class="bar-wrap"><div class="bar bar-11"></div></div>
-										<div class="bar-wrap"><div class="bar bar-12"></div></div>
-										<div class="bar-wrap"><div class="bar bar-13"></div></div>
-										<div class="bar-wrap"><div class="bar bar-14"></div></div>
-										<div class="bar-wrap"><div class="bar bar-15"></div></div>
-										<div class="bar-wrap"><div class="bar bar-16"></div></div>
-									</div>
+								<div class="chart-female">
+									<div class="bar-wrap"><div class="bar bar-1"></div></div>
+									<div class="bar-wrap"><div class="bar bar-2"></div></div>
+									<div class="bar-wrap"><div class="bar bar-3"></div></div>
+									<div class="bar-wrap"><div class="bar bar-4"></div></div>
+									<div class="bar-wrap"><div class="bar bar-5"></div></div>
+									<div class="bar-wrap"><div class="bar bar-6"></div></div>
+									<div class="bar-wrap"><div class="bar bar-7"></div></div>
+									<div class="bar-wrap"><div class="bar bar-8"></div></div>
+									<div class="bar-wrap"><div class="bar bar-9"></div></div>
+									<div class="bar-wrap"><div class="bar bar-10"></div></div>
+									<div class="bar-wrap"><div class="bar bar-11"></div></div>
+									<div class="bar-wrap"><div class="bar bar-12"></div></div>
+									<div class="bar-wrap"><div class="bar bar-13"></div></div>
+									<div class="bar-wrap"><div class="bar bar-14"></div></div>
+									<div class="bar-wrap"><div class="bar bar-15"></div></div>
+									<div class="bar-wrap"><div class="bar bar-16"></div></div>
 								</div>
 							</div>
-							<div class="card compare3 compare-result">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
-											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">globe</i> Country</button>
-										</div>
-									</div>
-								</div>
-								<h4>There is no statistically significant relationship between <span class="var_name">Country</span> and <span class="var_name">Gender</span></h4>
-							</div>
-							<div class="card compare4 compare-result">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">piechart</i> Age</button>
-											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">barchart</i> Satisfaction</button>
-										</div>
-									</div>
-								</div>
-								<h4><span class="var_name">Age</span> is weakly positively correlated with <span class="var_name">Satisfaction</span></h4>
-							</div>
-							<div class="card compare5 compare-result">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">piechart</i> Age</button>
-											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">globe</i> Country</button>
-										</div>
-									</div>
-								</div>
-								<h4>There is no statistically significant relationship between <span class="var_name">Age</span> and <span class="var_name">Country</span></h4>
-							</div>
-							<div class="card compare6 compare-result">
-								<div class="card-top clearfix">
-									<div class="titlewrap pull-left">
-										<div class="btn-group">
-											<button class="btn btn-info"><i class="ss-icon">scatterchart</i> Satisfaction</button>
-											<button class="btn btn-info hidden-sm hidden-xs"><i class="ss-icon">repeat</i></button>
-											<button class="btn btn-info"><i class="ss-icon">globe</i> Country</button>
-										</div>
-									</div>
-								</div>
-								<h4>There is a statistically significant relationship between <span class="var_name">Satisfaction</span> and <span class="var_name">Country</span></h4>
-							</div>
+						</div>
+						<div class="card compare3 compare-result">
+							<h4>There is no statistically significant relationship between <span class="var_name">Country</span> and <span class="var_name">Gender</span></h4>
+						</div>
+						<div class="card compare4 compare-result">
+							<h4><span class="var_name">Age</span> is weakly positively correlated with <span class="var_name">Satisfaction</span></h4>
+						</div>
+						<div class="card compare5 compare-result">
+							<h4>There is no statistically significant relationship between <span class="var_name">Age</span> and <span class="var_name">Country</span></h4>
+						</div>
+						<div class="card compare6 compare-result">
+							<h4>There is a statistically significant relationship between <span class="var_name">Satisfaction</span> and <span class="var_name">Country</span></h4>
 						</div>
 					</div>
 				</div>
@@ -262,6 +188,17 @@
 					<p>If you're analyzing data in a spreadsheet and writing anything more than =AVERAGE(), you'll work much faster in Statwing.</p>
 				</div>
 				<div class="col-sm-6">
+					<div class="image">
+						<div id="slider">
+							<div class="theslider"></div>
+						</div>
+						<div class="front">
+							<img src="img/stat-fg.png">
+						</div>
+						<div class="back">
+							<img src="img/stat-bg.png">
+						</div>
+					</div>
 				</div>
 			</div>
 			<hr>
@@ -308,6 +245,23 @@
 						<div class="point point19"></div>
 						<div class="point point20"></div>
 					</div>
+					<div class="chart-big">
+						<div class="bar-wrap"><div class="bar bar-1"></div></div>
+						<div class="bar-wrap"><div class="bar bar-2"></div></div>
+						<div class="bar-wrap"><div class="bar bar-3"></div></div>
+						<div class="bar-wrap"><div class="bar bar-4"></div></div>
+						<div class="bar-wrap"><div class="bar bar-5"></div></div>
+						<div class="bar-wrap"><div class="bar bar-6"></div></div>
+						<div class="bar-wrap"><div class="bar bar-7"></div></div>
+						<div class="bar-wrap"><div class="bar bar-8"></div></div>
+						<div class="bar-wrap"><div class="bar bar-9"></div></div>
+						<div class="bar-wrap"><div class="bar bar-10"></div></div>
+						<div class="bar-wrap"><div class="bar bar-11"></div></div>
+						<div class="bar-wrap"><div class="bar bar-12"></div></div>
+						<div class="bar-wrap"><div class="bar bar-13"></div></div>
+						<div class="bar-wrap"><div class="bar bar-14"></div></div>
+						<div class="bar-wrap"><div class="bar bar-15"></div></div>
+					</div>
 				</div>
 			</div>
 <!-- PRESS -->
@@ -351,11 +305,11 @@
 			<hr>
 			<div class="row row-padding-small" id="usecases">
 				<div class="col-sm-12">
-					<h2><i class="ss-icon pull-right">file</i> Examples of use</h2>
+					<h2><i class="ss-icon pull-right">file</i> Usecases</h2>
 				</div>
 			</div>
 			<div class="row row-padding-small usecases">
-				<div class="col-md-4">
+				<div class="col-sm-6">
 					<div class="box">
 						<h4 class="box-header top-blue">Surveys <i class="ss-icon pull-right">form</i></h4>
 						<p class="intrograph">Understand the results of your survey in minutes instead of hours</p>
@@ -364,36 +318,15 @@
 						<p>Then share a link with clients or colleagues so they can see your analyses and run more of their own.</p>
 						<div class="box-footer">
 							<div class="row">
-								<div class="col-md-8">
+								<div class="col-sm-8">
 									<b>Results from a survey of 10,000 software developers</b>
 								</div>
-								<div class="col-md-4">
-									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								<div class="col-sm-4">
+									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="box">
-						<h4 class="box-header top-blue">Marketing Analysis <i class="ss-icon pull-right">stock</i></h4>
-						<p class="intrograph">Ask deep questions about your users, their behavior, and the results of your marketing efforts</p>
-						<p>Marketing tools give you the ability to ask a few standard questions about your data. But if you want to dive deep or mix data from multiple sources, you'll need to pull the data out and do your own analysis in a tool like Statwing.</p>
-						<p>Marketing analysts use Statwing to ask questions like, “Is there a correlation between customer demographics and customer engagement?” or “Which of my marketing efforts had the best performance?”</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-md-8">
-									<b>Results of combining email marketing 
-data with website behavioral data</b>
-								</div>
-								<div class="col-md-4">
-									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
 					<div class="box">
 						<h4 class="box-header top-blue">Quantified Self <i class="ss-icon pull-right">userprofile</i></h4>
 						<p class="intrograph">Statistically analyze your quantified self data to understand if the trends and patterns you see are actually real</p>
@@ -401,19 +334,50 @@ data with website behavioral data</b>
 						<p>Quantified Self devotees have used Statwing to ask questions like, “Am I happier when I walk more?” or “Am I more likely to work out when I wake up earlier?”</p>
 						<div class="box-footer">
 							<div class="row">
-								<div class="col-md-8">
+								<div class="col-sm-8">
 									<b>One man's quantified self dataset</b>
 								</div>
-								<div class="col-md-4">
-									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								<div class="col-sm-4">
+									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<h4 class="box-header top-blue">Academic Research <i class="ss-icon pull-right">bank</i></h4>
+						<p class="intrograph">Statwing makes sure you're using the correct statistical tests, protecting your analyses against common mistakes</p>
+						<p>Statwing automatically detects outliers or too-small sample sizes, then alerts you to the issue.</p>
+						<p>Unlike any other statistical software, Statwing automatically reports effect sizes, not just p-values.</p>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<b>Psychological Survey Results</b>
+								</div>
+								<div class="col-sm-4">
+									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row row-padding-small usecases">
-				<div class="col-md-4">
+				<div class="col-sm-6">
+					<div class="box">
+						<h4 class="box-header top-blue">Marketing Analysis <i class="ss-icon pull-right">stock</i></h4>
+						<p class="intrograph">Ask deep questions about your users, their behavior, and the results of your marketing efforts</p>
+						<p>Marketing tools give you the ability to ask a few standard questions about your data. But if you want to dive deep or mix data from multiple sources, you'll need to pull the data out and do your own analysis in a tool like Statwing.</p>
+						<p>Marketing analysts use Statwing to ask questions like, “Is there a correlation between customer demographics and customer engagement?” or “Which of my marketing efforts had the best performance?”</p>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<b>Results of combining email marketing 
+data with website behavioral data</b>
+								</div>
+								<div class="col-sm-4">
+									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="box">
 						<h4 class="box-header top-blue">Journalism <i class="ss-icon pull-right">news</i></h4>
 						<p class="intrograph">Quickly visualize and find trends in public data</p>
@@ -422,53 +386,32 @@ data with website behavioral data</b>
 						<p>Statwing analyses and visualizations have been used at <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Guardian</a> and <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Motley Fool</a>, among others.</p>
 						<div class="box-footer">
 							<div class="row">
-								<div class="col-md-8">
+								<div class="col-sm-8">
 									<b>Congressional lobbying and the SOPA/PIPA bill</b>
 								</div>
-								<div class="col-md-4">
-									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								<div class="col-sm-4">
+									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="box">
-						<h4 class="box-header top-blue">Academic Research <i class="ss-icon pull-right">bank</i></h4>
-						<p class="intrograph">Statwing makes sure you're using the correct statistical tests, protecting your analyses against common mistakes</p>
-						<p>Statwing automatically detects outliers or too-small sample sizes, then alerts you to the issue.</p>
-						<p>Unlike any other statistical software, Statwing automatically reports effect sizes, not just p-values.</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-md-8">
-									<b>Psychological Survey Results</b>
-								</div>
-								<div class="col-md-4">
-									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
 					<div class="box">
 						<h4 class="box-header top-blue">Curiosity <i class="ss-icon pull-right">like</i></h4>
 						<p class="intrograph">Statwing's ease of use lets you concentrate on having fun exploring data, not worrying about the logistics of using your data analysis tool</p>
 						<p>Find fun datasets from around the web and pop them into Statwing to get instant visualizations.</p>
 						<div class="box-footer">
 							<div class="row">
-								<div class="col-md-8">
+								<div class="col-sm-8">
 									<b>Titanic Passenger List</b>
 								</div>
-								<div class="col-md-4">
-									<a href="#" class="btn btn-success">VIEW <i class="ss-icon">forward</i></a>
+								<div class="col-sm-4">
+									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 <!-- PRICING -->
 			<hr>
 			<div class="row" id="pricing">
@@ -511,7 +454,7 @@ data with website behavioral data</b>
 					</div>
 					<div class="row row-padding-small">
 						<div class="col-sm-6 col-sm-offset-3 center">
-							<a class="btn btn-success btn-lg btn-block" style="padding-top:22px;padding-bottom:18px;"><i class="ss-icon">playvideo</i> Start Statwing Silver free trial</a>
+							<a class="btn btn-primary btn-lg btn-block" style="padding-top:22px;padding-bottom:18px;"><i class="ss-icon">playvideo</i> Start Statwing Silver free trial</a>
 							<small>(E-mail sales@statwing.com for enterprise pricing)</small>
 						</div>
 					</div>
