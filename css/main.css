@@ -64,7 +64,7 @@ box-shadow: inset 0px 2px 1px rgba(0,0,0,0.1);
 text-shadow: 0px 1px 2px rgba(0,0,0,0.3);
 color: white;
 }
-.btn-primary {
+.btn-primary, .card-top, .card-top .btn {
 display: inline-block;
 border: 1px solid #2e7cb4;
 background-image: -moz-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
@@ -74,10 +74,10 @@ color: #d2ebf8;
 text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
 box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
 }
-.btn-primary:hover {
+.btn-primary:hover, .card-top .btn:hover {
 color: white;
 }
-.btn-primary:active, .btn-primary.active {
+.btn-primary:active, .btn-primary.active, .card-top .btn:active, .card-top .btn.active {
 background-image: -moz-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
 background-image: -webkit-linear-gradient(90deg, #2680b0 0%, #2275a5 100%);
 background-image: -ms-linear-gradient( 90deg, #2680b0 0%, #2275a5 100%);
@@ -136,6 +136,17 @@ color: #a7b3ba;
 position: relative;
 height: 220px;
 }
+.card-top {
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+padding: 8px 6px;
+position: absolute;
+left: -1px;
+right: -1px;
+top: -1px;
+}
 .card h4 {
 padding: 10px 20px;
 }
@@ -155,6 +166,7 @@ padding-bottom: 50px;
 box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
 z-index: 0;
 position: relative;
+overflow-x: hidden;
 }
 .ss-icon {
 vertical-align: middle;
@@ -781,6 +793,9 @@ left:76%;
 	.btn .hidden-sm {
 	display: none!important;
 	}
+	.card h4 {
+		font-size: 12px;
+	}
 }
 @media (max-width: 1199px) and (min-width: 992px) {
 	.btn .hidden-md {
@@ -831,6 +846,8 @@ left:76%;
 		display: block;
 		background: transparent;
 		padding: 7px 10px 5px;
+		box-shadow: none;
+		text-shadow: none;
 	}
 	.navbar-default .btn a {
 		color: #788083;
@@ -865,7 +882,7 @@ background: linear-gradient(to bottom,  rgba(51,160,211,0) 0%,rgba(51,160,211,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0033a0d3', endColorstr='#0033a0d3',GradientType=0 );
 
 }
-.image .front {
+.image .back {
 width: 100%;
 height: 100%;
 position: absolute;
@@ -873,7 +890,7 @@ left: 0;
 right: auto;
 overflow: hidden;
 }
-.image .back {
+.image .front {
 width: 332px;
 height: 100%;
 position: absolute;
@@ -881,36 +898,76 @@ right: 0;
 left: auto;
 overflow: hidden;
 }
-.image .back img {
+.image .front img {
 position: absolute;
 right: 0;
 max-width: none;
 }
 @keyframes slider {
-0%   {margin-left:30%;}
-50%  {margin-left:70%;}
-100% {margin-left:30%;}
+0%   {margin-left:10%;}
+50%  {margin-left:90%;}
+100% {margin-left:10%;}
 }
 @-webkit-keyframes slider {
-0%   {margin-left:30%;}
-50%  {margin-left:70%;}
-100% {margin-left:30%;}
+0%   {margin-left:10%;}
+50%  {margin-left:90%;}
+100% {margin-left:10%;}
 }
 .image #slider {
 animation:slider 5s infinite;
 -webkit-animation:slider 5s infinite;
 }
-@keyframes back {
-0%   {width:70%;}
-50%  {width:30%;}
-100% {width:70%;}
+@keyframes front {
+0%   {width:90%;}
+50%  {width:10%;}
+100% {width:90%;}
 }
-@-webkit-keyframes back {
-0%   {width:70%;}
-50%  {width:30%;}
-100% {width:70%;}
+@-webkit-keyframes front {
+0%   {width:90%;}
+50%  {width:10%;}
+100% {width:90%;}
 }
-.image .back {
-animation:back 5s infinite;
--webkit-animation:back 5s infinite;
+.image .front {
+animation:front 5s infinite;
+-webkit-animation:front 5s infinite;
+}
+.compare-interface {
+background-color: #f6f6f6;
+border: 1px solid #CECECE;
+box-shadow: 0px 1px 5px rgba(0,0,0,0.05);
+border-radius: 10px;
+}
+.compare-interface .sidebar {
+width: 35%;
+background-color: white;
+border-right: 1px solid #DDDDDD;
+padding: 10px;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+height: 400px;
+border-bottom-left-radius: 10px;
+float: left;
+}
+.compare-interface .workspace {
+width: 65%;
+float: left;
+padding-top: 60px;
+}
+.compare-interface .btn-info img {
+width: 22px;
+margin-top: 2px;
+}
+.compare-interface .card-top {
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.compare-interface .card .card-top {
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.compare-interface .card {
+height: 300px;
+margin: 20px;
+}
+.compare-interface .card h4 {
+	margin-top: 50px;
 }

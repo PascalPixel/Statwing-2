@@ -14,7 +14,7 @@
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Animate -->
-	<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
+	<!-- <link href='css/animate-custom.css' rel='stylesheet' type='text/css'> -->
 	<!-- H&FJ -->
 	<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/6665052/714022/css/fonts.css" />
 	<!-- CSS -->
@@ -34,7 +34,7 @@
           <a class="navbar-brand" href="#"><img src="img/statwing_logo.png" style="width:20px;margin-top:-5px;"> Statwing</a>
         </div>
         <div class="navbar-collapse collapse" id="scrollspy">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav hidden-sm">
             <li><a href="#howitworks">How it works</a></li>
             <li><a href="#usecases">Usecases</a></li>
             <li><a href="#pricing">Pricing</a></li>
@@ -53,10 +53,10 @@
 			<div class="row animated fadeInUp">
 				<div class="col-sm-9">
 					<h1 style="font-size:28px;color:#33a0d3;">Modern Data Analysis Software</h1>
-					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis software, in an intuitive interface.</h3>
+					<h3 class="intro" style="font-size:20px;margin-top:0px;">The power of statistical analysis, in an intuitive interface.</h3>
 				</div>
 				<div class="col-sm-3 center">
-					<button type="button" class="btn btn-success btn-block btn-lg btn-relate" style="height:60px;font-size:18px;margin-top:20px;">
+					<button type="button" class="btn btn-success btn-block btn-lg" style="height:60px;font-size:18px;margin-top:20px;font-weight:bold;-webkit-font-smoothing:antialiased;">
 						<i class="ss-icon">layout</i> Try <span class="hidden-sm">the</span> <span class="hidden-md hidden-sm">full</span> demo</button>
 					<small>(No sign up, completely free)</small>
 				</div>
@@ -174,9 +174,8 @@
 				<div class="col-sm-6">
 					<h3><i class="ss-icon">binoculars</i> Explore your data in seconds</h3>
 					<p class="intrograph">Simply upload your spreadsheet or dataset, then select the data you want to learn about.</p>
-					<p>Statwing is the future of statistical software, using complex and old applications like SPSS can be tiring to master and frustrating to use, or simple spreadsheet software like Excel which was never designed to do any real data analysis, making you perform hours of labor and never any real answers.</p>
-					<p>Statwing simply takes any dataset or spreadsheet, turns all data into variables, and makes it easy to ask normal questions, giving you simple answers in plain English, as well as advanced interactive schematics, Statwing simply understands the data.
-					</p>
+					<p>Statwing automates statistical analysis so you can understand your data deeply in just a few clicks.</p>
+					<p>Now anyone get the same insight out of data as a statistician or data scientist.</p>
 				</div>
 			</div>
 			<hr>
@@ -192,11 +191,92 @@
 						<div id="slider">
 							<div class="theslider"></div>
 						</div>
+						<div class="back">
+							<div class="compare-interface">
+								<div class="card-top">
+									<div class="titlewrap pull-left">
+										<div class="btn-group">
+											<button class="btn btn-info"><img src="img/statwing_logo_small.png"/></button>
+											<button class="btn btn-info"><i class="ss-icon">file</i> Survey <i class="ss-icon">dropdown</i></button>
+											<button class="btn btn-info"><i class="ss-icon">layout</i> Workspace 1 <i class="ss-icon">dropdown</i></button>
+										</div>
+									</div>
+								</div>
+								<div class="sidebar">
+									<button type="button" class="btn btn-primary btn-block btn-relate" style="margin-top:60px;">Relate <i class="ss-icon">merge</i></button>
+									<hr>
+									<button id="compareBtn1" type="button" class="btn btn-compare btn-block active">
+										<span class="pull-left">
+											Gender
+										</span>
+										<i class="ss-icon pull-right">
+											femaleuser
+										</i>
+									</button>
+									<button id="compareBtn3" type="button" class="btn btn-compare btn-block active">
+										<span class="pull-left">
+											Satisfaction
+										</span>
+										<i class="ss-icon pull-right">
+											scatterchart
+										</i>
+									</button>
+								</div>
+								<div class="workspace">
+									<div class="card" style="margin:20px;">
+										<div class="card-top clearfix">
+											<div class="titlewrap pull-left">
+												<div class="btn-group">
+													<button class="btn btn-info"><i class="ss-icon">femaleuser</i> Gender</button>
+													<button class="btn btn-info"><i class="ss-icon">scatterchart</i> Satisfaction</button>
+												</div>
+											</div>
+										</div>
+										<h4><span class="var_name" style="color: #8fc3db">Males</span> tend to have much higher values for <span class="var_name">Satisfaction</span> than <span class="var_name" style="color: #c0d6e0">Females</span></h4>
+										<div class="relative" style="margin-left:20px;">
+											<div class="chart-male">
+												<div class="bar-wrap"><div class="bar bar-1"></div></div>
+												<div class="bar-wrap"><div class="bar bar-2"></div></div>
+												<div class="bar-wrap"><div class="bar bar-3"></div></div>
+												<div class="bar-wrap"><div class="bar bar-4"></div></div>
+												<div class="bar-wrap"><div class="bar bar-5"></div></div>
+												<div class="bar-wrap"><div class="bar bar-6"></div></div>
+												<div class="bar-wrap"><div class="bar bar-7"></div></div>
+												<div class="bar-wrap"><div class="bar bar-8"></div></div>
+												<div class="bar-wrap"><div class="bar bar-9"></div></div>
+												<div class="bar-wrap"><div class="bar bar-10"></div></div>
+												<div class="bar-wrap"><div class="bar bar-11"></div></div>
+												<div class="bar-wrap"><div class="bar bar-12"></div></div>
+												<div class="bar-wrap"><div class="bar bar-13"></div></div>
+												<div class="bar-wrap"><div class="bar bar-14"></div></div>
+												<div class="bar-wrap"><div class="bar bar-15"></div></div>
+												<div class="bar-wrap"><div class="bar bar-16"></div></div>
+											</div>
+											<div class="chart-female">
+												<div class="bar-wrap"><div class="bar bar-1"></div></div>
+												<div class="bar-wrap"><div class="bar bar-2"></div></div>
+												<div class="bar-wrap"><div class="bar bar-3"></div></div>
+												<div class="bar-wrap"><div class="bar bar-4"></div></div>
+												<div class="bar-wrap"><div class="bar bar-5"></div></div>
+												<div class="bar-wrap"><div class="bar bar-6"></div></div>
+												<div class="bar-wrap"><div class="bar bar-7"></div></div>
+												<div class="bar-wrap"><div class="bar bar-8"></div></div>
+												<div class="bar-wrap"><div class="bar bar-9"></div></div>
+												<div class="bar-wrap"><div class="bar bar-10"></div></div>
+												<div class="bar-wrap"><div class="bar bar-11"></div></div>
+												<div class="bar-wrap"><div class="bar bar-12"></div></div>
+												<div class="bar-wrap"><div class="bar bar-13"></div></div>
+												<div class="bar-wrap"><div class="bar bar-14"></div></div>
+												<div class="bar-wrap"><div class="bar bar-15"></div></div>
+												<div class="bar-wrap"><div class="bar bar-16"></div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="front">
 							<img src="img/stat-fg.png">
-						</div>
-						<div class="back">
-							<img src="img/stat-bg.png">
 						</div>
 					</div>
 				</div>
@@ -208,8 +288,8 @@
 				<div class="col-sm-6">
 					<h3><i class="ss-icon">layout</i> Statwing vs. Statistical Software</h3>
 					<p class="intrograph">Traditional statistical software was built for statisticians, and requires technical expertise and painstaking coding to ask even simple questions.</p>
-					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for outliers or other data issues.</p>
-					<p>Statwing translates results into plain English, so anyone can understand data the way a statistician or data scientist would.</p>
+					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for data issues like outliers.</p>
+					<p>Statwing translates results into plain English, so anyone can understand their data the way a statistician or data scientist would.</p>
 					<p>The statistically inclined can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
 				</div>
 			</div>
@@ -218,9 +298,8 @@
 				<div class="col-sm-6">
 					<h3><i class="ss-icon">scatterchart</i> Instant Visualization</h3>
 					<p class="intrograph">Statwing automatically creates beautiful, interactive visualizations along with every analysis.</p>
-					<p>In spreadsheet and statistical software, even creating simple bar charts takes an inordinate amount decisions and clicks.</p>
-					<p>Statwing understands the structure of your data, though, so it instantly creates histograms, scatterplots, heatmaps, bar charts, anything your data calls for.</p>
-					<p>Those visualizations make data cleaning much faster, give a rich feel for the data, and can then be exported for use in presentation software.</p>
+					<p>In spreadsheets and statistical software, creating even simple charts takes too much time and effort.</p>
+					<p>Statwing understands your data's structure, so it automatically creates exportable histograms, scatterplots, heatmaps, and bar charts.</p>
 				</div>
 				<div class="col-sm-6">
 					<div class="scatterchart">
