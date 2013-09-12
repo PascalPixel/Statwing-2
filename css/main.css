@@ -914,8 +914,8 @@ max-width: none;
 100% {margin-left:10%;}
 }
 .image #slider {
-animation:slider 5s infinite;
--webkit-animation:slider 5s infinite;
+animation:slider 10s infinite;
+-webkit-animation:slider 10s infinite;
 }
 @keyframes front {
 0%   {width:90%;}
@@ -928,6 +928,6 @@ animation:slider 5s infinite;
 100% {width:90%;}
 }
 .image .front {
-animation:front 5s infinite;
--webkit-animation:front 5s infinite;
+animation:front 10s infinite;
+-webkit-animation:front 10s infinite;
 }
