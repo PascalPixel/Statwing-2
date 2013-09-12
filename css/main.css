@@ -379,13 +379,16 @@ font-weight: bold;
 }
 .bar-wrap {
 position: relative;
-height: 100px;
+height: 150px;
 width: 4.7%;
 float: left;
 margin: 0 1%;
 }
 .chart-big {
-width: 100%;
+right: 20px;
+left: 20px;
+bottom: 20px;
+position: absolute;
 }
 .relative {
 position: relative;
@@ -694,12 +697,10 @@ margin-right: 2%;
 margin-left: 0%;
 }
 .scatterchart {
-background-color: white;
-border-radius: 5px;
-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 padding: 20px;
-height: 240px;
+height: 250px;
 background-image: url('../img/raster.png');
+margin-top: 50px;
 position: relative;
 }
 .scatterchart .point {
@@ -718,76 +719,116 @@ bottom:16%;
 left:8%;
 }
 .scatterchart .point3 {
-bottom:11%;
-left:12%;
+bottom:12%;
+left:11%;
 }
 .scatterchart .point4 {
-bottom:21%;
+bottom:18%;
 left:15%;
 }
 .scatterchart .point5 {
-bottom:28%;
-left:19%;
+bottom:13%;
+left:18%;
 }
 .scatterchart .point6 {
-bottom:38%;
-left:23%;
+bottom:19%;
+left:21%;
 }
 .scatterchart .point7 {
-bottom:29%;
-left:27%;
+bottom:22%;
+left:24%;
 }
 .scatterchart .point8 {
-bottom:45%;
-left:29%;
+bottom:19%;
+left:27%;
 }
 .scatterchart .point9 {
-bottom:50%;
-left:50%;
+bottom:24%;
+left:30%;
 }
 .scatterchart .point10 {
-bottom:55%;
-left:55%;
+bottom:23%;
+left:33%;
 }
 .scatterchart .point11 {
-bottom:60%;
-left:60%;
+bottom:20%;
+left:36%;
 }
 .scatterchart .point12 {
-bottom:65%;
-left:65%;
+bottom:25%;
+left:39%;
 }
 .scatterchart .point13 {
-bottom:70%;
-left:70%;
+bottom:28%;
+left:42%;
 }
 .scatterchart .point14 {
-bottom:75%;
-left:75%;
+bottom:26%;
+left:45%;
 }
 .scatterchart .point15 {
-bottom:80%;
-left:80%;
+bottom:28%;
+left:48%;
 }
 .scatterchart .point16 {
-bottom:85%;
-left:85%;
+bottom:32%;
+left:51%;
 }
 .scatterchart .point17 {
-bottom:90%;
-left:90%;
+bottom:30%;
+left:54%;
 }
 .scatterchart .point18 {
-bottom:78%;
-left:78%;
+bottom:38%;
+left:57%;
 }
 .scatterchart .point19 {
-bottom:20%;
-left:56%;
+bottom:33%;
+left:60%;
 }
 .scatterchart .point20 {
-bottom:91%;
-left:76%;
+bottom:46%;
+left:63%;
+}
+.scatterchart .point21 {
+bottom:36%;
+left:66%;
+}
+.scatterchart .point22 {
+bottom:44%;
+left:69%;
+}
+.scatterchart .point23 {
+bottom:49%;
+left:72%;
+}
+.scatterchart .point24 {
+bottom:59%;
+left:75%;
+}
+.scatterchart .point25 {
+bottom:70%;
+left:78%;
+}
+.scatterchart .point26 {
+bottom:80%;
+left:81%;
+}
+.scatterchart .point27 {
+bottom:60%;
+left:84%;
+}
+.scatterchart .point28 {
+bottom:80%;
+left:87%;
+}
+.scatterchart .point29 {
+bottom:80%;
+left:90%;
+}
+.scatterchart .point30 {
+bottom:90%;
+left:93%;
 }
 @media (max-width: 991px) and (min-width: 768px) {
 	.btn .hidden-sm {
