@@ -897,6 +897,7 @@ position: absolute;
 right: 0;
 left: auto;
 overflow: hidden;
+background: #f7fafa;
 }
 .image .front img {
 position: absolute;
@@ -914,8 +915,8 @@ max-width: none;
 100% {margin-left:10%;}
 }
 .image #slider {
-animation:slider 10s infinite;
--webkit-animation:slider 10s infinite;
+animation:slider linear 10s infinite;
+-webkit-animation:slider linear 10s infinite;
 }
 @keyframes front {
 0%   {width:90%;}
@@ -928,6 +929,6 @@ animation:slider 10s infinite;
 100% {width:90%;}
 }
 .image .front {
-animation:front 10s infinite;
--webkit-animation:front 10s infinite;
+animation:front linear 10s infinite;
+-webkit-animation:front linear 10s infinite;
 }
