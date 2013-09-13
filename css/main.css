@@ -40,6 +40,10 @@ padding-top: 18px;
 padding-bottom: 0px;
 margin-right: 15px;
 }
+.navbar-default .navbar-brand img {
+    width:20px;
+    margin-top:-5px;   
+}
 .btn {
 border:1px solid #b7c3c4;
 background-image: -moz-linear-gradient( 90deg, #d8d8d0 0%, #e7e7e2 100%);
@@ -380,293 +384,8 @@ width: 4.7%;
 float: left;
 margin: 0 1%;
 }
-.chart-big {
-right: 20px;
-left: 20px;
-bottom: 20px;
-position: absolute;
-}
 .relative {
 position: relative;
-}
-.chart-big .bar-wrap:last-child {
-margin-right: 0%;
-}
-.chart-big .bar	{
-position: absolute;
-bottom:0;
-width: 100%;
-background-color: #d3eaf1;
-}
-@keyframes barchart1 {
-0%   {height:100%;}
-25%  {height:100%;}
-50%  {height:10%;}
-75%  {height:10%;}
-100% {height:100%;}
-}
-@keyframes barchart2 {
-0%   {height:70%;}
-25%  {height:80%;}
-50%  {height:12%;}
-75%  {height:30%;}
-100% {height:70%;}
-}
-@keyframes barchart3 {
-0%   {height:50%;}
-25%  {height:60%;}
-50%  {height:13%;}
-75%  {height:50%;}
-100% {height:50%;}
-}
-@keyframes barchart4 {
-0%   {height:40%;}
-25%  {height:50%;}
-50%  {height:15%;}
-75%  {height:70%;}
-100% {height:40%;}
-}
-@keyframes barchart5 {
-0%   {height:30%;}
-25%  {height:40%;}
-50%  {height:16%;}
-75%  {height:80%;}
-100% {height:30%;}
-}
-@keyframes barchart6 {
-0%   {height:20%;}
-25%  {height:30%;}
-50%  {height:17%;}
-75%  {height:90%;}
-100% {height:20%;}
-}
-@keyframes barchart7 {
-0%   {height:10%;}
-25%  {height:25%;}
-50%  {height:19%;}
-75%  {height:95%;}
-100% {height:10%;}
-}
-@keyframes barchart8 {
-0%   {height:10%;}
-25%  {height:20%;}
-50%  {height:20%;}
-75%  {height:100%;}
-100% {height:10%;}
-}
-@keyframes barchart9 {
-0%   {height:10%;}
-25%  {height:19%;}
-50%  {height:25%;}
-75%  {height:95%;}
-100% {height:10%;}
-}
-@keyframes barchart10 {
-0%   {height:20%;}
-25%  {height:17%;}
-50%  {height:30%;}
-75%  {height:90%;}
-100% {height:20%;}
-}
-@keyframes barchart11 {
-0%   {height:30%;}
-25%  {height:16%;}
-50%  {height:40%;}
-75%  {height:80%;}
-100% {height:30%;}
-}
-@keyframes barchart12 {
-0%   {height:40%;}
-25%  {height:15%;}
-50%  {height:50%;}
-75%  {height:70%;}
-100% {height:40%;}
-}
-@keyframes barchart13 {
-0%   {height:50%;}
-25%  {height:13%;}
-50%  {height:60%;}
-75%  {height:50%;}
-100% {height:50%;}
-}
-@keyframes barchart14 {
-0%   {height:70%;}
-25%  {height:12%;}
-50%  {height:80%;}
-75%  {height:30%;}
-100% {height:70%;}
-}
-@keyframes barchart15 {
-0%   {height:100%;}
-25%  {height:10%;}
-50%  {height:100%;}
-75%  {height:10%;}
-100% {height:100%;}
-}
-@-webkit-keyframes barchart1 {
-0%   {height:100%;}
-25%  {height:100%;}
-50%  {height:10%;}
-75%  {height:10%;}
-100% {height:100%;}
-}
-@-webkit-keyframes barchart2 {
-0%   {height:70%;}
-25%  {height:80%;}
-50%  {height:12%;}
-75%  {height:30%;}
-100% {height:70%;}
-}
-@-webkit-keyframes barchart3 {
-0%   {height:50%;}
-25%  {height:60%;}
-50%  {height:13%;}
-75%  {height:50%;}
-100% {height:50%;}
-}
-@-webkit-keyframes barchart4 {
-0%   {height:40%;}
-25%  {height:50%;}
-50%  {height:15%;}
-75%  {height:70%;}
-100% {height:40%;}
-}
-@-webkit-keyframes barchart5 {
-0%   {height:30%;}
-25%  {height:40%;}
-50%  {height:16%;}
-75%  {height:80%;}
-100% {height:30%;}
-}
-@-webkit-keyframes barchart6 {
-0%   {height:20%;}
-25%  {height:30%;}
-50%  {height:17%;}
-75%  {height:90%;}
-100% {height:20%;}
-}
-@-webkit-keyframes barchart7 {
-0%   {height:10%;}
-25%  {height:25%;}
-50%  {height:19%;}
-75%  {height:95%;}
-100% {height:10%;}
-}
-@-webkit-keyframes barchart8 {
-0%   {height:10%;}
-25%  {height:20%;}
-50%  {height:20%;}
-75%  {height:100%;}
-100% {height:10%;}
-}
-@-webkit-keyframes barchart9 {
-0%   {height:10%;}
-25%  {height:19%;}
-50%  {height:25%;}
-75%  {height:95%;}
-100% {height:10%;}
-}
-@-webkit-keyframes barchart10 {
-0%   {height:20%;}
-25%  {height:17%;}
-50%  {height:30%;}
-75%  {height:90%;}
-100% {height:20%;}
-}
-@-webkit-keyframes barchart11 {
-0%   {height:30%;}
-25%  {height:16%;}
-50%  {height:40%;}
-75%  {height:80%;}
-100% {height:30%;}
-}
-@-webkit-keyframes barchart12 {
-0%   {height:40%;}
-25%  {height:15%;}
-50%  {height:50%;}
-75%  {height:70%;}
-100% {height:40%;}
-}
-@-webkit-keyframes barchart13 {
-0%   {height:50%;}
-25%  {height:13%;}
-50%  {height:60%;}
-75%  {height:50%;}
-100% {height:50%;}
-}
-@-webkit-keyframes barchart14 {
-0%   {height:70%;}
-25%  {height:12%;}
-50%  {height:80%;}
-75%  {height:30%;}
-100% {height:70%;}
-}
-@-webkit-keyframes barchart15 {
-0%   {height:100%;}
-25%  {height:10%;}
-50%  {height:100%;}
-75%  {height:10%;}
-100% {height:100%;}
-}
-.chart-big .bar-1 {
-animation:barchart1 10s infinite;
--webkit-animation:barchart1 10s infinite;
-}
-.chart-big .bar-2 {
-animation:barchart2 10s infinite;
--webkit-animation:barchart2 10s infinite;
-}
-.chart-big .bar-3 {
-animation:barchart3 10s infinite;
--webkit-animation:barchart3 10s infinite;
-}
-.chart-big .bar-4 {
-animation:barchart4 10s infinite;
--webkit-animation:barchart4 10s infinite;
-}
-.chart-big .bar-5 {
-animation:barchart5 10s infinite;
--webkit-animation:barchart5 10s infinite;
-}
-.chart-big .bar-6 {
-animation:barchart6 10s infinite;
--webkit-animation:barchart6 10s infinite;
-}
-.chart-big .bar-7 {
-animation:barchart7 10s infinite;
--webkit-animation:barchart7 10s infinite;
-}
-.chart-big .bar-8 {
-animation:barchart8 10s infinite;
--webkit-animation:barchart8 10s infinite;
-}
-.chart-big .bar-9 {
-animation:barchart9 10s infinite;
--webkit-animation:barchart9 10s infinite;
-}
-.chart-big .bar-10 {
-animation:barchart10 10s infinite;
--webkit-animation:barchart10 10s infinite;
-}
-.chart-big .bar-11 {
-animation:barchart11 10s infinite;
--webkit-animation:barchart11 10s infinite;
-}
-.chart-big .bar-12 {
-animation:barchart12 10s infinite;
--webkit-animation:barchart12 10s infinite;
-}
-.chart-big .bar-13 {
-animation:barchart13 10s infinite;
--webkit-animation:barchart13 10s infinite;
-}
-.chart-big .bar-14 {
-animation:barchart14 10s infinite;
--webkit-animation:barchart14 10s infinite;
-}
-.chart-big .bar-15 {
-animation:barchart15 10s infinite;
--webkit-animation:barchart15 10s infinite;
 }
 .chart-male, .chart-female, .chart-underline {
 width: 100%;
@@ -896,32 +615,45 @@ right: 0;
 max-width: none;
 }
 @keyframes slider {
-0%   {margin-left:10%;}
-50%  {margin-left:90%;}
-100% {margin-left:10%;}
+0%   {margin-left:5%;}
+50%  {margin-left:95%;}
+100% {margin-left:5%;}
 }
 @-webkit-keyframes slider {
-0%   {margin-left:10%;}
-50%  {margin-left:90%;}
-100% {margin-left:10%;}
+0%   {margin-left:5%;}
+50%  {margin-left:95%;}
+100% {margin-left:5%;}
 }
 .image #slider {
-animation:slider linear 10s infinite;
--webkit-animation:slider linear 10s infinite;
+animation:slider 10s infinite;
+-webkit-animation:slider 10s infinite;
 }
 @keyframes front {
-0%   {width:90%;}
-50%  {width:10%;}
-100% {width:90%;}
+0%   {width:95%;}
+50%  {width:5%;}
+100% {width:95%;}
 }
 @-webkit-keyframes front {
-0%   {width:90%;}
-50%  {width:10%;}
-100% {width:90%;}
+0%   {width:95%;}
+50%  {width:5%;}
+100% {width:95%;}
 }
 .image .front {
-animation:front linear 10s infinite;
--webkit-animation:front linear 10s infinite;
+animation:front 10s infinite;
+-webkit-animation:front 10s infinite;
+}
+.hero-welcome h1 {
+    font-size:28px;
+    color:#33a0d3;
+}
+.hero-welcome h3 {
+    font-size:20px;
+    margin-top:-10px;
+    font-weight:normal;
+}
+.btn-relate {margin-top:60px;}
+.trydemo {
+height:60px;font-size:18px;margin-top:20px;font-weight:bold;-webkit-font-smoothing:antialiased;padding-top:17px;
 }
 @media (max-width: 991px) and (min-width: 768px) {
 	.btn .hidden-sm {
