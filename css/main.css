@@ -392,7 +392,7 @@ width: 100%;
 height: 35px;
 margin-top: 10px;
 }
-.chart-male .bar, .chart-female .bar {
+.bar {
 position: absolute;
 bottom:0;
 width: 100%;
@@ -407,7 +407,7 @@ border-top: 1px solid #dbebf2;
 .chart-female .bar {
 background-color: #a7db67;
 }
-.chart-male .bar-wrap, .chart-female .bar-wrap {
+.bar-wrap {
 position: relative;
 width: 4.2%;
 height: 100%;
@@ -655,12 +655,23 @@ animation:front 10s infinite;
 .trydemo {
 height:60px;font-size:18px;margin-top:20px;font-weight:bold;-webkit-font-smoothing:antialiased;padding-top:17px;
 }
+.customer-satisfaction {
+font-size: 16px;
+}
+.chart-country {
+width: 100%;
+height: 90px;
+margin-top: 10px;
+}
+.country .chart-underline > .bar-wrap, .country .chart-country > .bar-wrap {
+width: 18%;
+}
 @media (max-width: 991px) and (min-width: 768px) {
 	.btn .hidden-sm {
 	display: none!important;
 	}
 	.card h4 {
-		font-size: 12px;
+		font-size: 13px;
 	}
 }
 @media (max-width: 1199px) and (min-width: 992px) {

@@ -65,7 +65,7 @@
 				<div class="col-sm-3 line-double">
 					<button id="compareBtn1" type="button" class="btn btn-compare btn-block active">
 						<span class="pull-left">
-							Customer Satisfaction
+							<span class="hidden-sm hidden-md">Customer</span> Satisfaction
 						</span>
 						<i class="ss-icon pull-right">
 							barchart
@@ -104,10 +104,62 @@
 				<div class="col-sm-5">
 					<div class="card-wrap">	
 						<div class="card compare1 compare-result">
-							<h4>There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span></h4>
+							<h4 class="customer-satisfaction"><span class="var_name" style="color: #8fc3db">Age</span> is weakly positively correlated with <span class="var_name" style="color: #777777">Customer Satisfaction</span></h4>
+							<div class="relative" style="margin-left:20px;margin-right: 19px;">
+								<div class="scatterchart" style="height: 95px;margin-top: -10px;background: none;">
+									<div class="point point1"></div>
+									<div class="point point2"></div>
+									<div class="point point3"></div>
+									<div class="point point4"></div>
+									<div class="point point5"></div>
+									<div class="point point6"></div>
+									<div class="point point7"></div>
+									<div class="point point8"></div>
+									<div class="point point9"></div>
+									<div class="point point10"></div>
+									<div class="point point11"></div>
+									<div class="point point12"></div>
+									<div class="point point13"></div>
+									<div class="point point14"></div>
+									<div class="point point15"></div>
+									<div class="point point16"></div>
+									<div class="point point17"></div>
+									<div class="point point18"></div>
+									<div class="point point19"></div>
+									<div class="point point20"></div>
+									<div class="point point21"></div>
+									<div class="point point22"></div>
+									<div class="point point23"></div>
+									<div class="point point24"></div>
+									<div class="point point25"></div>
+									<div class="point point26"></div>
+									<div class="point point27"></div>
+									<div class="point point28"></div>
+									<div class="point point29"></div>
+									<div class="point point30"></div>
+								</div>
+								<div class="chart-underline">
+									<div class="bar-wrap">0</div>
+									<div class="bar-wrap">1</div>
+									<div class="bar-wrap">2</div>
+									<div class="bar-wrap">3</div>
+									<div class="bar-wrap">4</div>
+									<div class="bar-wrap">5</div>
+									<div class="bar-wrap">6</div>
+									<div class="bar-wrap">7</div>
+									<div class="bar-wrap">8</div>
+									<div class="bar-wrap">9</div>
+									<div class="bar-wrap">10</div>
+									<div class="bar-wrap">11</div>
+									<div class="bar-wrap">12</div>
+									<div class="bar-wrap">13</div>
+									<div class="bar-wrap">14</div>
+									<div class="bar-wrap">15</div>
+								</div>
+							</div>
 						</div>
 						<div class="card compare2 compare-result">
-							<h4><span class="var_name" style="color: #8fc3db">Males</span> tend to have much higher values for <span class="var_name" style="color: #777777">Customer Satisfaction</span> than <span class="var_name" style="color: #a7db67">Females</span></h4>
+							<h4 class="customer-satisfaction"><span class="var_name" style="color: #8fc3db">Males</span> tend to have much higher values for <span class="var_name" style="color: #777777">Customer Satisfaction</span> than <span class="var_name" style="color: #a7db67">Females</span></h4>
 							<div class="relative" style="margin-left:20px;margin-right: 19px;">
 								<div class="chart-male">
 									<div class="bar-wrap"><div class="bar bar-1"></div></div>
@@ -166,16 +218,31 @@
 							</div>
 						</div>
 						<div class="card compare3 compare-result">
-							<h4>There is no statistically significant relationship between <span class="var_name">Country</span> and <span class="var_name">Gender</span></h4>
+							<h4 class="customer-satisfaction">There is a statistically significant relationship between  <span class="var_name" style="color: #777777">Customer Satisfaction</span> and <span class="var_name" style="color: #8fc3db">Country</span> </h4>							<div class="relative country" style="margin-left:20px;margin-right: 19px;">
+								<div class="chart-country">
+									<div class="bar-wrap"><div class="bar bar-1" style="height:100%"></div></div>
+									<div class="bar-wrap"><div class="bar bar-2" style="height:90%"></div></div>
+									<div class="bar-wrap"><div class="bar bar-3" style="height:60%"></div></div>
+									<div class="bar-wrap"><div class="bar bar-4" style="height:50%"></div></div>
+									<div class="bar-wrap"><div class="bar bar-5" style="height:45%"></div></div>
+								</div>
+								<div class="chart-underline">
+									<div class="bar-wrap">USA</div>
+									<div class="bar-wrap">Canada</div>
+									<div class="bar-wrap">Mexico</div>
+									<div class="bar-wrap">Japan</div>
+									<div class="bar-wrap">Netherlands</div>
+								</div>
+							</div>
 						</div>
 						<div class="card compare4 compare-result">
-							<h4><span class="var_name">Age</span> is weakly positively correlated with <span class="var_name">Satisfaction</span></h4>
+							<h4>There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span></h4>
 						</div>
 						<div class="card compare5 compare-result">
 							<h4>There is no statistically significant relationship between <span class="var_name">Age</span> and <span class="var_name">Country</span></h4>
 						</div>
 						<div class="card compare6 compare-result">
-							<h4>There is a statistically significant relationship between <span class="var_name">Satisfaction</span> and <span class="var_name">Country</span></h4>
+							<h4>There is no statistically significant relationship between <span class="var_name">Country</span> and <span class="var_name">Gender</span></h4>
 						</div>
 					</div>
 				</div>
@@ -221,7 +288,7 @@
 			<hr>
 			<div class="row row-padding">
 				<div class="col-sm-6">
-                    <div class="image">
+                    <div class="image" style="position:absolute;right:0;">
 						<div id="slider">
 							<div class="theslider"></div>
 						</div>
@@ -448,7 +515,7 @@ data with website behavioral data</b>
 			<div class="row" id="pricing">
 				<div class="col-sm-12">
 					<h2 class="center">Pricing</h2>
-					<h4 class="intro center">Start with a free trial of Statwing Silver (no credit card required).<br> After one month, choose one our three plans.</h4>
+					<h4 class="intro center">Start with a free trial of Statwing Silver (no credit card required). After one month, choose one our three plans.</h4>
 					<div class="row row-padding pricing">
 						<div class="col-sm-4">
 							<div class="box">
@@ -484,7 +551,7 @@ data with website behavioral data</b>
 						</div>
 					</div>
 					<div class="row row-padding-small">
-						<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="col-sm-8 col-sm-offset-2 center">
 							<a class="btn btn-primary btn-lg btn-block" href="https://www.statwing.com/users/sign_up" style="padding-top:22px;padding-bottom:18px;"><i class="ss-icon">playvideo</i> Start Statwing Silver free trial</a>
 							<small>(E-mail <a href="mailto:sales@statwing.com">sales@statwing.com</a> for enterprise pricing)</small>
 						</div>
