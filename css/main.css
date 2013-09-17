@@ -436,12 +436,147 @@ background-image: url('../img/raster.png');
 margin-top: 50px;
 position: relative;
 }
+.scatterchart2 {
+position: relative;
+height: 120px;
+margin-top: -10px;
+width: 100%;
+background-image: url('../img/scatterline.png');
+background-size: 100% 100%;
+}
 .scatterchart .point {
 border-radius: 5px;
 background-color: #9be424;
 position: absolute;
 height: 10px;
 width: 10px;
+}
+.scatterchart2 .point {
+border-radius: 5px;
+background-color: #9be424;
+position: absolute;
+height: 5px;
+width: 5px;
+}
+.scatterchart2 .point1 {
+bottom:10%;
+left:5%;
+}
+.scatterchart2 .point2 {
+bottom:16%;
+left:8%;
+}
+.scatterchart2 .point3 {
+bottom:12%;
+left:11%;
+}
+.scatterchart2 .point4 {
+bottom:18%;
+left:15%;
+}
+.scatterchart2 .point5 {
+bottom:13%;
+left:18%;
+}
+.scatterchart2 .point6 {
+bottom:19%;
+left:21%;
+}
+.scatterchart2 .point7 {
+bottom:22%;
+left:24%;
+}
+.scatterchart2 .point8 {
+bottom:19%;
+left:27%;
+}
+.scatterchart2 .point9 {
+bottom:24%;
+left:30%;
+}
+.scatterchart2 .point10 {
+bottom:23%;
+left:33%;
+}
+.scatterchart2 .point11 {
+bottom:20%;
+left:36%;
+}
+.scatterchart2 .point12 {
+bottom:25%;
+left:39%;
+}
+.scatterchart2 .point13 {
+bottom:28%;
+left:42%;
+}
+.scatterchart2 .point14 {
+bottom:26%;
+left:45%;
+}
+.scatterchart2 .point15 {
+bottom:28%;
+left:48%;
+}
+.scatterchart2 .point16 {
+bottom:32%;
+left:51%;
+}
+.scatterchart2 .point17 {
+bottom:30%;
+left:54%;
+}
+.scatterchart2 .point18 {
+bottom:38%;
+left:57%;
+}
+.scatterchart2 .point19 {
+bottom:33%;
+left:60%;
+}
+.scatterchart2 .point20 {
+bottom:46%;
+left:63%;
+}
+.scatterchart2 .point21 {
+bottom:36%;
+left:66%;
+}
+.scatterchart2 .point22 {
+bottom:44%;
+left:69%;
+}
+.scatterchart2 .point23 {
+bottom:49%;
+left:72%;
+}
+.scatterchart2 .point24 {
+bottom:59%;
+left:75%;
+}
+.scatterchart2 .point25 {
+bottom:70%;
+left:78%;
+}
+.scatterchart2 .point26 {
+bottom:80%;
+left:81%;
+}
+.scatterchart2 .point27 {
+bottom:60%;
+left:84%;
+}
+.scatterchart2 .point28 {
+bottom:80%;
+left:87%;
+}
+.scatterchart2 .point29 {
+bottom:80%;
+left:90%;
+}
+.scatterchart2 .point30 {
+bottom:90%;
+left:93%;
 }
 .scatterchart .point1 {
 bottom:10%;
