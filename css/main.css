@@ -333,6 +333,9 @@ color: #33a0d3;
 .blue-bg {
 background-color: #33a0d3;
 }
+.gendervcountry td {
+height: 30px;
+}
 .pricing ul {
 margin: 0;
 padding: 0 0 0 10px;
@@ -389,7 +392,7 @@ position: relative;
 }
 .chart-male, .chart-female, .chart-underline {
 width: 100%;
-height: 35px;
+height: 50px;
 margin-top: 10px;
 }
 .bar {
@@ -459,55 +462,55 @@ height: 5px;
 width: 5px;
 }
 .scatterchart2 .point1 {
-bottom:10%;
+bottom:1%;
 left:5%;
 }
 .scatterchart2 .point2 {
-bottom:16%;
+bottom:50%;
 left:8%;
 }
 .scatterchart2 .point3 {
-bottom:12%;
+bottom:5%;
 left:11%;
 }
 .scatterchart2 .point4 {
-bottom:18%;
+bottom:10%;
 left:15%;
 }
 .scatterchart2 .point5 {
-bottom:13%;
+bottom:60%;
 left:18%;
 }
 .scatterchart2 .point6 {
-bottom:19%;
+bottom:4%;
 left:21%;
 }
 .scatterchart2 .point7 {
-bottom:22%;
+bottom:50%;
 left:24%;
 }
 .scatterchart2 .point8 {
-bottom:19%;
+bottom:30%;
 left:27%;
 }
 .scatterchart2 .point9 {
-bottom:24%;
+bottom:10%;
 left:30%;
 }
 .scatterchart2 .point10 {
-bottom:23%;
+bottom:50%;
 left:33%;
 }
 .scatterchart2 .point11 {
-bottom:20%;
+bottom:40%;
 left:36%;
 }
 .scatterchart2 .point12 {
-bottom:25%;
+bottom:20%;
 left:39%;
 }
 .scatterchart2 .point13 {
-bottom:28%;
+bottom:15%;
 left:42%;
 }
 .scatterchart2 .point14 {
@@ -519,7 +522,7 @@ bottom:28%;
 left:48%;
 }
 .scatterchart2 .point16 {
-bottom:32%;
+bottom:44%;
 left:51%;
 }
 .scatterchart2 .point17 {
@@ -527,11 +530,11 @@ bottom:30%;
 left:54%;
 }
 .scatterchart2 .point18 {
-bottom:38%;
+bottom:80%;
 left:57%;
 }
 .scatterchart2 .point19 {
-bottom:33%;
+bottom:90%;
 left:60%;
 }
 .scatterchart2 .point20 {
@@ -539,19 +542,19 @@ bottom:46%;
 left:63%;
 }
 .scatterchart2 .point21 {
-bottom:36%;
+bottom:20%;
 left:66%;
 }
 .scatterchart2 .point22 {
-bottom:44%;
+bottom:30%;
 left:69%;
 }
 .scatterchart2 .point23 {
-bottom:49%;
+bottom:5%;
 left:72%;
 }
 .scatterchart2 .point24 {
-bottom:59%;
+bottom:40%;
 left:75%;
 }
 .scatterchart2 .point25 {
