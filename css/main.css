@@ -442,15 +442,6 @@ font-weight: bold;
 text-align: center;
 }
 .scatterchart {
-padding: 20px;
-height: 300px;
-background-image: url('../img/raster.png'), url('../img/scatterline.png');
-background-size: auto, 100% 80%;
-background-repeat: repeat, no-repeat;
-background-position: center center;
-position: relative;
-}
-.scatterchart2 {
 position: relative;
 height: 120px;
 margin-top: -10px;
@@ -458,135 +449,15 @@ width: 100%;
 background-image: url('../img/scatterline.png');
 background-size: 100% 100%;
 }
-.scatterchart .point, .scatterchart2 .point {
+.scatterchart .point {
 border-radius: 5px;
 background-color: #9be424;
 position: absolute;
 height: 5px;
 width: 5px;
 }
-.scatterchart2 .point1 {
-bottom:1%;
-left:5%;
-}
-.scatterchart2 .point2 {
-bottom:50%;
-left:8%;
-}
-.scatterchart2 .point3 {
-bottom:5%;
-left:11%;
-}
-.scatterchart2 .point4 {
-bottom:10%;
-left:15%;
-}
-.scatterchart2 .point5 {
-bottom:60%;
-left:18%;
-}
-.scatterchart2 .point6 {
-bottom:4%;
-left:21%;
-}
-.scatterchart2 .point7 {
-bottom:50%;
-left:24%;
-}
-.scatterchart2 .point8 {
-bottom:30%;
-left:27%;
-}
-.scatterchart2 .point9 {
-bottom:10%;
-left:30%;
-}
-.scatterchart2 .point10 {
-bottom:50%;
-left:33%;
-}
-.scatterchart2 .point11 {
-bottom:40%;
-left:36%;
-}
-.scatterchart2 .point12 {
-bottom:20%;
-left:39%;
-}
-.scatterchart2 .point13 {
-bottom:15%;
-left:42%;
-}
-.scatterchart2 .point14 {
-bottom:26%;
-left:45%;
-}
-.scatterchart2 .point15 {
-bottom:28%;
-left:48%;
-}
-.scatterchart2 .point16 {
-bottom:44%;
-left:51%;
-}
-.scatterchart2 .point17 {
-bottom:30%;
-left:54%;
-}
-.scatterchart2 .point18 {
-bottom:80%;
-left:57%;
-}
-.scatterchart2 .point19 {
-bottom:90%;
-left:60%;
-}
-.scatterchart2 .point20 {
-bottom:46%;
-left:63%;
-}
-.scatterchart2 .point21 {
-bottom:20%;
-left:66%;
-}
-.scatterchart2 .point22 {
-bottom:30%;
-left:69%;
-}
-.scatterchart2 .point23 {
-bottom:5%;
-left:72%;
-}
-.scatterchart2 .point24 {
-bottom:40%;
-left:75%;
-}
-.scatterchart2 .point25 {
-bottom:70%;
-left:78%;
-}
-.scatterchart2 .point26 {
-bottom:80%;
-left:81%;
-}
-.scatterchart2 .point27 {
-bottom:60%;
-left:84%;
-}
-.scatterchart2 .point28 {
-bottom:80%;
-left:87%;
-}
-.scatterchart2 .point29 {
-bottom:80%;
-left:90%;
-}
-.scatterchart2 .point30 {
-bottom:90%;
-left:93%;
-}
 .scatterchart .point1 {
-bottom:10%;
+bottom:1%;
 left:5%;
 }
 .scatterchart .point2 {
@@ -594,7 +465,7 @@ bottom:50%;
 left:8%;
 }
 .scatterchart .point3 {
-bottom:15%;
+bottom:5%;
 left:11%;
 }
 .scatterchart .point4 {
@@ -606,7 +477,7 @@ bottom:60%;
 left:18%;
 }
 .scatterchart .point6 {
-bottom:14%;
+bottom:4%;
 left:21%;
 }
 .scatterchart .point7 {
@@ -674,7 +545,7 @@ bottom:30%;
 left:69%;
 }
 .scatterchart .point23 {
-bottom:25%;
+bottom:5%;
 left:72%;
 }
 .scatterchart .point24 {
