@@ -871,3 +871,6 @@ width: 18%;
 		color: #788083;
 	}
 }
+.btn-compare > [class^="icon-"], .btn-compare > [class*=" icon-"] {
+margin-top: 4px;
+}
