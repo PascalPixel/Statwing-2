@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
 
+<html>
 <head>
 	<!-- Identity -->
 	<title>Statwing</title>
@@ -9,804 +9,1277 @@
 	<meta charset='utf-8'>
 	<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<!-- SS-Pika -->
-	<link href="icons/ss-pika.css" rel="stylesheet">
 	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
 	<!-- Animate -->
 	<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
 	<!-- H&FJ -->
-	<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/6665052/714022/css/fonts.css" />
+	<link href="http://cloud.typography.com/6665052/714022/css/fonts.css" rel="stylesheet" type="text/css">
 	<!-- CSS -->
 	<link href='css/main.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body data-spy="scroll" data-target="#scrollspy">
-<!-- NAVBAR -->
+
 	<div class="navbar navbar-default navbar-fixed-top animated delay1 fadeInDown">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="img/statwing_logo.png"> Statwing</a>
-        </div>
-        <div class="navbar-collapse collapse" id="scrollspy">
-          <ul class="nav navbar-nav hidden-sm">
-            <li><a href="#howitworks">How it works</a></li>
-            <li><a href="#usecases">Use cases</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://blog.statwing.com/">Blog</a></li>
-            <li><a href="https://www.statwing.com/jobs">Jobs</a></li>
-            <li><div class="btn-group"><a href="https://www.statwing.com/users/sign_in" class="btn">Sign In</a><a href="https://www.statwing.com/users/sign_up" class="btn">Sign Up</a></div></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-<!-- HERO -->
-	<div id="hero">
 		<div class="container">
-			<div class="row animated fadeInUp">
-				<div class="col-sm-9 hero-welcome">
-					<h1>Modern Data Analysis Software</h1>
-					<h3>The power of statistical analysis, in an intuitive interface.</h3>
-				</div>
-				<div class="col-sm-3 center">
-					<a type="button" href="https://www.statwing.com/demo" class="btn btn-success btn-block btn-lg trydemo">
-						<i class="ss-icon">layout</i> Try <span class="hidden-sm">the</span> <span class="hidden-md hidden-sm">full</span> demo</a>
-					<small>(No sign up, completely free)</small>
-				</div>
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img src="img/statwing_logo.png"> Statwing</a>
 			</div>
-			<div class="row row-padding animated delay1 fadeInUp hidden-xs">
-				<div class="col-sm-3 line-double">
-					<button id="compareBtn1" type="button" class="btn btn-compare btn-block active">
-						<span class="pull-left">
-							<span class="hidden-sm hidden-md">Customer</span> Satisfaction
-						</span>
-						<i class="ss-icon pull-right">
-							barchart
-						</i>
-					</button>
-					<button id="compareBtn2" type="button" class="btn btn-compare btn-block">
-						<span class="pull-left">
-							Age
-						</span>
-						<i class="ss-icon pull-right">
-							piechart
-						</i>
-					</button>
-					<button id="compareBtn3" type="button" class="btn btn-compare btn-block active">
-						<span class="pull-left">
-							Gender
-						</span>
-						<i class="ss-icon pull-right">
-							femaleuser
-						</i>
-					</button>
-					<button id="compareBtn4" type="button" class="btn btn-compare btn-block">							
-						<span class="pull-left">
-							Country
-						</span>
-						<i class="ss-icon pull-right">
-							globe
-						</i>
-					</button>
-				</div>
-				<div class="col-sm-1 line-merge"></div>
-				<div class="col-sm-2 line-single">
-					<button type="button" class="btn btn-primary btn-block btn-relate">Relate <i class="ss-icon">merge</i></button>
-				</div>
-				<div class="col-sm-1 line-arrow"></div>
-				<div class="col-sm-5">
-					<div class="card-wrap">	
-						<div class="card compare1 compare-result">
-							<h4 class="customer-satisfaction"><span class="var_name" style="color: #8fc3db">Age</span> is weakly positively correlated with <span class="var_name" style="color: #777777">Customer Satisfaction</span></h4>
-							<div class="relative" style="margin-left:20px;margin-right: 19px;">
-								<div class="scatterchart2">
-									<div class="point point1"></div>
-									<div class="point point2"></div>
-									<div class="point point3"></div>
-									<div class="point point4"></div>
-									<div class="point point5"></div>
-									<div class="point point6"></div>
-									<div class="point point7"></div>
-									<div class="point point8"></div>
-									<div class="point point9"></div>
-									<div class="point point10"></div>
-									<div class="point point11"></div>
-									<div class="point point12"></div>
-									<div class="point point13"></div>
-									<div class="point point14"></div>
-									<div class="point point15"></div>
-									<div class="point point16"></div>
-									<div class="point point17"></div>
-									<div class="point point18"></div>
-									<div class="point point19"></div>
-									<div class="point point20"></div>
-									<div class="point point21"></div>
-									<div class="point point22"></div>
-									<div class="point point23"></div>
-									<div class="point point24"></div>
-									<div class="point point25"></div>
-									<div class="point point26"></div>
-									<div class="point point27"></div>
-									<div class="point point28"></div>
-									<div class="point point29"></div>
-									<div class="point point30"></div>
-								</div>
-							</div>
-						</div>
-						<div class="card compare2 compare-result">
-							<h4 class="customer-satisfaction"><span class="var_name" style="color: #8fc3db">Males</span> tend to have much higher values for <span class="var_name" style="color: #777777">Customer Satisfaction</span> than <span class="var_name" style="color: #a7db67">Females</span></h4>
-							<div class="relative" style="margin-left:20px;margin-right: 19px;">
-								<div class="chart-male">
-									<div class="bar-wrap"><div class="bar bar-1"></div></div>
-									<div class="bar-wrap"><div class="bar bar-2"></div></div>
-									<div class="bar-wrap"><div class="bar bar-3"></div></div>
-									<div class="bar-wrap"><div class="bar bar-4"></div></div>
-									<div class="bar-wrap"><div class="bar bar-5"></div></div>
-									<div class="bar-wrap"><div class="bar bar-6"></div></div>
-									<div class="bar-wrap"><div class="bar bar-7"></div></div>
-									<div class="bar-wrap"><div class="bar bar-8"></div></div>
-									<div class="bar-wrap"><div class="bar bar-9"></div></div>
-									<div class="bar-wrap"><div class="bar bar-10"></div></div>
-									<div class="bar-wrap"><div class="bar bar-11"></div></div>
-									<div class="bar-wrap"><div class="bar bar-12"></div></div>
-									<div class="bar-wrap"><div class="bar bar-13"></div></div>
-									<div class="bar-wrap"><div class="bar bar-14"></div></div>
-									<div class="bar-wrap"><div class="bar bar-15"></div></div>
-									<div class="bar-wrap"><div class="bar bar-16"></div></div>
-								</div>
-								<div class="chart-female">
-									<div class="bar-wrap"><div class="bar bar-1"></div></div>
-									<div class="bar-wrap"><div class="bar bar-2"></div></div>
-									<div class="bar-wrap"><div class="bar bar-3"></div></div>
-									<div class="bar-wrap"><div class="bar bar-4"></div></div>
-									<div class="bar-wrap"><div class="bar bar-5"></div></div>
-									<div class="bar-wrap"><div class="bar bar-6"></div></div>
-									<div class="bar-wrap"><div class="bar bar-7"></div></div>
-									<div class="bar-wrap"><div class="bar bar-8"></div></div>
-									<div class="bar-wrap"><div class="bar bar-9"></div></div>
-									<div class="bar-wrap"><div class="bar bar-10"></div></div>
-									<div class="bar-wrap"><div class="bar bar-11"></div></div>
-									<div class="bar-wrap"><div class="bar bar-12"></div></div>
-									<div class="bar-wrap"><div class="bar bar-13"></div></div>
-									<div class="bar-wrap"><div class="bar bar-14"></div></div>
-									<div class="bar-wrap"><div class="bar bar-15"></div></div>
-									<div class="bar-wrap"><div class="bar bar-16"></div></div>
-								</div>
-								<div class="chart-underline">
-									<div class="bar-wrap">0</div>
-									<div class="bar-wrap">1</div>
-									<div class="bar-wrap">2</div>
-									<div class="bar-wrap">3</div>
-									<div class="bar-wrap">4</div>
-									<div class="bar-wrap">5</div>
-									<div class="bar-wrap">6</div>
-									<div class="bar-wrap">7</div>
-									<div class="bar-wrap">8</div>
-									<div class="bar-wrap">9</div>
-									<div class="bar-wrap">10</div>
-									<div class="bar-wrap">11</div>
-									<div class="bar-wrap">12</div>
-									<div class="bar-wrap">13</div>
-									<div class="bar-wrap">14</div>
-									<div class="bar-wrap">15</div>
-								</div>
-							</div>
-						</div>
-						<div class="card compare3 compare-result">
-							<h4 class="customer-satisfaction">There is a statistically significant relationship between  <span class="var_name" style="color: #777777">Customer Satisfaction</span> and <span class="var_name" style="color: #8fc3db">Country</span> </h4>							<div class="relative country" style="margin-left:20px;margin-right: 19px;">
-								<div class="chart-country">
-									<div class="bar-wrap"><div class="bar bar-1" style="height:100%"></div></div>
-									<div class="bar-wrap"><div class="bar bar-2" style="height:90%"></div></div>
-									<div class="bar-wrap"><div class="bar bar-3" style="height:60%"></div></div>
-									<div class="bar-wrap"><div class="bar bar-4" style="height:50%"></div></div>
-									<div class="bar-wrap"><div class="bar bar-5" style="height:45%"></div></div>
-								</div>
-								<div class="chart-underline">
-									<div class="bar-wrap">USA</div>
-									<div class="bar-wrap">Canada</div>
-									<div class="bar-wrap">Mexico</div>
-									<div class="bar-wrap">Japan</div>
-									<div class="bar-wrap">Netherlands</div>
-								</div>
-							</div>
-						</div>
-						<div class="card compare4 compare-result">
-							<h4>There is no statistically significant relationship between <span class="var_name">Gender</span> and <span class="var_name">Age</span></h4>
-						</div>
-						<div class="card compare5 compare-result">
-							<h4>There is no statistically significant relationship between <span class="var_name">Age</span> and <span class="var_name">Country</span></h4>
-						</div>
-						<div class="card compare6 compare-result">
-							<h4>There is no statistically significant relationship between <span class="var_name">Country</span> and <span class="var_name">Gender</span></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- MAIN AREA -->
-	<div class="wrap animated delay2 fadeIn">
-		<div class="container">
-			<div class="row row-padding" id="howitworks" style="padding-top: 150px; margin-top: -90px;">
-				<div class="col-sm-6">
-					<img src="img/upload-bg.png">
-				</div>
-				<div class="col-sm-6">
-					<h3><i class="ss-icon">binoculars</i> Explore your data in seconds</h3>
-					<p class="intrograph">Simply upload your spreadsheet or dataset, then select the data you want to learn about.</p>
-					<p>Statwing automates statistical analysis so you can understand your data deeply in just a few clicks.</p>
-					<p>Now anyone get the same insight out of data as a statistician or data scientist.</p>
-				</div>
-			</div>
-			<hr>
-			<div class="row row-padding">
-				<div class="col-sm-6">
-					<h3><i class="ss-icon">columns</i> Statwing vs. Spreadsheets</h3>
-					<p class="intrograph">Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
-					<p>Statwing is designed solely for analyzing tables of data, so users work five to ten times faster.</p>
-					<p>If you're analyzing data in a spreadsheet and writing anything more than =AVERAGE(), you'll work much faster in Statwing.</p>
-				</div>
-				<div class="col-sm-6">
-					<div class="image">
-						<div id="slider">
-							<div class="theslider"></div>
-						</div>
-						<div class="back">
-							<img src="img/stat-bg.png">
-						</div>
-						<div class="front">
-							<img src="img/stat-fg.png">
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="row row-padding">
-				<div class="col-sm-6">
-                    <div class="image" style="position:absolute;right:0;">
-						<div id="slider">
-							<div class="theslider"></div>
-						</div>
-						<div class="back">
-							<img src="img/stat-bg.png">
-						</div>
-						<div class="front">
-							<img src="img/stat-2-fg.png">
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<h3><i class="ss-icon">layout</i> Statwing vs. Statistical Software</h3>
-					<p class="intrograph">Traditional statistical software was built for statisticians, and requires technical expertise and painstaking coding to ask even simple questions.</p>
-					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically, even accounting for data issues like outliers.</p>
-					<p>Statwing translates results into plain English, so anyone can understand their data the way a statistician or data scientist would.</p>
-					<p>The statistically inclined can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p>
-				</div>
-			</div>
-			<hr>
-			<div class="row row-padding">
-				<div class="col-sm-6">
-					<h3><i class="ss-icon">scatterchart</i> Instant Visualization</h3>
-					<p class="intrograph">Statwing automatically creates beautiful, interactive visualizations along with every analysis.</p>
-					<p>In spreadsheets and statistical software, creating even simple charts takes too much time and effort.</p>
-					<p>Statwing understands your data's structure, so it automatically creates exportable histograms, scatterplots, heatmaps, and bar charts.</p>
-				</div>
-				<div class="col-sm-6">
-					<div class="card" style="height:300px;margin-top:20px;">
-						<div class="card-top clearfix">
-							<div class="titlewrap pull-left">
-								<div class="btn-group">
-									<button class="btn btn-primary"><i class="ss-icon">femaleuser</i> Gender</button>
-									<button class="btn btn-primary"><i class="ss-icon">repeat</i></button>
-									<button class="btn btn-primary"><i class="ss-icon">scatterchart</i> Satisfaction</button>
-								</div>
-							</div>
-						</div>
-						<div class="scatterchart">
-							<div class="point point1"></div>
-							<div class="point point2"></div>
-							<div class="point point3"></div>
-							<div class="point point4"></div>
-							<div class="point point5"></div>
-							<div class="point point6"></div>
-							<div class="point point7"></div>
-							<div class="point point8"></div>
-							<div class="point point9"></div>
-							<div class="point point10"></div>
-							<div class="point point11"></div>
-							<div class="point point12"></div>
-							<div class="point point13"></div>
-							<div class="point point14"></div>
-							<div class="point point15"></div>
-							<div class="point point16"></div>
-							<div class="point point17"></div>
-							<div class="point point18"></div>
-							<div class="point point19"></div>
-							<div class="point point20"></div>
-							<div class="point point21"></div>
-							<div class="point point22"></div>
-							<div class="point point23"></div>
-							<div class="point point24"></div>
-							<div class="point point25"></div>
-							<div class="point point26"></div>
-							<div class="point point27"></div>
-							<div class="point point28"></div>
-							<div class="point point29"></div>
-							<div class="point point30"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- PRESS -->
-			<hr>
-			<div class="row row-padding-small" id="press">
-				<div class="col-sm-12">
-					<h2><i class="ss-icon pull-right">news</i> Statwing in the press</h2>
-				</div>
-			</div>
-			<div class="row row-padding-small">
-				<div class="col-sm-6">
-					<div class="box press_box">
-						<h4 class="box-header">TechCrunch <img class="press_logo pull-right" src="img/techcrunch.png" style="width:100px;"/></h4>
-						<p>“Statwing makes it easier to do what used to require someone with deep technical knowledge about statistics.”</p>
-					</div>
-					<div class="box press_box">
-						<h4 class="box-header">The Next Web <img class="press_logo pull-right" src="img/tnw.png" style="width:100px;"/></h4>
-						<p>“We’re not all statisticians, but now you can do sound analysis without the complexity of learning SPSS or STATA.”</p>
-					</div>
-					<div class="box press_box">
-						<h4 class="box-header">O'Reilly <img class="press_logo pull-right" src="img/oreilly.png" style="width:100px;"/></h4>
-						<p>“I welcome a tool that produces readily interpretable results.”</p>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="box press_box">
-						<h4 class="box-header">Financial Post <img class="press_logo pull-right" src="img/financialpost.png" style="width:100px;"/></h4>
-						<p>“Statwing lets you quickly and easily analyze data to explore statistical relationships in seconds.”</p>
-					</div>
-					<div class="box press_box">
-						<h4 class="box-header">GreenBook <img class="press_logo pull-right" src="img/greenbook.png" style="width:100px;"/></h4>
-						<p>"Statwing delivers. It’s an incredibly simple user interface that belies the sophistication of the models powering it."</p>
-					</div>
-					<div class="box press_box">
-						<h4 class="box-header">Computerworld <img class="press_logo pull-right" src="img/computerworld.png" style="width:100px;"/></h4>
-						<p>“...an appealing resource for professionals who want to try taking their data skills up a notch.”</p>
-					</div>
-				</div>
-			</div>
-<!-- USE CASES -->
-			<hr>
-			<div class="row row-padding-small" id="usecases" style="padding-top:120px;margin-top:-80px;">
-				<div class="col-sm-12">
-					<h2><i class="ss-icon pull-right">file</i> Use cases</h2>
-				</div>
-			</div>
-			<div class="row row-padding-small usecases">
-				<div class="col-sm-6">
-					<div class="box">
-						<h4 class="box-header top-blue">Surveys <i class="ss-icon pull-right">form</i></h4>
-						<p class="intrograph">Understand the results of your survey in minutes instead of hours</p>
-						<p>Analyze and visualize answers to questions like "Is there a correlation between my customers' age and their satisfaction?" or "What if I filter that analysis by gender?"</p>
-						<p>Use Statwing when you want to go beyond the basic reporting tools of survey providers but you don't want to waste time learning expert statistical tools or shuffling data around in Excel.</p>
-						<p>Then share a link with clients or colleagues so they can see your analyses and run more of their own.</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-8">
-									<b>Results from a survey of 10,000 software developers</b>
-								</div>
-								<div class="col-sm-4">
-									<a href="https://www.statwing.com/demos/big5-election" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<h4 class="box-header top-blue">Quantified Self <i class="ss-icon pull-right">userprofile</i></h4>
-						<p class="intrograph">Statistically analyze your quantified self data to understand if the trends and patterns you see are actually real</p>
-						<p>It's easy to look at quantified self data and see patterns where there are none. Statwing provides objective analyses of relationships in your data.</p>
-						<p>Quantified Self devotees have used Statwing to ask questions like, “Am I happier when I walk more?” or “Am I more likely to work out when I wake up earlier?”</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-8">
-									<b>One man's quantified self dataset</b>
-								</div>
-								<div class="col-sm-4">
-									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<h4 class="box-header top-blue">Academic Research <i class="ss-icon pull-right">bank</i></h4>
-						<p class="intrograph">Statwing makes sure you're using the correct statistical tests, protecting your analyses against common mistakes</p>
-						<p>Statwing automatically detects outliers or too-small sample sizes, then alerts you to the issue.</p>
-						<p>Unlike any other statistical software, Statwing automatically reports effect sizes, not just p-values.</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-8">
-									<b>Psychological Survey Results</b>
-								</div>
-								<div class="col-sm-4">
-									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="box">
-						<h4 class="box-header top-blue">Marketing Analysis <i class="ss-icon pull-right">stock</i></h4>
-						<p class="intrograph">Ask deep questions about your users, their behavior, and the results of your marketing efforts</p>
-						<p>Marketing tools give you the ability to ask a few standard questions about your data. But if you want to dive deep or mix data from multiple sources, you'll need to pull the data out and do your own analysis in a tool like Statwing.</p>
-						<p>Marketing analysts use Statwing to ask questions like, “Is there a correlation between customer demographics and customer engagement?” or “Which of my marketing efforts had the best performance?”</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-8">
-									<b>Results of combining email marketing 
-data with website behavioral data</b>
-								</div>
-								<div class="col-sm-4">
-									<a href="#" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<h4 class="box-header top-blue">Journalism <i class="ss-icon pull-right">news</i></h4>
-						<p class="intrograph">Quickly visualize and find trends in public data</p>
-						<p>Identify patterns and trends in the data without having to dive deep into statistical terminology.</p>
-						<p>Create publishable visualizations in just a couple clicks.</p>
-						<p>Statwing analyses and visualizations have been used at <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Guardian</a> and <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Motley Fool</a>, among others.</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-8">
-									<b>Congressional lobbying and the SOPA/PIPA bill</b>
-								</div>
-								<div class="col-sm-4">
-									<a href="https://www.statwing.com/demos/sopa" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<h4 class="box-header top-blue">Curiosity <i class="ss-icon pull-right">like</i></h4>
-						<p class="intrograph">Statwing's ease of use lets you concentrate on having fun exploring data, not worrying about the logistics of using your data analysis tool</p>
-						<p>Find fun datasets from around the web and pop them into Statwing to get instant visualizations.</p>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-8">
-									<b>Titanic Passenger List</b>
-								</div>
-								<div class="col-sm-4">
-									<a href="https://www.statwing.com/demos/titanic" class="btn btn-success btn-block">VIEW <i class="ss-icon">forward</i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- PRICING -->
-			<hr>
-			<div class="row" id="pricing" style="padding-top:120px;margin-top:-80px;">
-				<div class="col-sm-12">
-					<h2 class="center">Pricing</h2>
-					<h4 class="intro center">Start with a free trial of Statwing Silver (no credit card required). After one month, choose one our three plans.</h4>
-					<div class="row row-padding pricing">
-						<div class="col-sm-4">
-							<div class="box">
-								<h4 class="box-header">Statwing Public</h4>
-								<ul>
-									<li>New uploads will be <strong>publicly</strong> visible <em data-placement="top" class="ss-icon help-popover" data-content="Data uploaded during the Statwing Silver trial will remain private forever">question</em></li>
-									<li>Datasets up to <strong>1</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>100,000</td><td>10</td></tr><tr><td>25,000</td><td>40</td></tr><tr><td>5,000</td><td>200</td></tr></table>">question</em></li>
-								</ul>
-								<h4 class="box-footer">FREE</h4>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="box">
-								<h4 class="box-header">Statwing Silver</h4>
-								<ul>
-									<li>Uploads are <strong>private</strong> forever (even if you downgrade later)
-										<li>Export charts to Excel and Powerpoint</li>
-									<li>Datasets up to <strong>1</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>100,000</td><td>10</td></tr><tr><td>25,000</td><td>40</td></tr><tr><td>5,000</td><td>200</td></tr></table>">question</em></li>
-								</ul>
-								<h4 class="box-footer">$25 / month</h4>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="box">
-								<h4 class="box-header">Statwing Gold</h4>
-								<ul>
-									<li>Uploads are <strong>private</strong> forever (even if you downgrade later)</li>
-									<li>Export charts to Excel and Powerpoint</li>
-									<li>Datasets up to <strong>5</strong> million cells large <em data-placement="top" class="ss-icon help-popover" data-html="true" data-title="Example dataset sizes" data-content="<table class='popover-table'><tr><th>Rows</th><th>Columns</th></tr><tr><td>500,000</td><td>10</td></tr><tr><td>100,000</td><td>50</td></tr><tr><td>25,000</td><td>200</td></tr></table>">question</em></li>
-								</ul>
-								<h4 class="box-footer">$100 / month</h4>
-							</div>
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-sm-8 col-sm-offset-2 center">
-							<a class="btn btn-primary btn-lg btn-block" href="https://www.statwing.com/users/sign_up" style="padding-top:22px;padding-bottom:18px;"><i class="ss-icon">playvideo</i> Start Statwing Silver free trial</a>
-							<small>(E-mail <a href="mailto:sales@statwing.com">sales@statwing.com</a> for enterprise pricing)</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- FOOTER -->
-	<div class="footer container">
-		<div class="row row-padding" id="contact">
-<!-- TEAM -->
-			<div class="col-md-4 people">
-				<div class="box">
-					<h4 class="box-header blue">Team <i class="ss-icon pull-right">usergroup</i></h4>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/greg.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Greg Laughlin</h4>
-							Cofounder, CEO<br/>
-							Stanford B.A./M.A. 2006
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/john.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">John Le</h4>
-							Cofounder, CTO<br/>
-							Stanford B.S/M.S. 2009
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/bob.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Bob Vallone</h4>
-							User Interface Advisor<br/>
-							Creator of TiVo UI<br/>
-							Taught Stats at Stanford
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/kristian.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Kristian Hartikainen</h4>
-							Software Engineer<br/>
-							Aalto University B.S. 2013
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- INVESTORS -->
-			<div class="col-md-4 people">
-				<div class="box">
-					<h4 class="box-header blue">Selected Investors <i class="ss-icon pull-right">usergroup</i></h4>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/jeff.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Jeff Hammerbacher</h4>
-							Cofounder of Cloudera, Built Facebook data team, Coined "data science"
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/jason.jpg"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Jason Seats</h4>
-							Cofounder of Slicehost, Director of TechStars Austin<br/>
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/diego.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Diego Basch</h4>
-							Founder of IndexTank
-						</div>
-					</div>
-					<div class="row row-padding-small">
-						<div class="col-xs-4">
-							<img class="img-circle" src="img/yc-logo.png"/>
-						</div>
-						<div class="col-xs-8">
-							<h4 class="people-header">Y Combinator</h4>
-							Investor in Dropbox, Airbnb, Reddit, Scribd, Optimizely, others
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- CONTACT -->
-			<div class="col-md-4">
-				<div class="box">
-					<h4 class="box-header blue">Contact <i class="ss-icon pull-right">mail</i></h4>
-					<form>
-					    <div class="form-group">
-					      <input type="text" class="form-control" id="InputEmail" placeholder="Your e-mail">
-					    </div>
-					    <div class="form-group">
-					      <input type="text" class="form-control" id="InputSubject" placeholder="Subject">
-					    </div>
-					    <div class="form-group">
-					      <input style="height:100px;vertical-align:top;" type="text" class="form-control" id="InputMessage" placeholder="Your message">
-					    </div>
-					    <button type="button" class="btn btn-primary btn-block" style="margin-bottom:10px;"><span class="pull-left">Send</span> <i class="ss-icon pull-right">send</i></button>
-					</form>
-				</div>
-			</div>
-		</div>
-<!-- SITEMAP -->
-		<div class="row row-padding">
-			<div class="col-sm-12">
-				<ul class="oneline">
-					<li><a href="http://www.statwing.com/">© Statwing</a></li>
-					<li><a href="https://www.statwing.com/jobs">Jobs</a></li>
-					<li><a href="http://blog.statwing.com/">Blog</a></li>
-					<li><a href="http://docs.statwing.com/">Docs</a></li>
-					<li><a href="https://www.statwing.com/legal">Legal</a></li>
+
+			<div class="navbar-collapse collapse" id="scrollspy">
+				<ul class="nav navbar-nav hidden-sm">
 					<li>
-						<a style="color:#788083;" href="http://superpencil.com/?utm_source=statwing&utm_medium=statwing&utm_campaign=statwing">
-							Designed by <img width="22px" alt="Superpencil Design" src="img/superpencil.png" style="vertical-align: middle;"> Superpencil
-						</a>
+						<a href="#howitworks">How it works</a>
 					</li>
+
 					<li>
-						<img src="https://d1ycphw12ot9ds.cloudfront.net/assets/comodo_secure_small-44a41ec33cffa26cc203d24a4be12cc0.png" style="vertical-align: middle;"/>
+						<a href="#usecases">Use cases</a>
 					</li>
+
 					<li>
-						<a href="https://mixpanel.com/f/partner">
-							<img width="80px" alt="Real Time Web Analytics" src="https://mixpanel.com/site_media/images/partner/badge_light.png" style="vertical-align: middle;">
-						</a>
+						<a href="#pricing">Pricing</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="http://blog.statwing.com/">Blog</a>
+					</li>
+
+					<li>
+						<a href="https://www.statwing.com/jobs">Jobs</a>
+					</li>
+
+					<li>
+						<a href="https://www.statwing.com/users/sign_in">Sign In</a>
+					</li>
+
+					<li>
+						<div class="btn-group signup">
+							<a class="btn signup" href="https://www.statwing.com/users/sign_up">Sign Up</a>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	
+
+	<div id="hero">
+		<div class="container">
+			<div class="row animated fadeInUp">
+				<div class="col-sm-9 hero-welcome">
+					<h1>Modern Data Analysis Software</h1>
+
+					<h3>The power of statistical analysis, in an intuitive interface.</h3>
+				</div>
+
+				<div class="col-sm-3 center">
+					<a class="btn btn-success btn-block btn-lg trydemo" href="https://www.statwing.com/demo" type="button"><span class="entypo-chart"></span> Try <span class="hidden-sm">the</span> <span class="hidden-md hidden-sm">full</span> demo</a> <small>(No sign up, completely free)</small>
+				</div>
+			</div>
+
+			<div class="row row-padding animated delay1 fadeInUp hidden-xs">
+				<div class="col-sm-3 line-double">
+					<button class="btn btn-compare btn-block active" id="compareBtn1" type="button"><span class="pull-left"><span class="hidden-sm hidden-md">Customer</span> Satisfaction</span> <i class="icon-bar-chart pull-right"></i></button> <button class="btn btn-compare btn-block" id="compareBtn2" type="button"><span class="pull-left">Age</span> <em class="ss-icon pull-right">piechart</em></button> <button class="btn btn-compare btn-block active" id="compareBtn3" type="button"><span class="pull-left">Gender</span> <em class="ss-icon pull-right">femaleuser</em></button> <button class="btn btn-compare btn-block" id="compareBtn4" type="button"><span class="pull-left">Country</span> <em class="ss-icon pull-right">globe</em></button>
+				</div>
+
+				<div class="col-sm-1 line-merge"></div>
+
+				<div class="col-sm-2 line-single">
+					<button class="btn btn-primary btn-block btn-relate" type="button">Relate <i class="icon-youtube-play"></i></button>
+				</div>
+
+				<div class="col-sm-1 line-arrow"></div>
+
+				<div class="col-sm-5">
+					<div class="card-wrap">
+						<div class="card compare1 compare-result">
+							<h4 class="customer-satisfaction"><span class="var_name" style="color: #777777">Age</span> is weakly positively correlated with <span class="var_name" style="color: #777777">Customer Satisfaction</span></h4>
+
+							<div class="relative" style="margin-left:20px;margin-right: 19px;">
+								<div class="scatterchart2">
+									<div class="point point1"></div>
+
+									<div class="point point2"></div>
+
+									<div class="point point3"></div>
+
+									<div class="point point4"></div>
+
+									<div class="point point5"></div>
+
+									<div class="point point6"></div>
+
+									<div class="point point7"></div>
+
+									<div class="point point8"></div>
+
+									<div class="point point9"></div>
+
+									<div class="point point10"></div>
+
+									<div class="point point11"></div>
+
+									<div class="point point12"></div>
+
+									<div class="point point13"></div>
+
+									<div class="point point14"></div>
+
+									<div class="point point15"></div>
+
+									<div class="point point16"></div>
+
+									<div class="point point17"></div>
+
+									<div class="point point18"></div>
+
+									<div class="point point19"></div>
+
+									<div class="point point20"></div>
+
+									<div class="point point21"></div>
+
+									<div class="point point22"></div>
+
+									<div class="point point23"></div>
+
+									<div class="point point24"></div>
+
+									<div class="point point25"></div>
+
+									<div class="point point26"></div>
+
+									<div class="point point27"></div>
+
+									<div class="point point28"></div>
+
+									<div class="point point29"></div>
+
+									<div class="point point30"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card compare2 compare-result" style="display:block;">
+							<h4 class="customer-satisfaction"><span class="var_name" style="color: #8fc3db">Males</span> tend to have much higher values for <span class="var_name" style="color: #777777">Customer Satisfaction</span> than <span class="var_name" style="color: #a7db67">Females</span></h4>
+
+							<div class="relative" style="margin-left:20px;margin-right: 19px;">
+								<div class="chart-male">
+									<div class="bar-wrap">
+										<div class="bar bar-1"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-2"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-3"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-4"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-5"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-6"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-7"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-8"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-9"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-10"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-11"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-12"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-13"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-14"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-15"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-16"></div>
+									</div>
+								</div>
+
+								<div class="chart-female">
+									<div class="bar-wrap">
+										<div class="bar bar-1"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-2"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-3"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-4"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-5"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-6"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-7"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-8"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-9"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-10"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-11"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-12"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-13"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-14"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-15"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-16"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card compare3 compare-result">
+							<h4 class="customer-satisfaction">There is a statistically significant relationship between <span class="var_name" style="color: #777777">Customer Satisfaction</span> and <span class="var_name" style="color: #777777">Country</span></h4>
+
+							<div class="relative country" style="margin-left:20px;margin-right: 19px;">
+								<div class="chart-country">
+									<div class="bar-wrap">
+										<div class="bar bar-1" style="height:100%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-2" style="height:90%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-3" style="height:60%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-4" style="height:50%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-5" style="height:45%"></div>
+									</div>
+								</div>
+
+								<div class="chart-underline">
+									<div class="bar-wrap">
+										USA
+									</div>
+
+									<div class="bar-wrap">
+										Canada
+									</div>
+
+									<div class="bar-wrap">
+										Mexico
+									</div>
+
+									<div class="bar-wrap">
+										Japan
+									</div>
+
+									<div class="bar-wrap">
+										Netherlands
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card compare4 compare-result">
+							<h4 class="customer-satisfaction">No statistically significant difference between <span class="var_name" style="color: #8fc3db">Males</span> and <span class="var_name" style="color: #a7db67">Females</span> for <span class="var_name" style="color: #777777">Age</span></h4>
+
+							<div class="relative" style="margin-left:20px;margin-right: 19px;">
+								<div class="chart-female">
+									<div class="bar-wrap">
+										<div class="bar bar-1" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-2" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-3" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-4" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-5" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-6" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-7" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-8" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-9" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-10" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-11" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-12" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-13" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-14" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-15" style="background-color:#8fc3db;"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-16" style="background-color:#8fc3db;"></div>
+									</div>
+								</div>
+
+								<div class="chart-female">
+									<div class="bar-wrap">
+										<div class="bar bar-1"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-2"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-3"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-4"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-5"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-6"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-7"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-8"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-9"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-10"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-11"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-12"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-13"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-14"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-15"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-16"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card compare5 compare-result">
+							<h4 class="customer-satisfaction">There is no statistically significant relationship between <span class="var_name" style="color: #777777">Age</span> and <span class="var_name" style="color: #777777">Country</span></h4>
+
+							<div class="relative country" style="margin-left:20px;margin-right: 19px;">
+								<div class="chart-country">
+									<div class="bar-wrap">
+										<div class="bar bar-1" style="height:60%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-2" style="height:58%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-3" style="height:57%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-4" style="height:58%"></div>
+									</div>
+
+									<div class="bar-wrap">
+										<div class="bar bar-5" style="height:60%"></div>
+									</div>
+								</div>
+
+								<div class="chart-underline">
+									<div class="bar-wrap">
+										USA
+									</div>
+
+									<div class="bar-wrap">
+										Canada
+									</div>
+
+									<div class="bar-wrap">
+										Mexico
+									</div>
+
+									<div class="bar-wrap">
+										Japan
+									</div>
+
+									<div class="bar-wrap">
+										Netherlands
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card compare6 compare-result">
+							<h4 class="customer-satisfaction">There is no statistically significant relationship between <span class="var_name" style="color: #777777">Country</span> &amp; <span class="var_name" style="color: #777777">Gender</span></h4>
+
+							<div style="margin:20px;">
+								<table class="table table-bordered gendervcountry">
+									<tbody>
+										<tr>
+											<td style="border-left-color: white;border-top-color: white;"></td>
+
+											<td></td>
+
+											<td></td>
+
+											<td></td>
+
+											<td></td>
+
+											<td></td>
+										</tr>
+
+										<tr>
+											<td></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.2);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.4);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.6);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.8);"></td>
+
+											<td style="background-color: rgb(51, 160, 211);"></td>
+										</tr>
+
+										<tr>
+											<td></td>
+
+											<td style="background-color: rgb(51, 160, 211);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.8);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.6);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.4);"></td>
+
+											<td style="background-color: rgba(51, 160, 211, 0.2);"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap animated delay2 fadeIn">
+		<div class="container">
+			<div class="row row-padding" id="howitworks" style="padding-top: 150px; margin-top: -90px;">
+				<div class="col-sm-6"><img src="img/upload-bg.png"></div>
+
+				<div class="col-sm-6">
+					<h3><em class="ss-icon">binoculars</em> Explore your data in seconds</h3>
+
+					<p class="intrograph">Simply upload your spreadsheet or dataset, then select the data you want to learn about.</p>
+
+					<p>Statwing automates statistical analysis so you can understand your data deeply in just a few clicks.</p>
+
+					<p>Now anyone get the same insight out of data as a statistician or data scientist.</p>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row row-padding">
+				<div class="col-sm-6">
+					<h3><em class="ss-icon">columns</em> Statwing vs. Spreadsheets</h3>
+
+					<p class="intrograph">Asking a simple question of your data in a spreadsheet takes minutes of shuffling data, creating charts and pivot tables, and writing formulas.</p>
+
+					<p>Statwing is designed solely for analyzing tables of data, so users work five to ten times faster.</p>
+
+					<p>If you're analyzing data in a spreadsheet and writing anything more than =AVERAGE(), you'll work much faster in Statwing.</p><a class="wistia-popover[height=80%,playerColor=7b796a,width=80%]" href="https://fast.wistia.net/embed/iframe/9rxwx3qvbl?popover=true">Watch a video comparing Statwing to Excel to learn more...</a><script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/popover-v1.js"></script>
+				</div>
+
+				<div class="col-sm-6 hidden-xs">
+					<div class="image">
+						<div id="slider">
+							<div class="theslider"></div>
+						</div>
+
+						<div class="back"><img src="img/stat-bg.png"></div>
+
+						<div class="front"><img src="img/stat-fg.png"></div>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row row-padding">
+				<div class="col-sm-6 hidden-xs">
+					<div class="image image-right">
+						<div id="slider">
+							<div class="theslider"></div>
+						</div>
+
+						<div class="back"><img src="img/stat-bg.png"></div>
+
+						<div class="front"><img src="img/stat-2-fg.png"></div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<h3><em class="ss-icon">layout</em> Statwing vs. Statistical Software</h3>
+
+					<p class="intrograph">Traditional statistical software was built for statisticians, and requires technical expertise and painstaking coding to ask even simple questions.</p>
+
+					<p>Statwing is built for business users and data analysts, so it chooses statistical tests automatically.</p>
+
+					<p>It even accounts for data issues like outliers, so you can always be confident you're running the right analysis.</p>
+
+					<p>Statwing translates results into plain English, so anyone can understand their data the way a statistician or data scientist would.</p>
+
+					<p>The statistically inclined can dive into clean, interactive output of p-values, effect sizes, confidence intervals, and more.</p><a class="wistia-popover[height=80%,playerColor=7b796a,width=80%]" href="https://fast.wistia.net/embed/iframe/ve4rhmv7nl?popover=true">Watch a video comparing Statwing to SPSS to learn more...</a><script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/popover-v1.js"></script>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row row-padding">
+				<div class="col-sm-6">
+					<h3><em class="ss-icon">scatterchart</em> Instant Visualization</h3>
+
+					<p class="intrograph">Statwing automatically creates beautiful, interactive visualizations along with every analysis.</p>
+
+					<p>In spreadsheets and statistical software, creating even simple charts takes too much time and effort.</p>
+
+					<p>Statwing understands your data's structure, so it automatically creates exportable histograms, scatterplots, heatmaps, and bar charts.</p>
+				</div>
+
+				<div class="col-sm-6 hidden-xs">
+					<div class="card" style="height:300px;margin-top:20px;">
+						<div class="scatterchart">
+							<div class="point point1"></div>
+
+							<div class="point point2"></div>
+
+							<div class="point point3"></div>
+
+							<div class="point point4"></div>
+
+							<div class="point point5"></div>
+
+							<div class="point point6"></div>
+
+							<div class="point point7"></div>
+
+							<div class="point point8"></div>
+
+							<div class="point point9"></div>
+
+							<div class="point point10"></div>
+
+							<div class="point point11"></div>
+
+							<div class="point point12"></div>
+
+							<div class="point point13"></div>
+
+							<div class="point point14"></div>
+
+							<div class="point point15"></div>
+
+							<div class="point point16"></div>
+
+							<div class="point point17"></div>
+
+							<div class="point point18"></div>
+
+							<div class="point point19"></div>
+
+							<div class="point point20"></div>
+
+							<div class="point point21"></div>
+
+							<div class="point point22"></div>
+
+							<div class="point point23"></div>
+
+							<div class="point point24"></div>
+
+							<div class="point point25"></div>
+
+							<div class="point point26"></div>
+
+							<div class="point point27"></div>
+
+							<div class="point point28"></div>
+
+							<div class="point point29"></div>
+
+							<div class="point point30"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="row row-padding-small" id="press">
+				<div class="col-sm-12">
+					<h2><em class="ss-icon pull-right">news</em> Statwing in the press</h2>
+				</div>
+			</div>
+			
+			<div class="row row-padding-small">
+				<div class="col-sm-6">
+					<div class="box press_box">
+						<h4 class="box-header">TechCrunch <img class="press_logo pull-right" src="img/techcrunch.png" style="width:100px;"></h4>
+
+						<p>“Statwing makes it easier to do what used to require someone with deep technical knowledge about statistics.”</p>
+					</div>
+
+					<div class="box press_box">
+						<h4 class="box-header">The Next Web <img class="press_logo pull-right" src="img/tnw.png" style="width:100px;"></h4>
+
+						<p>“We’re not all statisticians, but now you can do sound analysis without the complexity of learning SPSS or STATA.”</p>
+					</div>
+
+					<div class="box press_box">
+						<h4 class="box-header">O'Reilly <img class="press_logo pull-right" src="img/oreilly.png" style="width:100px;"></h4>
+
+						<p>“I welcome a tool that produces readily interpretable results.”</p>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="box press_box">
+						<h4 class="box-header">Financial Post <img class="press_logo pull-right" src="img/financialpost.png" style="width:100px;"></h4>
+
+						<p>“Statwing lets you quickly and easily analyze data to explore statistical relationships in seconds.”</p>
+					</div>
+
+					<div class="box press_box">
+						<h4 class="box-header">GreenBook <img class="press_logo pull-right" src="img/greenbook.png" style="width:100px;"></h4>
+
+						<p>"Statwing delivers. It’s an incredibly simple user interface that belies the sophistication of the models powering it."</p>
+					</div>
+
+					<div class="box press_box">
+						<h4 class="box-header">Computerworld <img class="press_logo pull-right" src="img/computerworld.png" style="width:100px;"></h4>
+
+						<p>“...an appealing resource for professionals who want to try taking their data skills up a notch.”</p>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+
+			<div class="row row-padding-small" id="usecases" style="padding-top:120px;margin-top:-80px;">
+				<div class="col-sm-12">
+					<h2><em class="ss-icon pull-right">file</em> Use cases</h2>
+				</div>
+			</div>
+
+			<div class="row row-padding-small usecases">
+				<div class="col-sm-6">
+					<div class="box">
+						<h4 class="box-header top-blue">Surveys <em class="ss-icon pull-right">form</em></h4>
+
+						<p class="intrograph">Understand the results of your survey in minutes instead of hours</p>
+
+						<p>Analyze and visualize answers to questions like "Is there a correlation between my customers' age and their satisfaction?" or "What if I filter that analysis by gender?"</p>
+
+						<p>Use Statwing when you want to go beyond the basic reporting tools of survey providers but you don't want to waste time learning expert statistical tools or shuffling data around in Excel.</p>
+
+						<p>Then share a link with clients or colleagues so they can see your analyses and run more of their own.</p>
+
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<strong>Results from a survey of 10,000 software developers</strong>
+								</div>
+
+								<div class="col-sm-4">
+									<a class="btn btn-success btn-block" href="https://www.statwing.com/demos/survey#workspaces/4317">VIEW <em class="ss-icon">forward</em></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<h4 class="box-header top-blue">Academic Research <em class="ss-icon pull-right">bank</em></h4>
+
+						<p class="intrograph">Statwing makes sure you're using the correct statistical tests, protecting your analyses against common mistakes</p>
+
+						<p>Statwing automatically detects outliers or too-small sample sizes, then alerts you to the issue.</p>
+
+						<p>Unlike any other statistical software, Statwing automatically reports effect sizes, not just p-values.</p>
+
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<strong>Psychological Survey Results</strong>
+								</div>
+
+								<div class="col-sm-4">
+									<a class="btn btn-success btn-block" href="https://www.statwing.com/demos/big5-election#workspaces/4333">VIEW <em class="ss-icon">forward</em></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<h4 class="box-header top-blue">Curiosity <em class="ss-icon pull-right">like</em></h4>
+
+						<p class="intrograph">Statwing's ease of use lets you concentrate on having fun exploring data, not worrying about the logistics of using your data analysis tool</p>
+
+						<p>Find fun datasets from around the web and pop them into Statwing to get instant visualizations.</p>
+
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<strong>Titanic Passenger List</strong>
+								</div>
+
+								<div class="col-sm-4">
+									<a class="btn btn-success btn-block" href="https://www.statwing.com/demos/titanic#workspaces/21">VIEW <em class="ss-icon">forward</em></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="box">
+						<h4 class="box-header top-blue">Marketing Analysis <em class="ss-icon pull-right">stock</em></h4>
+
+						<p class="intrograph">Ask deep questions about your users, their behavior, and the results of your marketing efforts</p>
+
+						<p>Marketing tools give you the ability to ask a few standard questions about your data. But if you want to dive deep or mix data from multiple sources, you'll need to pull the data out and do your own analysis in a tool like Statwing.</p>
+
+						<p>Marketing analysts use Statwing to ask questions like, “Is there a correlation between customer demographics and customer engagement?” or “Which of my marketing efforts had the best performance?”</p>
+
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<strong>Results of combining email marketing data with website behavioral data</strong>
+								</div>
+
+								<div class="col-sm-4">
+									<a class="btn btn-success btn-block" href="https://www.statwing.com/demos/marketing#workspaces/4109">VIEW <em class="ss-icon">forward</em></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<h4 class="box-header top-blue">Journalism <em class="ss-icon pull-right">news</em></h4>
+
+						<p class="intrograph">Quickly visualize and find trends in public data</p>
+
+						<p>Identify patterns and trends in the data without having to dive deep into statistical terminology.</p>
+
+						<p>Create publishable visualizations in just a couple clicks.</p>
+
+						<p>Statwing analyses and visualizations have been used at <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Guardian</a> and <a href="http://www.theguardian.com/news/datablog/2013/jul/14/taser-use-police-forces-uk-data" target="_blank">the Motley Fool</a>, among others.</p>
+
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<strong>Congressional lobbying and the SOPA/PIPA bill</strong>
+								</div>
+
+								<div class="col-sm-4">
+									<a class="btn btn-success btn-block" href="https://www.statwing.com/demos/sopa#workspaces/4303">VIEW <em class="ss-icon">forward</em></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<h4 class="box-header top-blue">Quantified Self <em class="ss-icon pull-right">userprofile</em></h4>
+
+						<p class="intrograph">Statistically analyze your quantified self data to understand if the trends and patterns you see are actually real</p>
+
+						<p>It's easy to look at quantified self data and see patterns where there are none. Statwing provides objective analyses of relationships in your data.</p>
+
+						<p>Quantified Self devotees have used Statwing to ask questions like, “Am I happier when I walk more?” or “Am I more likely to work out when I wake up earlier?”</p>
+
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-8">
+									<strong>One man's quantified self dataset</strong>
+								</div>
+
+								<div class="col-sm-4">
+									<a class="btn btn-success btn-block" href="https://www.statwing.com/demos/quantified-self#workspaces/23">VIEW <em class="ss-icon">forward</em></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+
+			<div class="row" id="pricing" style="padding-top:120px;margin-top:-80px;">
+				<div class="col-sm-12">
+					<h2 class="center">Pricing</h2>
+
+					<h4 class="intro center">Start with a free trial of Statwing Silver (no credit card required). After one month, choose one our three plans.</h4>
+
+					<div class="row row-padding pricing">
+						<div class="col-sm-4">
+							<div class="box">
+								<h4 class="box-header">Statwing Public</h4>
+
+								<ul>
+									<li>New uploads will be <strong>publicly</strong> visible <em class="ss-icon help-popover" data-content="Data uploaded during the Statwing Silver trial will remain private forever" data-placement="top">question</em></li>
+
+									<li>Datasets up to <strong>1</strong> million cells large <em class="ss-icon help-popover" data-content="&lt;table class='popover-table'&gt;&lt;tr&gt;&lt;th&gt;Rows&lt;/th&gt;&lt;th&gt;Columns&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;100,000&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;25,000&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5,000&lt;/td&gt;&lt;td&gt;200&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" data-html="true" data-placement="top" data-title="Example dataset sizes">question</em></li>
+								</ul>
+
+								<h4 class="box-footer">FREE</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="box">
+								<h4 class="box-header">Statwing Silver</h4>
+
+								<ul>
+									<li>Uploads are <strong>private</strong> forever (even if you downgrade later)</li>
+
+									<li>Export charts to Excel and Powerpoint</li>
+
+									<li>Datasets up to <strong>1</strong> million cells large <em class="ss-icon help-popover" data-content="&lt;table class='popover-table'&gt;&lt;tr&gt;&lt;th&gt;Rows&lt;/th&gt;&lt;th&gt;Columns&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;100,000&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;25,000&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5,000&lt;/td&gt;&lt;td&gt;200&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" data-html="true" data-placement="top" data-title="Example dataset sizes">question</em></li>
+								</ul>
+
+								<h4 class="box-footer">$25 / month</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="box">
+								<h4 class="box-header">Statwing Gold</h4>
+
+								<ul>
+									<li>Uploads are <strong>private</strong> forever (even if you downgrade later)</li>
+
+									<li>Export charts to Excel and Powerpoint</li>
+
+									<li>Datasets up to <strong>5</strong> million cells large <em class="ss-icon help-popover" data-content="&lt;table class='popover-table'&gt;&lt;tr&gt;&lt;th&gt;Rows&lt;/th&gt;&lt;th&gt;Columns&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;500,000&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;100,000&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;25,000&lt;/td&gt;&lt;td&gt;200&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" data-html="true" data-placement="top" data-title="Example dataset sizes">question</em></li>
+								</ul>
+
+								<h4 class="box-footer">$100 / month</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<a class="btn btn-success btn-lg btn-block" href="https://www.statwing.com/users/sign_up" style="padding-top:22px;padding-bottom:18px;"><em class="ss-icon">playvideo</em> Start Statwing Silver free trial</a> <small>(E-mail <a href="mailto:sales@statwing.com">sales@statwing.com</a> for enterprise pricing)</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer container">
+		<div class="row row-padding" id="contact">
+
+			<div class="col-md-4 people">
+				<div class="box">
+					<h4 class="box-header blue">Team <em class="ss-icon pull-right">usergroup</em></h4>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/greg.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Greg Laughlin</h4>Cofounder, CEO<br>
+							Stanford B.A./M.A. 2006
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/john.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">John Le</h4>Cofounder, CTO<br>
+							Stanford B.S/M.S. 2009
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/bob.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Bob Vallone</h4>User Interface Advisor<br>
+							Creator of TiVo UI<br>
+							Taught Stats at Stanford
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/kristian.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Kristian Hartikainen</h4>Software Engineer<br>
+							Aalto University B.S. 2013
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 people">
+				<div class="box">
+					<h4 class="box-header blue">Selected Investors <em class="ss-icon pull-right">usergroup</em></h4>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/jeff.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Jeff Hammerbacher</h4>Cofounder of Cloudera,<br>
+							Built Facebook data team,<br>
+							Coined "data science"
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/jason.jpg"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Jason Seats</h4>Cofounder of Slicehost,<br>
+							Director of TechStars Austin<br>
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/diego.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Diego Basch</h4>Founder of IndexTank
+						</div>
+					</div>
+
+					<div class="row row-padding-small">
+						<div class="col-xs-4"><img class="img-circle" src="img/yc-logo.png"></div>
+
+						<div class="col-xs-8">
+							<h4 class="people-header">Y Combinator</h4>Investor in Dropbox, Airbnb, Reddit, Scribd, Optimizely, others
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="box">
+					<h4 class="box-header blue">Contact <em class="ss-icon pull-right">mail</em></h4>
+
+					<form>
+						<div class="form-group">
+							<input class="form-control" id="InputEmail" placeholder="Your e-mail" type="text">
+						</div>
+
+						<div class="form-group">
+							<input class="form-control" id="InputSubject" placeholder="Subject" type="text">
+						</div>
+
+						<div class="form-group">
+							<input class="form-control" id="InputMessage" placeholder="Your message" style="height:100px;vertical-align:top;" type="text">
+						</div><button class="btn btn-primary btn-block" style="margin-bottom:10px;" type="button"><span class="pull-left">Send</span> <i class="icon-envelope pull-right"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="row row-padding">
+			<div class="col-sm-12">
+				<ul class="oneline">
+					<li>
+						<a href="http://www.statwing.com/">© Statwing</a>
+					</li>
+
+					<li>
+						<a href="https://www.statwing.com/jobs">Jobs</a>
+					</li>
+
+					<li>
+						<a href="http://blog.statwing.com/">Blog</a>
+					</li>
+
+					<li>
+						<a href="http://docs.statwing.com/">Docs</a>
+					</li>
+
+					<li>
+						<a href="https://www.statwing.com/legal">Legal</a>
+					</li>
+
+					<li>
+						<a href="http://superpencil.com/?utm_source=statwing&amp;utm_medium=statwing&amp;utm_campaign=statwing" style="color:#788083;">Designed by <img alt="Superpencil Design" src="img/superpencil.png" style="vertical-align: middle;" width="22px"> Superpencil</a>
+					</li>
+
+					<li><img src="https://d1ycphw12ot9ds.cloudfront.net/assets/comodo_secure_small-44a41ec33cffa26cc203d24a4be12cc0.png" style="vertical-align: middle;"></li>
+
+					<li>
+						<a href="https://mixpanel.com/f/partner"><img alt="Real Time Web Analytics" src="https://mixpanel.com/site_media/images/partner/badge_light.png" style="vertical-align: middle;" width="80px"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!-- jQuery -->
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<!-- Demo's animation -->
 	<script type="text/javascript">
-	$(document).ready(function() {
-	
-		var barreset = function() {
-			$('.chart-male .bar-1, .chart-male .bar-2, .chart-male .bar-3, .chart-male .bar-4, .chart-male .bar-5, .chart-male .bar-6, .chart-male .bar-7, .chart-male .bar-8, .chart-male .bar-9, .chart-male .bar-10, .chart-male .bar-11, .chart-male .bar-12, .chart-male .bar-13, .chart-male .bar-14, .chart-male .bar-15, .chart-male .bar-16, .chart-female .bar-1, .chart-female .bar-2, chart-female .bar-3, .chart-female .bar-4, .chart-female .bar-5, .chart-female .bar-6, .chart-female .bar-7, .chart-female .bar-8, .chart-female .bar-9, .chart-female .bar-10, .chart-female .bar-11, .chart-female .bar-12, .chart-female .bar-13, .chart-female .bar-14, .chart-female .bar-15, .chart-female .bar-16').css("height", "5px");
-		};
-	
-		//Animation Gender v. Satisfaction
-		var genderVSsatisfaction = function(){
-			$('.chart-male .bar-1').css("height", "5%");
-			$('.chart-male .bar-2').css("height", "5%");
-			$('.chart-male .bar-3').css("height", "5%");
-			$('.chart-male .bar-4').css("height", "5%");
-			$('.chart-male .bar-5').css("height", "20%");
-			$('.chart-male .bar-6').css("height", "40%");
-			$('.chart-male .bar-7').css("height", "50%");
-			$('.chart-male .bar-8').css("height", "60%");
-			$('.chart-male .bar-9').css("height", "70%");
-			$('.chart-male .bar-10').css("height", "90%");
-			$('.chart-male .bar-11').css("height", "100%");
-			$('.chart-male .bar-12').css("height", "90%");
-			$('.chart-male .bar-13').css("height", "80%");
-			$('.chart-male .bar-14').css("height", "70%");
-			$('.chart-male .bar-15').css("height", "60%");
-			$('.chart-male .bar-16').css("height", "50%");
-			$('.chart-female .bar-1').css("height", "20%");
-			$('.chart-female .bar-2').css("height", "10%");
-			$('.chart-female .bar-3').css("height", "20%");
-			$('.chart-female .bar-4').css("height", "50%");
-			$('.chart-female .bar-5').css("height", "60%");
-			$('.chart-female .bar-6').css("height", "55%");
-			$('.chart-female .bar-7').css("height", "70%");
-			$('.chart-female .bar-8').css("height", "100%");
-			$('.chart-female .bar-9').css("height", "60%");
-			$('.chart-female .bar-10').css("height", "80%");
-			$('.chart-female .bar-11').css("height", "70%");
-			$('.chart-female .bar-12').css("height", "70%");
-			$('.chart-female .bar-13').css("height", "40%");
-			$('.chart-female .bar-14').css("height", "20%");
-			$('.chart-female .bar-15').css("height", "10%");
-			$('.chart-female .bar-16').css("height", "5%");
-		};
-	
-		// Relate selected buttons function
-		var relate = function(){
-			if ($('#compareBtn1').hasClass('active') && $('#compareBtn2').hasClass('active')) {
-				$('.compare1').fadeIn();
-			} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn3').hasClass('active')) {
-				$('.compare2').fadeIn();
-				genderVSsatisfaction();
-			} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn4').hasClass('active')) {
-				$('.compare3').fadeIn();
-			} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn3').hasClass('active')) {
-				$('.compare4').fadeIn();
-			} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn4').hasClass('active')) {
-				$('.compare5').fadeIn();
-			} else if ($('#compareBtn3').hasClass('active') && $('#compareBtn4').hasClass('active')) {
-				$('.compare6').fadeIn();
-			}
-		};
-		
-		//The array that will always hold the two most recent selected buttons
-		var activeBtns = [];
-		$('.btn-compare').bind('click', function() {
-			var $btn = $(this);
-			//1. Hide the right box, reset arrow
-			$('.compare-result').fadeOut();
-			barreset();
-			$('.line-double').css("background-image", "url(img/line-double.png)");
-			$('.line-merge').css("background-image", "url(img/line-merge.png)");
-			//2. Push in the array if button is pushed
-			if (!$btn.hasClass('active')) {
-				activeBtns.push($btn); //add clicked elem to array
-				if (activeBtns.length > 2) { //population control :)
-					activeBtns.shift();
+		$(document).ready(function() {
+			var barreset = function() {
+					$('.chart-male .bar-1, .chart-male .bar-2, .chart-male .bar-3, .chart-male .bar-4, .chart-male .bar-5, .chart-male .bar-6, .chart-male .bar-7, .chart-male .bar-8, .chart-male .bar-9, .chart-male .bar-10, .chart-male .bar-11, .chart-male .bar-12, .chart-male .bar-13, .chart-male .bar-14, .chart-male .bar-15, .chart-male .bar-16, .chart-female .bar-1, .chart-female .bar-2, chart-female .bar-3, .chart-female .bar-4, .chart-female .bar-5, .chart-female .bar-6, .chart-female .bar-7, .chart-female .bar-8, .chart-female .bar-9, .chart-female .bar-10, .chart-female .bar-11, .chart-female .bar-12, .chart-female .bar-13, .chart-female .bar-14, .chart-female .bar-15, .chart-female .bar-16').css("height", "5px");
+				};
+			//Animation Gender v. Satisfaction
+			var genderVSsatisfaction = function() {
+					$('.chart-male .bar-1').css("height", "5%");
+					$('.chart-male .bar-2').css("height", "5%");
+					$('.chart-male .bar-3').css("height", "5%");
+					$('.chart-male .bar-4').css("height", "5%");
+					$('.chart-male .bar-5').css("height", "20%");
+					$('.chart-male .bar-6').css("height", "40%");
+					$('.chart-male .bar-7').css("height", "50%");
+					$('.chart-male .bar-8').css("height", "60%");
+					$('.chart-male .bar-9').css("height", "70%");
+					$('.chart-male .bar-10').css("height", "90%");
+					$('.chart-male .bar-11').css("height", "100%");
+					$('.chart-male .bar-12').css("height", "90%");
+					$('.chart-male .bar-13').css("height", "80%");
+					$('.chart-male .bar-14').css("height", "70%");
+					$('.chart-male .bar-15').css("height", "60%");
+					$('.chart-male .bar-16').css("height", "50%");
+					$('.chart-female .bar-1').css("height", "20%");
+					$('.chart-female .bar-2').css("height", "10%");
+					$('.chart-female .bar-3').css("height", "20%");
+					$('.chart-female .bar-4').css("height", "50%");
+					$('.chart-female .bar-5').css("height", "60%");
+					$('.chart-female .bar-6').css("height", "55%");
+					$('.chart-female .bar-7').css("height", "70%");
+					$('.chart-female .bar-8').css("height", "100%");
+					$('.chart-female .bar-9').css("height", "60%");
+					$('.chart-female .bar-10').css("height", "80%");
+					$('.chart-female .bar-11').css("height", "70%");
+					$('.chart-female .bar-12').css("height", "70%");
+					$('.chart-female .bar-13').css("height", "40%");
+					$('.chart-female .bar-14').css("height", "20%");
+					$('.chart-female .bar-15').css("height", "10%");
+					$('.chart-female .bar-16').css("height", "5%");
+				};
+			// Relate selected buttons function
+			var relate = function() {
+					if ($('#compareBtn1').hasClass('active') && $('#compareBtn2').hasClass('active')) {
+						$('.compare1').fadeIn();
+					} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn3').hasClass('active')) {
+						$('.compare2').fadeIn();
+						genderVSsatisfaction();
+					} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+						$('.compare3').fadeIn();
+					} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn3').hasClass('active')) {
+						$('.compare4').fadeIn();
+						genderVSsatisfaction();
+					} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+						$('.compare5').fadeIn();
+					} else if ($('#compareBtn3').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+						$('.compare6').fadeIn();
+					}
+				};
+			//The array that will always hold the two most recent selected buttons
+			var activeBtns = [];
+			$('.btn-compare').bind('click', function() {
+				var $btn = $(this);
+				//1. Hide the right box, reset arrow
+				$('.compare-result').fadeOut();
+				barreset();
+				$('.line-double').css("background-image", "url(img/line-double.png)");
+				$('.line-merge').css("background-image", "url(img/line-merge.png)");
+				//2. Push in the array if button is pushed
+				if (!$btn.hasClass('active')) {
+					activeBtns.push($btn); //add clicked elem to array
+					if (activeBtns.length > 2) { //population control :)
+						activeBtns.shift();
+					}
+				} else {
+					activeBtns = $.grep(activeBtns, function(elem, index) {
+						return elem.attr('class') !== $btn.attr('class'); //remove clicked element from the array. I compare classes as they provide a clean result, objects don't work
+					});
 				}
-			} else {
-				activeBtns = $.grep(activeBtns, function(elem, index) {
-					return elem.attr('class') !== $btn.attr('class'); //remove clicked element from the array. I compare classes as they provide a clean result, objects don't work
-				});
-			}
-			//3. Run the show/hide buttons mambo jumbo
-			$('.btn-compare').removeClass('active');
-			for (x in activeBtns) {
-				activeBtns[x].addClass('active');
-			}
-			//4. Change background lines
-			if ($('#compareBtn1').hasClass('active') && $('#compareBtn2').hasClass('active')) {
-				$('.line-double').css("background-image", "url(img/line-double_1.png)");
-				$('.line-merge').css("background-image", "url(img/line-merge_1.png)");
-			} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn3').hasClass('active')) {
-				$('.line-double').css("background-image", "url(img/line-double_2.png)");
-				$('.line-merge').css("background-image", "url(img/line-merge_2.png)");
-			} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn4').hasClass('active')) {
-				$('.line-double').css("background-image", "url(img/line-double_3.png)");
-				$('.line-merge').css("background-image", "url(img/line-merge_3.png)");
-			} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn3').hasClass('active')) {
-				$('.line-double').css("background-image", "url(img/line-double_4.png)");
-				$('.line-merge').css("background-image", "url(img/line-merge_4.png)");
-			} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn4').hasClass('active')) {
-				$('.line-double').css("background-image", "url(img/line-double_5.png)");
-				$('.line-merge').css("background-image", "url(img/line-merge_5.png)");
-			} else if ($('#compareBtn3').hasClass('active') && $('#compareBtn4').hasClass('active')) {
-				$('.line-double').css("background-image", "url(img/line-double_6.png)");
-				$('.line-merge').css("background-image", "url(img/line-merge_6.png)");
-			}
+				//3. Run the show/hide buttons mambo jumbo
+				$('.btn-compare').removeClass('active');
+				for (x in activeBtns) {
+					activeBtns[x].addClass('active');
+				}
+				//4. Change background lines
+				if ($('#compareBtn1').hasClass('active') && $('#compareBtn2').hasClass('active')) {
+					$('.line-double').css("background-image", "url(img/line-double_1.png)");
+					$('.line-merge').css("background-image", "url(img/line-merge_1.png)");
+				} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn3').hasClass('active')) {
+					$('.line-double').css("background-image", "url(img/line-double_2.png)");
+					$('.line-merge').css("background-image", "url(img/line-merge_2.png)");
+				} else if ($('#compareBtn1').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+					$('.line-double').css("background-image", "url(img/line-double_3.png)");
+					$('.line-merge').css("background-image", "url(img/line-merge_3.png)");
+				} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn3').hasClass('active')) {
+					$('.line-double').css("background-image", "url(img/line-double_4.png)");
+					$('.line-merge').css("background-image", "url(img/line-merge_4.png)");
+				} else if ($('#compareBtn2').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+					$('.line-double').css("background-image", "url(img/line-double_5.png)");
+					$('.line-merge').css("background-image", "url(img/line-merge_5.png)");
+				} else if ($('#compareBtn3').hasClass('active') && $('#compareBtn4').hasClass('active')) {
+					$('.line-double').css("background-image", "url(img/line-double_6.png)");
+					$('.line-merge').css("background-image", "url(img/line-merge_6.png)");
+				}
+			});
+			//5. Relate button click, compare two active buttons
+			$('.btn-relate').bind('click', function() {
+				relate();
+			});
+			//6. Intro timed animation
+			setTimeout(function() {
+				genderVSsatisfaction();
+			}, 1000);
+			//7. Light up Sign up button after hero scrolled
+			$(document).scroll(function() {
+				var scroll = $(window).scrollTop();
+				if (scroll >= 800) {
+					$(".signup").fadeOut();
+				}
+			});
+			$('.help-popover').popover({
+				trigger: "hover"
+			});
 		});
-		
-		//5. Relate button click, compare two active buttons
-		$('.btn-relate').bind('click', function() {
-			relate();
-		});
-		
-		//6. Relate on startup
-		setTimeout(function(){relate();},1000);
-		
-		$('.help-popover').popover({
-			trigger: "hover"
-		});
-		
-	});
 	</script>
 </body>
-
 </html>
