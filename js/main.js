@@ -118,4 +118,6 @@ $(document).ready(function() {
 			$(".btnSignup").stop().css({"border-color":"#aec4cb","color":"#aec4cb"});
 		}
 	});
+	//8. Activate SKROLLR
+	var s = skrollr.init();
 });

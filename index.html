@@ -643,13 +643,13 @@
 	
 					<div class="col-sm-6 hidden-xs">
 						<div class="image">
-							<div id="slider">
+							<div id="slider" class="skrol" data-700="margin-left:5%;" data-1000="margin-left:95%;">
 								<div class="theslider"></div>
 							</div>
 	
 							<div class="back"><img src="img/stat-bg.png"></div>
 	
-							<div class="front"><img src="img/stat-fg.png"></div>
+							<div class="front" class="skrol" data-700="width:95%;" data-1000="width:5%;"><img src="img/stat-fg.png"></div>
 						</div>
 					</div>
 				</div>
@@ -658,13 +658,13 @@
 				<div class="row row-padding">
 					<div class="col-sm-6 hidden-xs">
 						<div class="image image-right">
-							<div id="slider">
+							<div id="slider" class="skrol" data-1200="margin-left:5%;" data-1500="margin-left:95%;">
 								<div class="theslider"></div>
 							</div>
 	
 							<div class="back"><img src="img/stat-bg.png"></div>
 	
-							<div class="front"><img src="img/stat-2-fg.png"></div>
+							<div class="front" class="skrol" data-1200="width:95%;" data-1500="width:5%;"><img src="img/stat-2-fg.png"></div>
 						</div>
 					</div>
 	
@@ -1170,11 +1170,30 @@
 				</div>
 			</div>
 		</div>
+		
 		<!-- jQuery -->
 		<script src="js/jquery-1.10.2.min.js"></script>
+		
 		<!-- Bootstrap JS -->
 		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Google Analytics -->
+		<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        
+        <!-- Scrolling animations -->
+        <script src="js/skrollr.min.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script src="js/skrollr.ie.min.js"></script>
+		<![endif]-->
+		
 		<!-- Statwing demo's and animation -->
 		<script src="js/main.js"></script>
+		
 	</body>
 </html>

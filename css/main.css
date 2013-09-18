@@ -19,6 +19,7 @@ color: #788083;
 background-image: url('../img/raster.png');
 padding-bottom: 30px;
 box-shadow: inset 0px 0px 500px #e7f3f6;
+overflow-x: hidden;
 }
 a {
 color: #33a0d3;
@@ -717,7 +718,7 @@ right: 0;
 }
 .image #slider {
 position: absolute;
-margin-left: -30%;
+margin-left: 35%;
 top: -50px;
 z-index: 50;
 }
@@ -759,34 +760,6 @@ position: absolute;
 right: 0;
 max-width: none;
 }
-@keyframes slider {
-0%   {margin-left:5%;}
-50%  {margin-left:95%;}
-100% {margin-left:5%;}
-}
-@-webkit-keyframes slider {
-0%   {margin-left:5%;}
-50%  {margin-left:95%;}
-100% {margin-left:5%;}
-}
-.image #slider {
-animation:slider 10s infinite;
--webkit-animation:slider 10s infinite;
-}
-@keyframes front {
-0%   {width:95%;}
-50%  {width:5%;}
-100% {width:95%;}
-}
-@-webkit-keyframes front {
-0%   {width:95%;}
-50%  {width:5%;}
-100% {width:95%;}
-}
-.image .front {
-animation:front 10s infinite;
--webkit-animation:front 10s infinite;
-}
 .hero-welcome h1 {
     font-size:28px;
     color:#33a0d3;
@@ -826,8 +799,8 @@ width: 18%;
 }
 @media (min-width: 768px) {
 	.image-right {
-	position: relative;
-	right: auto;
+	position: absolute;
+	right: 0;
 	}
 	.navbar-default {
 	background: transparent;
