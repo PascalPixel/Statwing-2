@@ -851,21 +851,19 @@ width: 18%;
 	.navbar-default .navbar-nav>.active>a:hover {
 	background-color: #33a0d3;
 	}
-	.navbar-default .btn-group {
-		border: 2px solid #aec4cb;
+	.navbar-default .btn {
+		border: 3px solid #aec4cb;
 		border-radius: 5px;
 		margin-top: 8px;
 		margin-right: 0;
-	}	
-	.navbar-default .btn-group .btn {
 		color: #aec4cb;
-	}
-	.navbar-default .btn {
 		display: block;
 		background: transparent;
 		padding: 7px 10px 5px;
 		box-shadow: none;
 		text-shadow: none;
+		transition: all 1s;
+		-webkit-transition: all 1s;
 	}
 	.navbar-default .btn a {
 		color: #788083;

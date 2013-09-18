@@ -58,9 +58,7 @@
 					</li>
 
 					<li>
-						<div class="btn-group signup">
-							<a class="btn signup" href="https://www.statwing.com/users/sign_up">Sign Up</a>
-						</div>
+						<div class="btn btnSignup"><a class="btnSignup" style="color: #aec4cb;" href="https://www.statwing.com/users/sign_up">Sign Up</a></div>
 					</li>
 				</ul>
 			</div>
@@ -1287,12 +1285,11 @@
 			//7. Light up Sign up button after hero scrolled
 			$(document).scroll(function() {
 				var scroll = $(window).scrollTop();
-				if (scroll >= 800) {
-					$(".signup").fadeOut();
+				if (scroll >= 500) {
+					$(".btnSignup").stop().css({"border-color":"#a7db67","color":"#a7db67"});
+				} else {
+					$(".btnSignup").stop().css({"border-color":"#aec4cb","color":"#aec4cb"});
 				}
-			});
-			$('.help-popover').popover({
-				trigger: "hover"
 			});
 		});
 	</script>
