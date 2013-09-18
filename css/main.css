@@ -56,6 +56,8 @@ text-shadow: 0px 1px 0px white;
 border-radius: 4px;
 box-shadow: inset 0px 1px 0px white;
 padding: 10px 13px 7px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
 }
 .btn:hover {
 color: #575751;
@@ -77,6 +79,8 @@ background-image: -ms-linear-gradient( 90deg, #2d92cd 0%, #33a0d3 100%);
 color: #d2ebf8;
 text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
 box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
 }
 .btn-primary:hover, .card-top .btn:hover {
 color: white;
@@ -98,6 +102,8 @@ background-image: -ms-linear-gradient( 90deg, #cbe6f0 0%, #ddeef5 100%);
 color: #409acd;
 text-shadow: 0px 1px 0px white;
 box-shadow: inset 0px 1px 0px white;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
 }
 .btn-info:hover {
 color: #32759c;
@@ -119,6 +125,8 @@ background-image: -ms-linear-gradient( 90deg, #5fbd31 0%, #8ad34a 100%);
 color: #edf8d3;
 text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
 box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
 }
 .btn-success:hover {
 color: white;
