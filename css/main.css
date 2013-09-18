@@ -784,6 +784,12 @@ margin-top: 10px;
 .country .chart-underline > .bar-wrap, .country .chart-country > .bar-wrap {
 width: 18%;
 }
+.btn-compare > [class^="icon-"], .btn-compare > [class*=" icon-"] {
+margin-top: 4px;
+}
+#cycler{position:relative;}
+#cycler img{position:absolute;z-index:1}
+#cycler img.active{z-index:3}
 @media (max-width: 991px) and (min-width: 768px) {
 	.btn .hidden-sm {
 	display: none!important;
@@ -849,7 +855,4 @@ width: 18%;
 	.navbar-default .btn a {
 		color: #788083;
 	}
-}
-.btn-compare > [class^="icon-"], .btn-compare > [class*=" icon-"] {
-margin-top: 4px;
 }
