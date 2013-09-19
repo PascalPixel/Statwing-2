@@ -181,9 +181,6 @@ z-index: 0;
 position: relative;
 overflow-x: hidden;
 }
-.ss-icon {
-vertical-align: middle;
-}
 .help-popover {
 cursor: default;
 }
@@ -195,6 +192,9 @@ text-align: right;
 .popover {
 min-width: 200px;
 } 
+.icon-question-sign:hover {
+  color:#222;
+}
 .row-padding {
 padding-top: 40px;
 padding-bottom: 40px;

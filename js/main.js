@@ -9,6 +9,8 @@ function cycleImages(){
     }
 
 $(document).ready(function() {
+	$('.help-popover').popover({html:true, placement:"top"})
+
 	var barreset = function() {
 			$('.chart-male .bar-1, .chart-male .bar-2, .chart-male .bar-3, .chart-male .bar-4, .chart-male .bar-5, .chart-male .bar-6, .chart-male .bar-7, .chart-male .bar-8, .chart-male .bar-9, .chart-male .bar-10, .chart-male .bar-11, .chart-male .bar-12, .chart-male .bar-13, .chart-male .bar-14, .chart-male .bar-15, .chart-male .bar-16, .chart-female .bar-1, .chart-female .bar-2, chart-female .bar-3, .chart-female .bar-4, .chart-female .bar-5, .chart-female .bar-6, .chart-female .bar-7, .chart-female .bar-8, .chart-female .bar-9, .chart-female .bar-10, .chart-female .bar-11, .chart-female .bar-12, .chart-female .bar-13, .chart-female .bar-14, .chart-female .bar-15, .chart-female .bar-16').css("height", "5px");
 		};
