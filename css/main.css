@@ -302,7 +302,7 @@ background-position: center center;
 .line-arrow {
 background-image: url('../img/line-arrow.png');
 background-repeat: no-repeat;
-background-position-y: 58px;
+background-position: left 58px;
 height: 210px;
 }
 .intrograph {
