@@ -135,9 +135,9 @@ $(document).ready(function() {
 	$(document).scroll(function() {
 		var scroll = $(window).scrollTop();
 		if (scroll >= 500) {
-			$(".btnSignup").stop().css({"border-color":"#a7db67","color":"#a7db67"});
+			$(".btnSignup").addClass('highlight');
 		} else {
-			$(".btnSignup").stop().css({"border-color":"#aec4cb","color":"#aec4cb"});
+			$(".btnSignup").removeClass('highlight');
 		}
 	});
 	

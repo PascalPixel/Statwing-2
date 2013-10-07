@@ -720,10 +720,15 @@ margin-top: 4px;
 		padding: 7px 10px 5px;
 		box-shadow: none;
 		text-shadow: none;
-		transition: all 1s;
-		-webkit-transition: all 1s;
+		transition: all 0.1s;
+		-webkit-transition: all 0.1s;
 	}
 	.navbar-default .btn a {
 		color: #788083;
+	}
+	.navbar-default .highlight {
+		border-color: rgb(167, 219, 103) !important;
+		background-color: rgb(167, 219, 103) !important;
+		color: #ffffff !important;
 	}
 }
