@@ -16,7 +16,7 @@
 		<!-- Font Awesome -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<!-- Animate -->
-		<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
+		<!-- <link href='css/animate-custom.css' rel='stylesheet' type='text/css'> -->
 		<!-- H&FJ -->
 		<link href="http://cloud.typography.com/6665052/714022/css/fonts.css" rel="stylesheet" type="text/css">
 		<!-- CSS -->
@@ -85,36 +85,45 @@
 	
 		<div class="wrap animated delay2 fadeIn">
 			<div class="container">
-				<div class="row row-padding" style="padding-top: 150px; margin-top: -90px;">
+				<div class="row row-padding">
 					<div class="col-sm-12 center">
 						<h2><span class="icon-code"></span> Two forms of partnerships</h2>
 					</div>
 					<div class="col-sm-6">
-						<div class="center">
-							<h2 class="blue">Integrated</h2>
-							<img style="margin:20px 0 40px;" src="img/integration_1.png">
+						<div class="box">
+							<h4 class="box-header">
+								Integrated
+								<span class="icon-list-alt pull-right"></span>
+							</h4>
+							<div class="center"><img style="margin:20px 0 40px;" src="img/integration_1.png"></div>
+							<p class="intrograph">Embed Statwing into your product, with customized branding.</p>
+							<p>Your users will analyze their data with the full power of Statwing—and with your branding. Statwing can embed directly into your product, or in one click your users can analyze their data at https://[yourapp].statwing.com.</p>
+							<div class="box-footer">
+								<!-- Button trigger modal 1 -->
+								<a data-toggle="modal" href="#exporting1" class="btn btn-success btn-block">
+									Contact about white-label integration <span class="icon-send icon-rotate-90 hidden-sm"></span>
+								</a>
+							</div>
 						</div>
-						<p class="intrograph">Embed Statwing into your product</p>
-
-						<p>
-						 Your users will analyze their data with the full power of Statwing—and with your branding. Statwing can embed directly into your product, or in one click your users can analyze their data at https://[yourapp].statwing.com.</p>
-
-						<p>CTA: Contact Statwing About Integrating [which if clicked yields a form with fields for email address, website, and optional message]</p>
-
 					</div>
 					<div class="col-sm-6">
-						<div class="center">
-							<h2 class="blue">Exporting (Free)</h2>
-							<img style="margin:20px 0 40px;" src="img/integration_2.png">
+						<div class="box">
+							<h4 class="box-header">
+								Exporting (Free)
+								<span class="icon-share pull-right"></span>
+							</h4>
+							<div class="center"><img style="margin:20px 0 40px;" src="img/integration_2.png"></div>
+							<p class="intrograph">Your users can one-click export their data to Statwing.</p>
+							<p>Your users analyze their data for free initially. If they want to use Statwing for more than a month, they'll subscribe to Statwing.</p>
+							<div class="box-footer">
+								<a class="btn" href="/api" style="width:49%">
+									See the API Docs <span class="icon-send icon-rotate-90 hidden-sm"></span>
+								</a>
+								<a data-toggle="modal" href="#exporting2" class="btn btn-success btn-block" href="/demos/survey" style="width:49%">
+									Contact us <span class="icon-send icon-rotate-90 hidden-sm"></span>
+								</a>
+							</div>
 						</div>
-						<p class="intrograph">Your users can one-click export their data to Statwing.</p>
-	
-						<p>Your users analyze their data for free initially. If they want to use Statwing for more than a month, they'll subscribe to Statwing.</p>
-						
-						<p>CTA1: "See the API Docs" [button, linked to here: https://www.statwing.com/docs/api]</p>
-						
-						<p>CTA2: Contact Statwing About Integrating [same as a "Integrated" CTA, except we'll fill in subject differently programmatically]</p>
-						
 					</div>
 				</div>
 				
@@ -356,6 +365,45 @@
 					</ul>
 				</div>
 			</div>
+			
+			<!-- Modal Integration 1 -->
+			<div class="modal fade" id="exporting1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Integrated</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			
+			<!-- Modal Integration 2 -->
+			<div class="modal fade" id="exporting2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Exporting (Free)</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			
 		</div>
 		
 		<!-- jQuery -->
