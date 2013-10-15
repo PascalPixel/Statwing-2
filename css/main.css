@@ -661,6 +661,77 @@ margin-top: 4px;
 #cycler{position:relative;}
 #cycler img{position:absolute;z-index:1}
 #cycler img.active{z-index:3}
+blockquote, q {
+quotes: none;
+}
+.testimonial .quote {
+position: relative;
+background: #f7fafa;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: rgba(0,0,0,0.1) solid 5px;
+font-size: 18px;
+line-height: 26px;
+padding: 20px;
+margin-bottom: 40px;
+}
+
+.testimonial .quote:after {
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #f7fafa transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -15px;
+left: 32px;
+}
+
+.testimonial .quote:before {
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 19px 19px 0;
+border-color: rgba(0,0,0,0.1) transparent;
+display: block;
+width: 0;
+z-index: 0;
+bottom: -24px;
+left: 28px;
+}
+.testimonial .quote .quote-date {
+	font-weight: bold;
+	font-size: 10px;
+	margin: 10px 0 0;
+	text-transform: uppercase;
+	color: #99b3bf;
+}
+.testimonial .user {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.testimonial .user-avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	float: left;
+	margin-left: 25px;
+	
+}
+.testimonial .user-info {
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+	margin-left: 16px;
+	margin-top: 8px;
+}
+.testimonial .handle {
+	color: #33a0d3;
+}
 @media (max-width: 991px) and (min-width: 768px) {
 	.btn .hidden-sm {
 	display: none!important;
