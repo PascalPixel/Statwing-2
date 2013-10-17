@@ -16,7 +16,7 @@
 		<!-- Font Awesome -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<!-- Animate -->
-		<!-- <link href='css/animate-custom.css' rel='stylesheet' type='text/css'> -->
+		<link href='css/animate-custom.css' rel='stylesheet' type='text/css'>
 		<!-- H&FJ -->
 		<link href="http://cloud.typography.com/6665052/714022/css/fonts.css" rel="stylesheet" type="text/css">
 		<!-- CSS -->
@@ -28,7 +28,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 	
-		<div class="navbar navbar-default navbar-fixed-top animated delay1 fadeInDown">
+		<div class="navbar navbar-default navbar-fixed-top animated delay1 slideDownDown">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img src="img/statwing_logo.png"> Statwing</a>
@@ -72,7 +72,7 @@
 	
 		<div id="hero">
 			<div class="container">
-				<div class="row animated fadeInUp">
+				<div class="row animated slideDownUp">
 					<div class="col-sm-9 hero-welcome">
 						<h1>Modern Data Analysis Software</h1>
 	
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 	
-				<div class="row row-padding animated delay1 fadeInUp hidden-xs">
+				<div class="row row-padding animated delay1 slideDownUp hidden-xs">
 					<div class="col-sm-3 line-double">
 						<button class="btn btn-compare btn-block active" id="compareBtn1" type="button">
 							<span class="pull-left"><span class="hidden-sm hidden-md">Customer</span> Satisfaction</span> 
@@ -613,7 +613,7 @@
 			</div>
 		</div>
 	
-		<div class="wrap animated delay2 fadeIn">
+		<div class="wrap animated delay2 slideDown">
 			<div class="container">
 				<div class="row row-padding" id="howitworks" style="padding-top: 150px; margin-top: -90px;">
 					<div class="col-sm-6"><img src="img/upload-bg.png"></div>
@@ -767,7 +767,7 @@
 				<div class="row row-padding-small">
 					<div class="col-sm-6">
 					
-						<div class="testimonial">
+						<div class="testimonial" id="t_1">
 							<div class="quote">
                             	Used Statwing a lot for DDJ projects of late. Can't recommend highly enough to fellow data journalists needing quick statistical analysis.
                             	<div class="quote-date">
@@ -783,7 +783,7 @@
 	                        </div>
 						</div>
 						
-						<div class="testimonial">
+						<div class="testimonial" id="t_3">
 							<div class="quote">
                             	Want a way to get more oomph out of your spreadsheet reports? Check out Statwing. It's impressive!
                             	<div class="quote-date">
@@ -799,7 +799,23 @@
 	                        </div>
 						</div>
 						
-						<div class="testimonial">
+						<div class="testimonial" id="t_5">
+							<div class="quote">
+                            	I saw this yesterday, and I cannot get over how awesome it is: Statwing, an easy analysis tool for your data.
+                            	<div class="quote-date">
+		                        	8:06 PM - April 13, 2013 from Washington, DC
+		                        </div>
+							</div>
+							 <div class="user">
+	                        	<img class="user-avatar" src="https://si0.twimg.com/profile_images/1441681195/9228_1170807601342_1562550410_30579913_6502593_n_normal.jpg">
+	                        	<div class="user-info">
+	                        		<div class="name">Will Van Wazer</div>
+	                        		<div class="handle">@willvanwazer</div>
+	                        	</div>
+	                        </div>
+						</div>
+						
+						<div class="testimonial" id="t_7">
 							<div class="quote">
                             	I saw this yesterday, and I cannot get over how awesome it is: Statwing, an easy analysis tool for your data.
                             	<div class="quote-date">
@@ -818,7 +834,8 @@
 					</div>
 	
 					<div class="col-sm-6">
-						<div class="testimonial">
+					
+						<div class="testimonial" id="t_2">
 							<div class="quote">
                             	Used Statwing a lot for DDJ projects of late. Can't recommend highly enough to fellow data journalists needing quick statistical analysis.
                             	<div class="quote-date">
@@ -833,7 +850,8 @@
 	                        	</div>
 	                        </div>
 						</div>
-						<div class="testimonial">
+						
+						<div class="testimonial" id="t_4">
 							<div class="quote">
                             	Used Statwing a lot for DDJ projects of late. Can't recommend highly enough to fellow data journalists needing quick statistical analysis.
                             	<div class="quote-date">
@@ -848,7 +866,8 @@
 	                        	</div>
 	                        </div>
 						</div>
-						<div class="testimonial">
+						
+						<div class="testimonial" id="t_6">
 							<div class="quote">
                             	Used Statwing a lot for DDJ projects of late. Can't recommend highly enough to fellow data journalists needing quick statistical analysis.
                             	<div class="quote-date">
@@ -863,6 +882,23 @@
 	                        	</div>
 	                        </div>
 						</div>
+						
+						<div class="testimonial" id="t_8">
+							<div class="quote">
+                            	Used Statwing a lot for DDJ projects of late. Can't recommend highly enough to fellow data journalists needing quick statistical analysis.
+                            	<div class="quote-date">
+		                        	7:20 PM - May 18, 2013
+		                        </div>
+							</div>
+							 <div class="user">
+	                        	<img class="user-avatar" src="https://si0.twimg.com/profile_images/378800000020909915/f17ed999faa0f39c4544c5bb296e3243_bigger.png">
+	                        	<div class="user-info">
+	                        		<div class="name">John Burn-Murdoch</div>
+	                        		<div class="handle">@jburnmurdoch</div>
+	                        	</div>
+	                        </div>
+						</div>
+						
 					</div>
 				</div>
 				

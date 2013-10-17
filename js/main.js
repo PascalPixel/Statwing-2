@@ -146,4 +146,27 @@ $(document).ready(function() {
 	
 	//9. graph animation instant viz
 	setInterval('cycleImages()', 4000);
+	
+	//10. Testimonials
+	$('#t_1, #t_2, #t_3, #t_4, #t_5, #t_6, #t_7, #t_8').hide(); //Hide all 8
+	var loopTestimonials = function() { //Show/Hide sequence
+		$('#t_1, #t_2').slideDown();
+		setTimeout(function() {
+			$('#t_1, #t_2').slideUp();
+			$('#t_3, #t_4').slideDown();
+			setTimeout(function() {
+				$('#t_3, #t_4').slideUp();
+				$('#t_5, #t_6').slideDown();
+				setTimeout(function() {
+					$('#t_5, #t_6').slideUp();
+					$('#t_7, #t_8').slideDown();
+					setTimeout(function() {
+						$('#t_7, #t_8').slideUp();
+						loopTestimonials(); //Loop
+					}, 5000); //Timeout counter
+				}, 5000); //Timeout counter
+			}, 5000); //Timeout counter
+		}, 5000); //Timeout counter
+	};
+	loopTestimonials();//Run Function
 });
